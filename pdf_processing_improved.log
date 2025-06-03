@@ -1,0 +1,1366 @@
+2025-06-02 16:02:03,843 - INFO - [main:966] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-02 16:02:03,843 - INFO - [main:1008] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-02 16:02:03,843 - INFO - [main:1023] - Processing PDFs from folder: ./raw_data/papers
+2025-06-02 16:02:03,864 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-02 16:02:48,888 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-02 16:02:48,898 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 000000_20240618_0A_CN_0.pdf
+2025-06-02 16:02:48,898 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-02 16:02:51,149 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-02 16:02:51,357 - ERROR - [process_pdf_entry:784] - PDF: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf - Error closing PDF document: document closed
+2025-06-02 16:02:51,366 - INFO - [load_from_folder:924] - Successfully processed from folder: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-02 16:02:51,367 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-02 16:02:53,574 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201700506
+2025-06-02 16:02:53,640 - ERROR - [process_pdf_entry:784] - PDF: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf - Error closing PDF document: document closed
+2025-06-02 16:02:53,649 - INFO - [load_from_folder:924] - Successfully processed from folder: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-02 16:02:53,649 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-02 16:02:56,076 - ERROR - [process_pdf_entry:784] - PDF: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf - Error closing PDF document: document closed
+2025-06-02 16:02:56,086 - INFO - [load_from_folder:924] - Successfully processed from folder: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-02 16:02:56,086 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-02 16:02:59,218 - ERROR - [process_pdf_entry:784] - PDF: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf - Error closing PDF document: document closed
+2025-06-02 16:02:59,227 - INFO - [load_from_folder:924] - Successfully processed from folder: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-02 16:02:59,227 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-02 16:03:01,529 - ERROR - [process_pdf_entry:784] - PDF: 06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf - Error closing PDF document: document closed
+2025-06-02 16:03:01,537 - INFO - [load_from_folder:924] - Successfully processed from folder: 06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-02 16:03:01,537 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\061515_1_online(科研通-ablesci.com).pdf
+2025-06-02 16:03:03,642 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1116/1.4824163
+2025-06-02 16:03:04,807 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1116/1.4824163
+2025-06-02 16:03:04,839 - ERROR - [process_pdf_entry:784] - PDF: 061515_1_online(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:03:04,849 - INFO - [load_from_folder:924] - Successfully processed from folder: 061515_1_online(科研通-ablesci.com).pdf
+2025-06-02 16:03:04,849 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-02 16:03:07,043 - ERROR - [process_pdf_entry:784] - PDF: 07  High mobility transparent conducting oxides for thin film solar cells.pdf - Error closing PDF document: document closed
+2025-06-02 16:03:07,053 - INFO - [load_from_folder:924] - Successfully processed from folder: 07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-02 16:03:07,053 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-02 16:03:09,227 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.mtnano.2023.100329
+2025-06-02 16:03:09,308 - ERROR - [process_pdf_entry:784] - PDF: 08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf - Error closing PDF document: document closed
+2025-06-02 16:03:09,316 - INFO - [load_from_folder:924] - Successfully processed from folder: 08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-02 16:03:09,316 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\083547_1_online(科研通-ablesci.com).pdf
+2025-06-02 16:03:11,468 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3116542
+2025-06-02 16:03:12,707 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
+2025-06-02 16:03:12,740 - ERROR - [process_pdf_entry:784] - PDF: 083547_1_online(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:03:12,748 - INFO - [load_from_folder:924] - Successfully processed from folder: 083547_1_online(科研通-ablesci.com).pdf
+2025-06-02 16:03:12,748 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 16:03:57,756 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 16:03:57,763 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 16:03:57,763 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0038092X1931254X-main.pdf
+2025-06-02 16:03:59,945 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solener.2019.12.040
+2025-06-02 16:03:59,961 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0038092X1931254X-main.pdf - Error closing PDF document: document closed
+2025-06-02 16:03:59,970 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0038092X1931254X-main.pdf
+2025-06-02 16:03:59,970 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0040609017301219-main--IMO.pdf
+2025-06-02 16:04:02,091 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2017.02.032
+2025-06-02 16:04:02,101 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0040609017301219-main--IMO.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:02,110 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0040609017301219-main--IMO.pdf
+2025-06-02 16:04:02,110 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 16:04:04,252 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jpowsour.2021.230101
+2025-06-02 16:04:04,262 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S037877532100625X-main--IWTO.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:04,271 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 16:04:04,271 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0927024813000688-main (1).pdf
+2025-06-02 16:04:06,375 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2013.02.006
+2025-06-02 16:04:06,387 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024813000688-main (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:04:06,396 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024813000688-main (1).pdf
+2025-06-02 16:04:06,396 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0927024813000688-main.pdf
+2025-06-02 16:04:08,509 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2013.02.006
+2025-06-02 16:04:08,521 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024813000688-main.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:08,530 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024813000688-main.pdf
+2025-06-02 16:04:08,531 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S092702481600009X-main.pdf
+2025-06-02 16:04:10,691 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2016.01.005
+2025-06-02 16:04:10,701 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S092702481600009X-main.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:10,709 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S092702481600009X-main.pdf
+2025-06-02 16:04:10,709 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 16:04:12,848 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2024.112727
+2025-06-02 16:04:12,859 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:12,869 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 16:04:12,869 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1-s2.0-S0927025617303026-main.pdf
+2025-06-02 16:04:14,951 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.commatsci.2017.06.005
+2025-06-02 16:04:14,962 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927025617303026-main.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:14,972 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927025617303026-main.pdf
+2025-06-02 16:04:14,972 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1.1687984.pdf
+2025-06-02 16:04:17,121 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1687984
+2025-06-02 16:04:18,271 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1687984
+2025-06-02 16:04:18,557 - ERROR - [process_pdf_entry:784] - PDF: 1.1687984.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:18,567 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.1687984.pdf
+2025-06-02 16:04:18,567 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1.1995957(科研通-ablesci.com).pdf
+2025-06-02 16:04:20,674 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 16:04:21,834 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 16:04:22,002 - ERROR - [process_pdf_entry:784] - PDF: 1.1995957(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:04:22,011 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.1995957(科研通-ablesci.com).pdf
+2025-06-02 16:04:22,011 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1.2711768.pdf
+2025-06-02 16:04:24,134 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2711768
+2025-06-02 16:04:25,317 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2711768
+2025-06-02 16:04:25,596 - ERROR - [process_pdf_entry:784] - PDF: 1.2711768.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:25,607 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.2711768.pdf
+2025-06-02 16:04:25,607 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\1.3224946.pdf
+2025-06-02 16:04:27,670 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3224946
+2025-06-02 16:04:28,828 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3224946
+2025-06-02 16:04:29,126 - ERROR - [process_pdf_entry:784] - PDF: 1.3224946.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:29,134 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.3224946.pdf
+2025-06-02 16:04:29,134 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf
+2025-06-02 16:04:31,356 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41560-023-01331-7
+2025-06-02 16:04:31,459 - ERROR - [process_pdf_entry:784] - PDF: 10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:31,469 - INFO - [load_from_folder:924] - Successfully processed from folder: 10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf
+2025-06-02 16:04:31,469 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\10.1515_rams-2018-0006.pdf
+2025-06-02 16:04:33,618 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1515/rams-2018-0006
+2025-06-02 16:04:33,652 - ERROR - [process_pdf_entry:784] - PDF: 10.1515_rams-2018-0006.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:33,662 - INFO - [load_from_folder:924] - Successfully processed from folder: 10.1515_rams-2018-0006.pdf
+2025-06-02 16:04:33,662 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf
+2025-06-02 16:04:35,728 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 16:04:35,889 - ERROR - [process_pdf_entry:784] - PDF: 12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:35,898 - INFO - [load_from_folder:924] - Successfully processed from folder: 12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf
+2025-06-02 16:04:35,898 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\13  2023迈为无铟nature.pdf
+2025-06-02 16:04:38,169 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41560-023-01331-7
+2025-06-02 16:04:38,271 - ERROR - [process_pdf_entry:784] - PDF: 13  2023迈为无铟nature.pdf - Error closing PDF document: document closed
+2025-06-02 16:04:38,279 - INFO - [load_from_folder:924] - Successfully processed from folder: 13  2023迈为无铟nature.pdf
+2025-06-02 16:04:38,280 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\130 Ce-H.pdf
+2025-06-02 16:04:40,406 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41427-022-00421-4
+2025-06-02 16:05:23,301 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\130 Ce-H.pdf
+2025-06-02 16:05:23,309 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 130 Ce-H.pdf
+2025-06-02 16:05:23,309 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf
+2025-06-02 16:05:25,447 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/JJAP.39.6422
+2025-06-02 16:05:26,580 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/JJAP.39.6422
+2025-06-02 16:05:26,583 - ERROR - [process_pdf_entry:784] - PDF: 2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:26,594 - INFO - [load_from_folder:924] - Successfully processed from folder: 2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf
+2025-06-02 16:05:26,594 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\2009_JApplPhys.pdf
+2025-06-02 16:05:28,681 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3116542
+2025-06-02 16:05:29,844 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
+2025-06-02 16:05:30,006 - ERROR - [process_pdf_entry:784] - PDF: 2009_JApplPhys.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:30,015 - INFO - [load_from_folder:924] - Successfully processed from folder: 2009_JApplPhys.pdf
+2025-06-02 16:05:30,015 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\2020 IWO J PHYS D APPL PHYS (1).pdf
+2025-06-02 16:05:32,111 - ERROR - [process_pdf_entry:784] - PDF: 2020 IWO J PHYS D APPL PHYS (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:05:32,120 - INFO - [load_from_folder:924] - Successfully processed from folder: 2020 IWO J PHYS D APPL PHYS (1).pdf
+2025-06-02 16:05:32,121 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\2020 IWO J PHYS D APPL PHYS.pdf
+2025-06-02 16:05:34,258 - ERROR - [process_pdf_entry:784] - PDF: 2020 IWO J PHYS D APPL PHYS.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:34,268 - INFO - [load_from_folder:924] - Successfully processed from folder: 2020 IWO J PHYS D APPL PHYS.pdf
+2025-06-02 16:05:34,268 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\2022, Solar RRL, 2100891.pdf
+2025-06-02 16:05:36,295 - WARNING - [process_pdf_entry:661] - PDF: 2022, Solar RRL, 2100891.pdf - File too small (<10KB), likely not a full paper. Path: D:\In2O3\raw_data\papers\2022, Solar RRL, 2100891.pdf
+2025-06-02 16:05:36,302 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 2022, Solar RRL, 2100891.pdf
+2025-06-02 16:05:36,302 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\202410880988_CN118955091A.pdf
+2025-06-02 16:05:50,615 - ERROR - [process_pdf_entry:784] - PDF: 202410880988_CN118955091A.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:50,625 - INFO - [load_from_folder:924] - Successfully processed from folder: 202410880988_CN118955091A.pdf
+2025-06-02 16:05:50,625 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\32-1.3467780-氧化铟和氧化锡.pdf
+2025-06-02 16:05:52,760 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3467780
+2025-06-02 16:05:53,901 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3467780
+2025-06-02 16:05:53,936 - ERROR - [process_pdf_entry:784] - PDF: 32-1.3467780-氧化铟和氧化锡.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:53,946 - INFO - [load_from_folder:924] - Successfully processed from folder: 32-1.3467780-氧化铟和氧化锡.pdf
+2025-06-02 16:05:53,946 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\84107416.pdf
+2025-06-02 16:05:56,035 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.5.094603
+2025-06-02 16:05:56,113 - ERROR - [process_pdf_entry:784] - PDF: 84107416.pdf - Error closing PDF document: document closed
+2025-06-02 16:05:56,121 - INFO - [load_from_folder:924] - Successfully processed from folder: 84107416.pdf
+2025-06-02 16:05:56,122 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\978-981-16-2982-2.pdf
+2025-06-02 16:05:58,599 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/978-981-16-2982-2
+2025-06-02 16:05:59,706 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1007/978-981-16-2982-2
+2025-06-02 16:06:06,193 - ERROR - [process_pdf_entry:784] - PDF: 978-981-16-2982-2.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:06,207 - INFO - [load_from_folder:924] - Successfully processed from folder: 978-981-16-2982-2.pdf
+2025-06-02 16:06:06,207 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\acs.nanolett.8b02452.pdf
+2025-06-02 16:06:08,388 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.nanolett.8b02452
+2025-06-02 16:06:08,397 - ERROR - [process_pdf_entry:784] - PDF: acs.nanolett.8b02452.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:08,406 - INFO - [load_from_folder:924] - Successfully processed from folder: acs.nanolett.8b02452.pdf
+2025-06-02 16:06:08,407 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\adfm.201901741.pdf
+2025-06-02 16:06:10,560 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/adfm.201901741
+2025-06-02 16:06:10,601 - ERROR - [process_pdf_entry:784] - PDF: adfm.201901741.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:10,610 - INFO - [load_from_folder:924] - Successfully processed from folder: adfm.201901741.pdf
+2025-06-02 16:06:10,610 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\AGRAWAL-DISSERTATION-2017.pdf
+2025-06-02 16:06:12,914 - ERROR - [process_pdf_entry:784] - PDF: AGRAWAL-DISSERTATION-2017.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:12,925 - INFO - [load_from_folder:924] - Successfully processed from folder: AGRAWAL-DISSERTATION-2017.pdf
+2025-06-02 16:06:12,926 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf
+2025-06-02 16:06:15,044 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/0022-3727/45/29/295304
+2025-06-02 16:06:16,147 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1088/0022-3727/45/29/295304
+2025-06-02 16:06:16,194 - ERROR - [process_pdf_entry:784] - PDF: An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:06:16,204 - INFO - [load_from_folder:924] - Successfully processed from folder: An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf
+2025-06-02 16:06:16,205 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\APEX.1.015002---ITiO.pdf
+2025-06-02 16:06:18,315 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/APEX.1.015002
+2025-06-02 16:06:19,448 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/APEX.1.015002
+2025-06-02 16:06:19,698 - ERROR - [process_pdf_entry:784] - PDF: APEX.1.015002---ITiO.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:19,708 - INFO - [load_from_folder:924] - Successfully processed from folder: APEX.1.015002---ITiO.pdf
+2025-06-02 16:06:19,708 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\APEX.1.015002.pdf
+2025-06-02 16:06:21,820 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/APEX.1.015002
+2025-06-02 16:06:23,030 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/APEX.1.015002
+2025-06-02 16:06:23,281 - ERROR - [process_pdf_entry:784] - PDF: APEX.1.015002.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:23,290 - INFO - [load_from_folder:924] - Successfully processed from folder: APEX.1.015002.pdf
+2025-06-02 16:06:23,290 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\apexCeHIn2O3 (1).pdf
+2025-06-02 16:06:25,378 - ERROR - [process_pdf_entry:784] - PDF: apexCeHIn2O3 (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:06:25,387 - INFO - [load_from_folder:924] - Successfully processed from folder: apexCeHIn2O3 (1).pdf
+2025-06-02 16:06:25,387 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\apexCeHIn2O3.pdf
+2025-06-02 16:06:27,505 - ERROR - [process_pdf_entry:784] - PDF: apexCeHIn2O3.pdf - Error closing PDF document: document closed
+2025-06-02 16:06:27,515 - INFO - [load_from_folder:924] - Successfully processed from folder: apexCeHIn2O3.pdf
+2025-06-02 16:06:27,515 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Applied Physics Express 8,015505(2015).pdf
+2025-06-02 16:06:29,655 - ERROR - [process_pdf_entry:784] - PDF: Applied Physics Express 8,015505(2015).pdf - Error closing PDF document: document closed
+2025-06-02 16:06:29,666 - INFO - [load_from_folder:924] - Successfully processed from folder: Applied Physics Express 8,015505(2015).pdf
+2025-06-02 16:06:29,666 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ApplPhysLett_64_1395(科研通-ablesci.com).pdf
+2025-06-02 16:06:31,754 - ERROR - [process_pdf_entry:784] - PDF: ApplPhysLett_64_1395(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:06:31,764 - INFO - [load_from_folder:924] - Successfully processed from folder: ApplPhysLett_64_1395(科研通-ablesci.com).pdf
+2025-06-02 16:06:31,764 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf
+2025-06-02 16:06:33,885 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0118814
+2025-06-02 16:06:34,980 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0118814
+2025-06-02 16:06:49,756 - ERROR - [process_pdf_entry:784] - PDF: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:06:49,767 - INFO - [load_from_folder:924] - Successfully processed from folder: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf
+2025-06-02 16:06:49,768 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf
+2025-06-02 16:06:51,934 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0118814
+2025-06-02 16:06:53,054 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0118814
+2025-06-02 16:07:07,640 - ERROR - [process_pdf_entry:784] - PDF: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:07,651 - INFO - [load_from_folder:924] - Successfully processed from folder: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf
+2025-06-02 16:07:07,651 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\B2O3  he In2O3 的相图.pdf
+2025-06-02 16:07:09,749 - WARNING - [process_pdf_entry:691] - PDF: B2O3  he In2O3 的相图.pdf - No text extracted from PDF.
+2025-06-02 16:07:09,750 - ERROR - [process_pdf_entry:784] - PDF: B2O3  he In2O3 的相图.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:09,758 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: B2O3  he In2O3 的相图.pdf
+2025-06-02 16:07:09,758 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\bhachu2015.pdf
+2025-06-02 16:07:11,919 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/cm503896h
+2025-06-02 16:07:11,941 - ERROR - [process_pdf_entry:784] - PDF: bhachu2015.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:11,950 - INFO - [load_from_folder:924] - Successfully processed from folder: bhachu2015.pdf
+2025-06-02 16:07:11,950 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\C9TC05759E.pdf
+2025-06-02 16:07:14,062 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/solr.201900088
+2025-06-02 16:07:14,106 - ERROR - [process_pdf_entry:784] - PDF: C9TC05759E.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:14,114 - INFO - [load_from_folder:924] - Successfully processed from folder: C9TC05759E.pdf
+2025-06-02 16:07:14,114 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf
+2025-06-02 16:07:16,171 - ERROR - [process_pdf_entry:784] - PDF: Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:16,179 - INFO - [load_from_folder:924] - Successfully processed from folder: Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf
+2025-06-02 16:07:16,180 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\crystals-09-00192-v2.pdf
+2025-06-02 16:07:18,290 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/cryst9040192
+2025-06-02 16:07:18,300 - ERROR - [process_pdf_entry:784] - PDF: crystals-09-00192-v2.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:18,309 - INFO - [load_from_folder:924] - Successfully processed from folder: crystals-09-00192-v2.pdf
+2025-06-02 16:07:18,309 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\draft_Proof_hi (2).pdf
+2025-06-02 16:07:20,445 - ERROR - [process_pdf_entry:784] - PDF: draft_Proof_hi (2).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:20,455 - INFO - [load_from_folder:924] - Successfully processed from folder: draft_Proof_hi (2).pdf
+2025-06-02 16:07:20,455 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 16:07:22,532 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssc.201600095
+2025-06-02 16:07:22,585 - ERROR - [process_pdf_entry:784] - PDF: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:22,594 - INFO - [load_from_folder:924] - Successfully processed from folder: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 16:07:22,594 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf
+2025-06-02 16:07:24,782 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.6.055401
+2025-06-02 16:07:24,849 - ERROR - [process_pdf_entry:784] - PDF: Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:24,857 - INFO - [load_from_folder:924] - Successfully processed from folder: Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf
+2025-06-02 16:07:24,857 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf
+2025-06-02 16:07:26,967 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.5.094603
+2025-06-02 16:07:27,023 - ERROR - [process_pdf_entry:784] - PDF: Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:27,032 - INFO - [load_from_folder:924] - Successfully processed from folder: Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf
+2025-06-02 16:07:27,032 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf
+2025-06-02 16:07:29,133 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1107/S2052520617010988
+2025-06-02 16:07:30,398 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1107/S2052520617010988
+2025-06-02 16:07:30,402 - ERROR - [process_pdf_entry:784] - PDF: Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:30,411 - INFO - [load_from_folder:924] - Successfully processed from folder: Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf
+2025-06-02 16:07:30,411 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Eu掺杂.pdf
+2025-06-02 16:07:32,530 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1166/jnn.2014.10081
+2025-06-02 16:07:32,540 - ERROR - [process_pdf_entry:784] - PDF: Eu掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:32,550 - INFO - [load_from_folder:924] - Successfully processed from folder: Eu掺杂.pdf
+2025-06-02 16:07:32,550 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Ga2O3.pdf
+2025-06-02 16:07:34,661 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/1367-2630/13/8/085014
+2025-06-02 16:07:36,118 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1088/1367-2630/13/8/085014
+2025-06-02 16:07:36,160 - ERROR - [process_pdf_entry:784] - PDF: Ga2O3.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:36,170 - INFO - [load_from_folder:924] - Successfully processed from folder: Ga2O3.pdf
+2025-06-02 16:07:36,170 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Gd掺杂氧化铟.pdf
+2025-06-02 16:07:38,257 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2007.09.012
+2025-06-02 16:07:38,265 - ERROR - [process_pdf_entry:784] - PDF: Gd掺杂氧化铟.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:38,272 - INFO - [load_from_folder:924] - Successfully processed from folder: Gd掺杂氧化铟.pdf
+2025-06-02 16:07:38,272 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Hf 掺杂.pdf
+2025-06-02 16:07:40,365 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.apsusc.2016.11.239
+2025-06-02 16:07:40,392 - ERROR - [process_pdf_entry:784] - PDF: Hf 掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:40,401 - INFO - [load_from_folder:924] - Successfully processed from folder: Hf 掺杂.pdf
+2025-06-02 16:07:40,402 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 16:07:42,552 - ERROR - [process_pdf_entry:784] - PDF: High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:42,561 - INFO - [load_from_folder:924] - Successfully processed from folder: High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 16:07:42,561 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf
+2025-06-02 16:07:44,666 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2337281
+2025-06-02 16:07:45,758 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2337281
+2025-06-02 16:07:45,926 - ERROR - [process_pdf_entry:784] - PDF: High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:45,934 - INFO - [load_from_folder:924] - Successfully processed from folder: High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf
+2025-06-02 16:07:45,934 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf
+2025-06-02 16:07:48,003 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0103270
+2025-06-02 16:07:49,130 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0103270
+2025-06-02 16:07:49,158 - ERROR - [process_pdf_entry:784] - PDF: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:49,167 - INFO - [load_from_folder:924] - Successfully processed from folder: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf
+2025-06-02 16:07:49,167 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf
+2025-06-02 16:07:51,280 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0103270
+2025-06-02 16:07:52,373 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0103270
+2025-06-02 16:07:52,400 - ERROR - [process_pdf_entry:784] - PDF: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:07:52,410 - INFO - [load_from_folder:924] - Successfully processed from folder: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf
+2025-06-02 16:07:52,410 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf
+2025-06-02 16:07:54,547 - ERROR - [process_pdf_entry:784] - PDF: High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:54,555 - INFO - [load_from_folder:924] - Successfully processed from folder: High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf
+2025-06-02 16:07:54,555 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ICO-104.7.pdf
+2025-06-02 16:07:56,580 - WARNING - [process_pdf_entry:661] - PDF: ICO-104.7.pdf - File too small (<10KB), likely not a full paper. Path: D:\In2O3\raw_data\papers\ICO-104.7.pdf
+2025-06-02 16:07:56,586 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: ICO-104.7.pdf
+2025-06-02 16:07:56,586 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ICO-H-129.pdf
+2025-06-02 16:07:58,682 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 16:07:58,729 - ERROR - [process_pdf_entry:784] - PDF: ICO-H-129.pdf - Error closing PDF document: document closed
+2025-06-02 16:07:58,737 - INFO - [load_from_folder:924] - Successfully processed from folder: ICO-H-129.pdf
+2025-06-02 16:07:58,737 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ICO研究报告.pdf
+2025-06-02 16:08:00,826 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.7567/APEX.8.015505
+2025-06-02 16:08:02,026 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.7567/APEX.8.015505
+2025-06-02 16:08:02,177 - ERROR - [process_pdf_entry:784] - PDF: ICO研究报告.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:02,186 - INFO - [load_from_folder:924] - Successfully processed from folder: ICO研究报告.pdf
+2025-06-02 16:08:02,186 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ICRO-100以上.pdf
+2025-06-02 16:08:04,253 - ERROR - [process_pdf_entry:784] - PDF: ICRO-100以上.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:04,262 - INFO - [load_from_folder:924] - Successfully processed from folder: ICRO-100以上.pdf
+2025-06-02 16:08:04,262 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IHFO-79.6.pdf
+2025-06-02 16:08:06,396 - ERROR - [process_pdf_entry:784] - PDF: IHFO-79.6.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:06,404 - INFO - [load_from_folder:924] - Successfully processed from folder: IHFO-79.6.pdf
+2025-06-02 16:08:06,405 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ijms-23-12912-v2.pdf
+2025-06-02 16:08:08,521 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/ijms232112912
+2025-06-02 16:08:08,529 - ERROR - [process_pdf_entry:784] - PDF: ijms-23-12912-v2.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:08,538 - INFO - [load_from_folder:924] - Successfully processed from folder: ijms-23-12912-v2.pdf
+2025-06-02 16:08:08,538 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IMO_author_accepted_version_20-01-14 (1).pdf
+2025-06-02 16:08:10,645 - ERROR - [process_pdf_entry:784] - PDF: IMO_author_accepted_version_20-01-14 (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:08:10,654 - INFO - [load_from_folder:924] - Successfully processed from folder: IMO_author_accepted_version_20-01-14 (1).pdf
+2025-06-02 16:08:10,654 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IMO_author_accepted_version_20-01-14.pdf
+2025-06-02 16:08:12,779 - ERROR - [process_pdf_entry:784] - PDF: IMO_author_accepted_version_20-01-14.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:12,787 - INFO - [load_from_folder:924] - Successfully processed from folder: IMO_author_accepted_version_20-01-14.pdf
+2025-06-02 16:08:12,787 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ITGAO-93.7.pdf
+2025-06-02 16:08:14,909 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-020-05068-x
+2025-06-02 16:08:14,947 - ERROR - [process_pdf_entry:784] - PDF: ITGAO-93.7.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:14,955 - INFO - [load_from_folder:924] - Successfully processed from folder: ITGAO-93.7.pdf
+2025-06-02 16:08:14,955 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ITGO------Ti-Ga.pdf
+2025-06-02 16:08:17,050 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2022.01.278
+2025-06-02 16:08:17,060 - ERROR - [process_pdf_entry:784] - PDF: ITGO------Ti-Ga.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:17,069 - INFO - [load_from_folder:924] - Successfully processed from folder: ITGO------Ti-Ga.pdf
+2025-06-02 16:08:17,069 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ITiO-100以上.pdf
+2025-06-02 16:08:19,215 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0175864
+2025-06-02 16:08:20,325 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0175864
+2025-06-02 16:08:20,351 - ERROR - [process_pdf_entry:784] - PDF: ITiO-100以上.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:20,359 - INFO - [load_from_folder:924] - Successfully processed from folder: ITiO-100以上.pdf
+2025-06-02 16:08:20,359 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\ITiO-101-108.pdf
+2025-06-02 16:08:22,498 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.egypro.2014.12.357
+2025-06-02 16:08:22,507 - ERROR - [process_pdf_entry:784] - PDF: ITiO-101-108.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:22,515 - INFO - [load_from_folder:924] - Successfully processed from folder: ITiO-101-108.pdf
+2025-06-02 16:08:22,515 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IWO-73.pdf
+2025-06-02 16:08:24,599 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.matlet.2006.05.010
+2025-06-02 16:08:24,607 - ERROR - [process_pdf_entry:784] - PDF: IWO-73.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:24,616 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO-73.pdf
+2025-06-02 16:08:24,616 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IWO-RPD-120.pdf
+2025-06-02 16:08:26,739 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jallcom.2023.169394
+2025-06-02 16:08:26,752 - ERROR - [process_pdf_entry:784] - PDF: IWO-RPD-120.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:26,761 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO-RPD-120.pdf
+2025-06-02 16:08:26,761 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf
+2025-06-02 16:08:29,040 - ERROR - [process_pdf_entry:784] - PDF: IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:29,049 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf
+2025-06-02 16:08:29,049 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\IZrO-77.pdf
+2025-06-02 16:08:31,184 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/adfm.201901741
+2025-06-02 16:08:31,225 - ERROR - [process_pdf_entry:784] - PDF: IZrO-77.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:31,234 - INFO - [load_from_folder:924] - Successfully processed from folder: IZrO-77.pdf
+2025-06-02 16:08:31,234 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\JMR.2005.0184-MO.pdf
+2025-06-02 16:08:33,320 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1557/JMR.2005.0184
+2025-06-02 16:08:34,530 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1557/JMR.2005.0184
+2025-06-02 16:08:34,556 - ERROR - [process_pdf_entry:784] - PDF: JMR.2005.0184-MO.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:34,565 - INFO - [load_from_folder:924] - Successfully processed from folder: JMR.2005.0184-MO.pdf
+2025-06-02 16:08:34,565 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf
+2025-06-02 16:08:36,686 - ERROR - [process_pdf_entry:784] - PDF: Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:36,693 - INFO - [load_from_folder:924] - Successfully processed from folder: Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf
+2025-06-02 16:08:36,693 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\materials-12-00266.pdf
+2025-06-02 16:08:38,890 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/ma12020266
+2025-06-02 16:08:38,902 - ERROR - [process_pdf_entry:784] - PDF: materials-12-00266.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:38,910 - INFO - [load_from_folder:924] - Successfully processed from folder: materials-12-00266.pdf
+2025-06-02 16:08:38,910 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\mmc4.pdf
+2025-06-02 16:08:41,104 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.joule.2022.06.026
+2025-06-02 16:08:41,181 - ERROR - [process_pdf_entry:784] - PDF: mmc4.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:41,190 - INFO - [load_from_folder:924] - Successfully processed from folder: mmc4.pdf
+2025-06-02 16:08:41,190 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Molybdenum doped indium oxide thin films grown on mica substrates with.pdf
+2025-06-02 16:08:43,329 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2024.04.172
+2025-06-02 16:08:43,341 - ERROR - [process_pdf_entry:784] - PDF: Molybdenum doped indium oxide thin films grown on mica substrates with.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:43,351 - INFO - [load_from_folder:924] - Successfully processed from folder: Molybdenum doped indium oxide thin films grown on mica substrates with.pdf
+2025-06-02 16:08:43,351 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\nagata2019(科研通-ablesci.com).pdf
+2025-06-02 16:08:45,462 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/B978-0-08-102096-8.00015-X
+2025-06-02 16:08:46,587 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1016/B978-0-08-102096-8.00015-X
+2025-06-02 16:08:46,614 - ERROR - [process_pdf_entry:784] - PDF: nagata2019(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:08:46,622 - INFO - [load_from_folder:924] - Successfully processed from folder: nagata2019(科研通-ablesci.com).pdf
+2025-06-02 16:08:46,623 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\nanomaterials-12-01125.pdf
+2025-06-02 16:08:48,708 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/nano12071125
+2025-06-02 16:08:48,718 - ERROR - [process_pdf_entry:784] - PDF: nanomaterials-12-01125.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:48,726 - INFO - [load_from_folder:924] - Successfully processed from folder: nanomaterials-12-01125.pdf
+2025-06-02 16:08:48,726 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\nanomaterials-12-03902-v3.pdf
+2025-06-02 16:08:50,868 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/nano12213902
+2025-06-02 16:08:50,879 - ERROR - [process_pdf_entry:784] - PDF: nanomaterials-12-03902-v3.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:50,889 - INFO - [load_from_folder:924] - Successfully processed from folder: nanomaterials-12-03902-v3.pdf
+2025-06-02 16:08:50,889 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf
+2025-06-02 16:08:53,076 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201700553
+2025-06-02 16:08:53,101 - ERROR - [process_pdf_entry:784] - PDF: n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:53,110 - INFO - [load_from_folder:924] - Successfully processed from folder: n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf
+2025-06-02 16:08:53,110 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf
+2025-06-02 16:08:55,197 - ERROR - [process_pdf_entry:784] - PDF: Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:55,205 - INFO - [load_from_folder:924] - Successfully processed from folder: Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf
+2025-06-02 16:08:55,205 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\PhD-Borgersen-2023.pdf
+2025-06-02 16:08:57,448 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0134699
+2025-06-02 16:08:58,611 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0134699
+2025-06-02 16:08:59,226 - ERROR - [process_pdf_entry:784] - PDF: PhD-Borgersen-2023.pdf - Error closing PDF document: document closed
+2025-06-02 16:08:59,235 - INFO - [load_from_folder:924] - Successfully processed from folder: PhD-Borgersen-2023.pdf
+2025-06-02 16:08:59,235 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf
+2025-06-02 16:09:01,462 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssb.200844359
+2025-06-02 16:09:01,493 - ERROR - [process_pdf_entry:784] - PDF: Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:01,502 - INFO - [load_from_folder:924] - Successfully processed from folder: Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf
+2025-06-02 16:09:01,502 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\PhysRevB.92.205308(科研通-ablesci.com).pdf
+2025-06-02 16:09:03,594 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevB.92.205308
+2025-06-02 16:09:03,621 - ERROR - [process_pdf_entry:784] - PDF: PhysRevB.92.205308(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:03,630 - INFO - [load_from_folder:924] - Successfully processed from folder: PhysRevB.92.205308(科研通-ablesci.com).pdf
+2025-06-02 16:09:03,630 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 16:09:05,728 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 16:09:05,756 - ERROR - [process_pdf_entry:784] - PDF: Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:05,766 - INFO - [load_from_folder:924] - Successfully processed from folder: Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 16:09:05,766 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 16:09:07,844 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 16:09:07,874 - ERROR - [process_pdf_entry:784] - PDF: Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:07,882 - INFO - [load_from_folder:924] - Successfully processed from folder: Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 16:09:07,883 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf
+2025-06-02 16:09:10,046 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 16:09:10,092 - ERROR - [process_pdf_entry:784] - PDF: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:10,100 - INFO - [load_from_folder:924] - Successfully processed from folder: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf
+2025-06-02 16:09:10,101 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf
+2025-06-02 16:09:12,209 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 16:09:12,256 - ERROR - [process_pdf_entry:784] - PDF: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf - Error closing PDF document: document closed
+2025-06-02 16:09:12,266 - INFO - [load_from_folder:924] - Successfully processed from folder: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf
+2025-06-02 16:09:12,266 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf
+2025-06-02 16:09:14,343 - ERROR - [process_pdf_entry:784] - PDF: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:14,351 - INFO - [load_from_folder:924] - Successfully processed from folder: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf
+2025-06-02 16:09:14,351 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 16:09:16,428 - ERROR - [process_pdf_entry:784] - PDF: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:09:16,436 - INFO - [load_from_folder:924] - Successfully processed from folder: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 16:09:16,436 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\pssa.201600486.pdf
+2025-06-02 16:09:18,554 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201600486
+2025-06-02 16:10:01,453 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\pssa.201600486.pdf
+2025-06-02 16:10:01,460 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: pssa.201600486.pdf
+2025-06-02 16:10:01,460 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\RAREMETALS----IWO.pdf
+2025-06-02 16:10:03,540 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s12598-012-0485-8
+2025-06-02 16:10:03,547 - ERROR - [process_pdf_entry:784] - PDF: RAREMETALS----IWO.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:03,554 - INFO - [load_from_folder:924] - Successfully processed from folder: RAREMETALS----IWO.pdf
+2025-06-02 16:10:03,554 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\RAREMETALSLiYuan.pdf
+2025-06-02 16:10:05,646 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s12598-012-0483-x
+2025-06-02 16:10:05,654 - ERROR - [process_pdf_entry:784] - PDF: RAREMETALSLiYuan.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:05,661 - INFO - [load_from_folder:924] - Successfully processed from folder: RAREMETALSLiYuan.pdf
+2025-06-02 16:10:05,661 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf
+2025-06-02 16:10:07,763 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2021.138759
+2025-06-02 16:10:07,773 - ERROR - [process_pdf_entry:784] - PDF: Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:07,781 - INFO - [load_from_folder:924] - Successfully processed from folder: Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf
+2025-06-02 16:10:07,781 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf
+2025-06-02 16:10:09,862 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.nanolett.6b01171
+2025-06-02 16:10:09,873 - ERROR - [process_pdf_entry:784] - PDF: runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:09,881 - INFO - [load_from_folder:924] - Successfully processed from folder: runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf
+2025-06-02 16:10:09,881 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s00339-004-2593-2.pdf
+2025-06-02 16:10:11,984 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s00339-004-2593-2
+2025-06-02 16:10:12,027 - ERROR - [process_pdf_entry:784] - PDF: s00339-004-2593-2.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:12,035 - INFO - [load_from_folder:924] - Successfully processed from folder: s00339-004-2593-2.pdf
+2025-06-02 16:10:12,035 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s00339-022-05639-1(科研通-ablesci.com).pdf
+2025-06-02 16:10:14,079 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s00339-022-05639-1
+2025-06-02 16:10:14,115 - ERROR - [process_pdf_entry:784] - PDF: s00339-022-05639-1(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:10:14,122 - INFO - [load_from_folder:924] - Successfully processed from folder: s00339-022-05639-1(科研通-ablesci.com).pdf
+2025-06-02 16:10:14,122 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s10853-006-0844-7.pdf
+2025-06-02 16:10:16,305 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10853-006-0844-7
+2025-06-02 16:10:16,360 - ERROR - [process_pdf_entry:784] - PDF: s10853-006-0844-7.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:16,368 - INFO - [load_from_folder:924] - Successfully processed from folder: s10853-006-0844-7.pdf
+2025-06-02 16:10:16,368 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s10854-021-06097-w.pdf
+2025-06-02 16:10:18,443 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-021-06097-w
+2025-06-02 16:10:18,471 - ERROR - [process_pdf_entry:784] - PDF: s10854-021-06097-w.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:18,481 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-021-06097-w.pdf
+2025-06-02 16:10:18,481 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s10854-021-07689-2.pdf
+2025-06-02 16:10:20,654 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-021-07689-2
+2025-06-02 16:10:20,682 - ERROR - [process_pdf_entry:784] - PDF: s10854-021-07689-2.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:20,689 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-021-07689-2.pdf
+2025-06-02 16:10:20,689 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s10854-023-10269-1.pdf
+2025-06-02 16:10:22,776 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-023-10269-1
+2025-06-02 16:10:22,803 - ERROR - [process_pdf_entry:784] - PDF: s10854-023-10269-1.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:22,812 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-023-10269-1.pdf
+2025-06-02 16:10:22,812 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s11801-012-2321-7.pdf
+2025-06-02 16:10:24,875 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s11801-012-2321-7
+2025-06-02 16:10:24,910 - ERROR - [process_pdf_entry:784] - PDF: s11801-012-2321-7.pdf - Error closing PDF document: document closed
+2025-06-02 16:10:24,918 - INFO - [load_from_folder:924] - Successfully processed from folder: s11801-012-2321-7.pdf
+2025-06-02 16:10:24,918 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s41427-022-00421-4.pdf
+2025-06-02 16:10:27,041 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41427-022-00421-4
+2025-06-02 16:11:09,935 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\s41427-022-00421-4.pdf
+2025-06-02 16:11:09,942 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: s41427-022-00421-4.pdf
+2025-06-02 16:11:09,943 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\s42341-024-00536-1.pdf
+2025-06-02 16:11:12,061 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s42341-024-00536-1
+2025-06-02 16:11:12,092 - ERROR - [process_pdf_entry:784] - PDF: s42341-024-00536-1.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:12,101 - INFO - [load_from_folder:924] - Successfully processed from folder: s42341-024-00536-1.pdf
+2025-06-02 16:11:12,101 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Sm-Yb掺杂.pdf
+2025-06-02 16:11:14,214 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/JJAP.48.05EC04
+2025-06-02 16:11:15,302 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/JJAP.48.05EC04
+2025-06-02 16:11:15,329 - ERROR - [process_pdf_entry:784] - PDF: Sm-Yb掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:15,339 - INFO - [load_from_folder:924] - Successfully processed from folder: Sm-Yb掺杂.pdf
+2025-06-02 16:11:15,339 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\stanek2007(科研通-ablesci.com).pdf
+2025-06-02 16:11:17,419 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevB.75.134101
+2025-06-02 16:11:17,509 - ERROR - [process_pdf_entry:784] - PDF: stanek2007(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:17,517 - INFO - [load_from_folder:924] - Successfully processed from folder: stanek2007(科研通-ablesci.com).pdf
+2025-06-02 16:11:17,517 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf
+2025-06-02 16:11:19,581 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.apsusc.2007.12.035
+2025-06-02 16:11:19,589 - ERROR - [process_pdf_entry:784] - PDF: Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:19,597 - INFO - [load_from_folder:924] - Successfully processed from folder: Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf
+2025-06-02 16:11:19,598 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf
+2025-06-02 16:11:21,714 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acsami.0c16021
+2025-06-02 16:11:21,725 - ERROR - [process_pdf_entry:784] - PDF: swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:21,734 - INFO - [load_from_folder:924] - Successfully processed from folder: swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf
+2025-06-02 16:11:21,734 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf
+2025-06-02 16:11:23,818 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/sdtp.16231
+2025-06-02 16:11:23,860 - ERROR - [process_pdf_entry:784] - PDF: Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:23,868 - INFO - [load_from_folder:924] - Successfully processed from folder: Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf
+2025-06-02 16:11:23,869 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Tate.HighElectronMobilityW-doped.pdf
+2025-06-02 16:11:25,993 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2048829
+2025-06-02 16:11:27,124 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2048829
+2025-06-02 16:11:27,144 - ERROR - [process_pdf_entry:784] - PDF: Tate.HighElectronMobilityW-doped.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:27,152 - INFO - [load_from_folder:924] - Successfully processed from folder: Tate.HighElectronMobilityW-doped.pdf
+2025-06-02 16:11:27,152 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Tb掺杂ITO.pdf
+2025-06-02 16:11:29,594 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.jpclett.7b00524
+2025-06-02 16:11:35,937 - ERROR - [process_pdf_entry:784] - PDF: Tb掺杂ITO.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:35,946 - INFO - [load_from_folder:924] - Successfully processed from folder: Tb掺杂ITO.pdf
+2025-06-02 16:11:35,946 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Tetsuya Yamamoto Kochi University of Technology.pdf
+2025-06-02 16:11:38,037 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/1361-6463/ab938b
+2025-06-02 16:11:39,234 - ERROR - [query_crossref_by_doi:101] - CrossRef: API request failed for DOI 10.1088/1361-6463/: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.1088/1361-6463/
+2025-06-02 16:11:39,271 - ERROR - [process_pdf_entry:784] - PDF: Tetsuya Yamamoto Kochi University of Technology.pdf - Error closing PDF document: document closed
+2025-06-02 16:11:39,281 - INFO - [load_from_folder:924] - Successfully processed from folder: Tetsuya Yamamoto Kochi University of Technology.pdf
+2025-06-02 16:11:39,281 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf
+2025-06-02 16:11:41,418 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.202200187
+2025-06-02 16:11:42,014 - ERROR - [process_pdf_entry:784] - PDF: The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:42,023 - INFO - [load_from_folder:924] - Successfully processed from folder: The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf
+2025-06-02 16:11:42,024 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:44,117 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.202000487
+2025-06-02 16:11:44,157 - ERROR - [process_pdf_entry:784] - PDF: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:44,166 - INFO - [load_from_folder:924] - Successfully processed from folder: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:44,166 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf
+2025-06-02 16:11:46,264 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.202000487
+2025-06-02 16:11:46,305 - ERROR - [process_pdf_entry:784] - PDF: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:46,312 - INFO - [load_from_folder:924] - Successfully processed from folder: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf
+2025-06-02 16:11:46,312 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:48,389 - ERROR - [process_pdf_entry:784] - PDF: Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:48,396 - INFO - [load_from_folder:924] - Successfully processed from folder: Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:48,396 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:50,472 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 16:11:51,670 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 16:11:51,836 - ERROR - [process_pdf_entry:784] - PDF: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:51,845 - INFO - [load_from_folder:924] - Successfully processed from folder: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf
+2025-06-02 16:11:51,845 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf
+2025-06-02 16:11:53,921 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 16:11:55,025 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 16:11:55,193 - ERROR - [process_pdf_entry:784] - PDF: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:55,202 - INFO - [load_from_folder:924] - Successfully processed from folder: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf
+2025-06-02 16:11:55,203 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\warmsingh2004(科研通-ablesci.com).pdf
+2025-06-02 16:11:57,326 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1646468
+2025-06-02 16:11:58,466 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1646468
+2025-06-02 16:11:58,636 - ERROR - [process_pdf_entry:784] - PDF: warmsingh2004(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 16:11:58,645 - INFO - [load_from_folder:924] - Successfully processed from folder: warmsingh2004(科研通-ablesci.com).pdf
+2025-06-02 16:11:58,645 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\WCPEC3_11.pdf
+2025-06-02 16:12:00,709 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1109/WCPEC.2003.1305213
+2025-06-02 16:12:01,783 - ERROR - [query_crossref_by_doi:101] - CrossRef: API request failed for DOI 10.1109/WCPEC.2003.1305213: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.1109/WCPEC.2003.1305213
+2025-06-02 16:12:01,890 - ERROR - [process_pdf_entry:784] - PDF: WCPEC3_11.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:01,898 - INFO - [load_from_folder:924] - Successfully processed from folder: WCPEC3_11.pdf
+2025-06-02 16:12:01,898 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\xu2018.pdf
+2025-06-02 16:12:03,995 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201700553
+2025-06-02 16:12:04,020 - ERROR - [process_pdf_entry:784] - PDF: xu2018.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:04,027 - INFO - [load_from_folder:924] - Successfully processed from folder: xu2018.pdf
+2025-06-02 16:12:04,027 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\yeh2015.pdf
+2025-06-02 16:12:06,149 - ERROR - [process_pdf_entry:784] - PDF: yeh2015.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:06,158 - INFO - [load_from_folder:924] - Successfully processed from folder: yeh2015.pdf
+2025-06-02 16:12:06,158 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf
+2025-06-02 16:12:08,295 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.3.084608
+2025-06-02 16:12:08,357 - ERROR - [process_pdf_entry:784] - PDF: Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:08,367 - INFO - [load_from_folder:924] - Successfully processed from folder: Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf
+2025-06-02 16:12:08,367 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\Zr掺杂.pdf
+2025-06-02 16:12:10,448 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2337281
+2025-06-02 16:12:11,573 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2337281
+2025-06-02 16:12:11,743 - ERROR - [process_pdf_entry:784] - PDF: Zr掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:11,753 - INFO - [load_from_folder:924] - Successfully processed from folder: Zr掺杂.pdf
+2025-06-02 16:12:11,753 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\中科院-RPD制备氧化铟铈薄膜-高迁.pdf
+2025-06-02 16:12:13,798 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.matlet.2018.04.102
+2025-06-02 16:12:13,808 - ERROR - [process_pdf_entry:784] - PDF: 中科院-RPD制备氧化铟铈薄膜-高迁.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:13,817 - INFO - [load_from_folder:924] - Successfully processed from folder: 中科院-RPD制备氧化铟铈薄膜-高迁.pdf
+2025-06-02 16:12:13,817 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\功函数  aelm201600529-sup-0001-s1.pdf
+2025-06-02 16:12:15,888 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-02 16:12:15,908 - ERROR - [process_pdf_entry:784] - PDF: 功函数  aelm201600529-sup-0001-s1.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:15,917 - INFO - [load_from_folder:924] - Successfully processed from folder: 功函数  aelm201600529-sup-0001-s1.pdf
+2025-06-02 16:12:15,917 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf
+2025-06-02 16:12:18,126 - ERROR - [process_pdf_entry:784] - PDF: 原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf - Error closing PDF document: document closed
+2025-06-02 16:12:18,135 - INFO - [load_from_folder:924] - Successfully processed from folder: 原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf
+2025-06-02 16:12:18,135 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 16:13:03,149 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 16:13:03,157 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 16:13:03,157 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 16:13:48,165 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: raw_data\papers\掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 16:13:48,173 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 16:13:48,173 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\氧化铟基TCO薄膜文献.pdf
+2025-06-02 16:13:50,421 - ERROR - [process_pdf_entry:784] - PDF: 氧化铟基TCO薄膜文献.pdf - Error closing PDF document: document closed
+2025-06-02 16:13:50,431 - INFO - [load_from_folder:924] - Successfully processed from folder: 氧化铟基TCO薄膜文献.pdf
+2025-06-02 16:13:50,431 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\氧化铟基透明导电薄膜的研究进展_林剑荣.pdf
+2025-06-02 16:13:52,529 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.20038/j.cnki.mra.2022.000302
+2025-06-02 16:13:52,542 - ERROR - [process_pdf_entry:784] - PDF: 氧化铟基透明导电薄膜的研究进展_林剑荣.pdf - Error closing PDF document: document closed
+2025-06-02 16:13:52,549 - INFO - [load_from_folder:924] - Successfully processed from folder: 氧化铟基透明导电薄膜的研究进展_林剑荣.pdf
+2025-06-02 16:13:52,550 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf
+2025-06-02 16:13:54,859 - ERROR - [process_pdf_entry:784] - PDF: 溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf - Error closing PDF document: document closed
+2025-06-02 16:13:54,868 - INFO - [load_from_folder:924] - Successfully processed from folder: 溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf
+2025-06-02 16:13:54,868 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf
+2025-06-02 16:13:57,004 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.19912/j.0254-0096.tynxb.2022-1088
+2025-06-02 16:13:57,025 - ERROR - [process_pdf_entry:784] - PDF: 用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf - Error closing PDF document: document closed
+2025-06-02 16:13:57,036 - INFO - [load_from_folder:924] - Successfully processed from folder: 用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf
+2025-06-02 16:13:57,036 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf
+2025-06-02 16:13:59,428 - ERROR - [process_pdf_entry:784] - PDF: 硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf - Error closing PDF document: document closed
+2025-06-02 16:13:59,435 - INFO - [load_from_folder:924] - Successfully processed from folder: 硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf
+2025-06-02 16:13:59,435 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf
+2025-06-02 16:14:01,560 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2021.11.294
+2025-06-02 16:14:01,571 - ERROR - [process_pdf_entry:784] - PDF: 磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:01,579 - INFO - [load_from_folder:924] - Successfully processed from folder: 磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf
+2025-06-02 16:14:01,579 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\路易斯酸强度.pdf
+2025-06-02 16:14:03,643 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1107/S2052520617010988
+2025-06-02 16:14:04,746 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1107/S2052520617010988
+2025-06-02 16:14:04,749 - ERROR - [process_pdf_entry:784] - PDF: 路易斯酸强度.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:04,759 - INFO - [load_from_folder:924] - Successfully processed from folder: 路易斯酸强度.pdf
+2025-06-02 16:14:04,759 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\路易斯酸强度2.pdf
+2025-06-02 16:14:06,964 - ERROR - [process_pdf_entry:784] - PDF: 路易斯酸强度2.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:06,972 - INFO - [load_from_folder:924] - Successfully processed from folder: 路易斯酸强度2.pdf
+2025-06-02 16:14:06,972 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\铈掺杂.pdf
+2025-06-02 16:14:09,025 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1380/ejssnt.2012.471
+2025-06-02 16:14:09,039 - ERROR - [process_pdf_entry:784] - PDF: 铈掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:09,047 - INFO - [load_from_folder:924] - Successfully processed from folder: 铈掺杂.pdf
+2025-06-02 16:14:09,047 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\铬掺杂氧化铟-溶胶法制备薄膜-main.pdf
+2025-06-02 16:14:11,143 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jallcom.2013.04.089
+2025-06-02 16:14:11,155 - ERROR - [process_pdf_entry:784] - PDF: 铬掺杂氧化铟-溶胶法制备薄膜-main.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:11,162 - INFO - [load_from_folder:924] - Successfully processed from folder: 铬掺杂氧化铟-溶胶法制备薄膜-main.pdf
+2025-06-02 16:14:11,162 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf
+2025-06-02 16:14:13,213 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.11868/j.issn.1005-5053.2018.000035
+2025-06-02 16:14:13,223 - ERROR - [process_pdf_entry:784] - PDF: 非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:13,230 - INFO - [load_from_folder:924] - Successfully processed from folder: 非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf
+2025-06-02 16:14:13,230 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf
+2025-06-02 16:14:15,457 - ERROR - [process_pdf_entry:784] - PDF: 面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:15,465 - INFO - [load_from_folder:924] - Successfully processed from folder: 面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf
+2025-06-02 16:14:15,465 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\高迁专利-ReO.pdf
+2025-06-02 16:14:17,513 - WARNING - [process_pdf_entry:691] - PDF: 高迁专利-ReO.pdf - No text extracted from PDF.
+2025-06-02 16:14:17,513 - ERROR - [process_pdf_entry:784] - PDF: 高迁专利-ReO.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:17,520 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 高迁专利-ReO.pdf
+2025-06-02 16:14:17,520 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf
+2025-06-02 16:14:19,600 - ERROR - [process_pdf_entry:784] - PDF: 高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:19,608 - INFO - [load_from_folder:924] - Successfully processed from folder: 高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf
+2025-06-02 16:14:19,608 - INFO - [load_from_folder:914] - Attempting to process from folder: raw_data\papers\高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf
+2025-06-02 16:14:21,701 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1039/c9mh01014a
+2025-06-02 16:14:21,736 - ERROR - [process_pdf_entry:784] - PDF: 高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf - Error closing PDF document: document closed
+2025-06-02 16:14:21,744 - INFO - [load_from_folder:924] - Successfully processed from folder: 高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf
+2025-06-02 16:14:21,744 - INFO - [load_from_folder:928] - Folder processing summary: Successfully processed 146/157 PDFs.
+2025-06-02 16:14:21,744 - INFO - [main:1039] - Total papers processed (pre-deduplication): 146
+2025-06-02 16:14:21,744 - INFO - [main:1040] - Total unique papers to be saved: 138
+2025-06-02 16:14:21,767 - INFO - [save_paper_list:939] - Successfully saved 138 processed paper entries to output\extracted_papers_pycharm.json
+2025-06-02 16:14:21,767 - INFO - [main:1045] - PDF processing pipeline finished.
+2025-06-02 17:53:49,845 - INFO - [main:966] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-02 17:53:49,847 - INFO - [main:1008] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-02 17:53:49,847 - INFO - [main:1023] - Processing PDFs from folder: papers_test
+2025-06-02 17:53:49,855 - INFO - [load_from_folder:914] - Attempting to process from folder: papers_test\1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 17:53:52,037 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jpowsour.2021.230101
+2025-06-02 17:53:52,047 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S037877532100625X-main--IWTO.pdf - Error closing PDF document: document closed
+2025-06-02 17:53:52,057 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 17:53:52,057 - INFO - [load_from_folder:914] - Attempting to process from folder: papers_test\1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 17:53:54,257 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2024.112727
+2025-06-02 17:53:54,270 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf - Error closing PDF document: document closed
+2025-06-02 17:53:54,279 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 17:53:54,279 - INFO - [load_from_folder:914] - Attempting to process from folder: papers_test\1.2711768.pdf
+2025-06-02 17:53:56,461 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2711768
+2025-06-02 17:53:57,576 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2711768
+2025-06-02 17:53:57,857 - ERROR - [process_pdf_entry:784] - PDF: 1.2711768.pdf - Error closing PDF document: document closed
+2025-06-02 17:53:57,865 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.2711768.pdf
+2025-06-02 17:53:57,866 - INFO - [load_from_folder:914] - Attempting to process from folder: papers_test\Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 17:53:59,998 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssc.201600095
+2025-06-02 17:54:00,052 - ERROR - [process_pdf_entry:784] - PDF: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 17:54:00,062 - INFO - [load_from_folder:924] - Successfully processed from folder: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 17:54:00,062 - INFO - [load_from_folder:928] - Folder processing summary: Successfully processed 4/4 PDFs.
+2025-06-02 17:54:00,062 - INFO - [main:1039] - Total papers processed (pre-deduplication): 4
+2025-06-02 17:54:00,062 - INFO - [main:1040] - Total unique papers to be saved: 4
+2025-06-02 17:54:00,064 - INFO - [save_paper_list:939] - Successfully saved 4 processed paper entries to output\extracted_papers_test.json
+2025-06-02 17:54:00,064 - INFO - [main:1045] - PDF processing pipeline finished.
+2025-06-02 22:56:59,783 - INFO - [main:966] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-02 22:56:59,783 - INFO - [main:1008] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-02 22:56:59,783 - INFO - [main:1023] - Processing PDFs from folder: data/raw_data
+2025-06-02 22:56:59,797 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-02 22:57:44,823 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-02 22:57:44,831 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 000000_20240618_0A_CN_0.pdf
+2025-06-02 22:57:44,831 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-02 22:57:46,744 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-02 22:57:46,945 - ERROR - [process_pdf_entry:784] - PDF: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf - Error closing PDF document: document closed
+2025-06-02 22:57:46,954 - INFO - [load_from_folder:924] - Successfully processed from folder: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-02 22:57:46,954 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-02 22:57:48,815 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201700506
+2025-06-02 22:57:48,879 - ERROR - [process_pdf_entry:784] - PDF: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf - Error closing PDF document: document closed
+2025-06-02 22:57:48,887 - INFO - [load_from_folder:924] - Successfully processed from folder: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-02 22:57:48,887 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-02 22:57:50,792 - ERROR - [process_pdf_entry:784] - PDF: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf - Error closing PDF document: document closed
+2025-06-02 22:57:50,800 - INFO - [load_from_folder:924] - Successfully processed from folder: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-02 22:57:50,801 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-02 22:57:53,624 - ERROR - [process_pdf_entry:784] - PDF: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf - Error closing PDF document: document closed
+2025-06-02 22:57:53,633 - INFO - [load_from_folder:924] - Successfully processed from folder: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-02 22:57:53,633 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-02 22:57:55,595 - ERROR - [process_pdf_entry:784] - PDF: 06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf - Error closing PDF document: document closed
+2025-06-02 22:57:55,602 - INFO - [load_from_folder:924] - Successfully processed from folder: 06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-02 22:57:55,603 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\061515_1_online(科研通-ablesci.com).pdf
+2025-06-02 22:57:57,461 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1116/1.4824163
+2025-06-02 22:57:58,933 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1116/1.4824163
+2025-06-02 22:57:58,964 - ERROR - [process_pdf_entry:784] - PDF: 061515_1_online(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 22:57:58,972 - INFO - [load_from_folder:924] - Successfully processed from folder: 061515_1_online(科研通-ablesci.com).pdf
+2025-06-02 22:57:58,972 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-02 22:58:00,799 - ERROR - [process_pdf_entry:784] - PDF: 07  High mobility transparent conducting oxides for thin film solar cells.pdf - Error closing PDF document: document closed
+2025-06-02 22:58:00,807 - INFO - [load_from_folder:924] - Successfully processed from folder: 07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-02 22:58:00,807 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-02 22:58:02,724 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.mtnano.2023.100329
+2025-06-02 22:58:02,803 - ERROR - [process_pdf_entry:784] - PDF: 08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf - Error closing PDF document: document closed
+2025-06-02 22:58:02,811 - INFO - [load_from_folder:924] - Successfully processed from folder: 08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-02 22:58:02,812 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\083547_1_online(科研通-ablesci.com).pdf
+2025-06-02 22:58:04,721 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3116542
+2025-06-02 22:58:06,713 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
+2025-06-02 22:58:06,746 - ERROR - [process_pdf_entry:784] - PDF: 083547_1_online(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 22:58:06,754 - INFO - [load_from_folder:924] - Successfully processed from folder: 083547_1_online(科研通-ablesci.com).pdf
+2025-06-02 22:58:06,754 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 22:58:51,768 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 22:58:51,776 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-02 22:58:51,777 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0038092X1931254X-main.pdf
+2025-06-02 22:58:53,685 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solener.2019.12.040
+2025-06-02 22:58:53,700 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0038092X1931254X-main.pdf - Error closing PDF document: document closed
+2025-06-02 22:58:53,708 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0038092X1931254X-main.pdf
+2025-06-02 22:58:53,709 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0040609017301219-main--IMO.pdf
+2025-06-02 22:58:55,629 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2017.02.032
+2025-06-02 22:58:55,639 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0040609017301219-main--IMO.pdf - Error closing PDF document: document closed
+2025-06-02 22:58:55,649 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0040609017301219-main--IMO.pdf
+2025-06-02 22:58:55,649 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 22:58:57,577 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jpowsour.2021.230101
+2025-06-02 22:58:57,587 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S037877532100625X-main--IWTO.pdf - Error closing PDF document: document closed
+2025-06-02 22:58:57,595 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-02 22:58:57,595 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0927024813000688-main (1).pdf
+2025-06-02 22:58:59,493 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2013.02.006
+2025-06-02 22:58:59,505 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024813000688-main (1).pdf - Error closing PDF document: document closed
+2025-06-02 22:58:59,513 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024813000688-main (1).pdf
+2025-06-02 22:58:59,513 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0927024813000688-main.pdf
+2025-06-02 22:59:01,385 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2013.02.006
+2025-06-02 22:59:01,397 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024813000688-main.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:01,405 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024813000688-main.pdf
+2025-06-02 22:59:01,405 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S092702481600009X-main.pdf
+2025-06-02 22:59:03,276 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2016.01.005
+2025-06-02 22:59:03,286 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S092702481600009X-main.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:03,296 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S092702481600009X-main.pdf
+2025-06-02 22:59:03,296 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 22:59:05,190 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2024.112727
+2025-06-02 22:59:05,201 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:05,211 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-02 22:59:05,211 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1-s2.0-S0927025617303026-main.pdf
+2025-06-02 22:59:07,062 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.commatsci.2017.06.005
+2025-06-02 22:59:07,073 - ERROR - [process_pdf_entry:784] - PDF: 1-s2.0-S0927025617303026-main.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:07,082 - INFO - [load_from_folder:924] - Successfully processed from folder: 1-s2.0-S0927025617303026-main.pdf
+2025-06-02 22:59:07,082 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1.1687984.pdf
+2025-06-02 22:59:09,119 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1687984
+2025-06-02 22:59:10,451 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1687984
+2025-06-02 22:59:10,733 - ERROR - [process_pdf_entry:784] - PDF: 1.1687984.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:10,742 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.1687984.pdf
+2025-06-02 22:59:10,742 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1.1995957(科研通-ablesci.com).pdf
+2025-06-02 22:59:12,606 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 22:59:14,126 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 22:59:14,291 - ERROR - [process_pdf_entry:784] - PDF: 1.1995957(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 22:59:14,303 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.1995957(科研通-ablesci.com).pdf
+2025-06-02 22:59:14,304 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1.2711768.pdf
+2025-06-02 22:59:16,367 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2711768
+2025-06-02 22:59:17,479 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2711768
+2025-06-02 22:59:17,785 - ERROR - [process_pdf_entry:784] - PDF: 1.2711768.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:17,796 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.2711768.pdf
+2025-06-02 22:59:17,796 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\1.3224946.pdf
+2025-06-02 22:59:19,691 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3224946
+2025-06-02 22:59:20,796 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3224946
+2025-06-02 22:59:21,098 - ERROR - [process_pdf_entry:784] - PDF: 1.3224946.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:21,110 - INFO - [load_from_folder:924] - Successfully processed from folder: 1.3224946.pdf
+2025-06-02 22:59:21,110 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf
+2025-06-02 22:59:23,130 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41560-023-01331-7
+2025-06-02 22:59:23,229 - ERROR - [process_pdf_entry:784] - PDF: 10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:23,238 - INFO - [load_from_folder:924] - Successfully processed from folder: 10  2023-迈为无铟  Silicon solar cell with undoped tin oxide transparent electrode  迈为.pdf
+2025-06-02 22:59:23,238 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\10.1515_rams-2018-0006.pdf
+2025-06-02 22:59:25,097 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1515/rams-2018-0006
+2025-06-02 22:59:25,130 - ERROR - [process_pdf_entry:784] - PDF: 10.1515_rams-2018-0006.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:25,139 - INFO - [load_from_folder:924] - Successfully processed from folder: 10.1515_rams-2018-0006.pdf
+2025-06-02 22:59:25,139 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf
+2025-06-02 22:59:27,017 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 22:59:27,178 - ERROR - [process_pdf_entry:784] - PDF: 12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:27,190 - INFO - [load_from_folder:924] - Successfully processed from folder: 12  2022-迈为先进HJT TCO silicon heterojunction solar cell with transition metal element doped indium oxide transparent conductive film as front electrode.pdf
+2025-06-02 22:59:27,190 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\13  2023迈为无铟nature.pdf
+2025-06-02 22:59:29,248 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41560-023-01331-7
+2025-06-02 22:59:29,353 - ERROR - [process_pdf_entry:784] - PDF: 13  2023迈为无铟nature.pdf - Error closing PDF document: document closed
+2025-06-02 22:59:29,361 - INFO - [load_from_folder:924] - Successfully processed from folder: 13  2023迈为无铟nature.pdf
+2025-06-02 22:59:29,361 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\130 Ce-H.pdf
+2025-06-02 22:59:31,264 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41427-022-00421-4
+2025-06-02 23:00:14,372 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\130 Ce-H.pdf
+2025-06-02 23:00:14,381 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 130 Ce-H.pdf
+2025-06-02 23:00:14,381 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf
+2025-06-02 23:00:16,271 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/JJAP.39.6422
+2025-06-02 23:00:27,198 - ERROR - [query_crossref_by_doi:101] - CrossRef: API request failed for DOI 10.1143/JJAP.39.6422: HTTPSConnectionPool(host='api.crossref.org', port=443): Read timed out. (read timeout=10)
+2025-06-02 23:00:27,206 - ERROR - [process_pdf_entry:784] - PDF: 2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:27,217 - INFO - [load_from_folder:924] - Successfully processed from folder: 2000_ShigesatoStudyonFluorine-DopedIndiumOxideFilmsDepositedbyRFMagnetronSputtering.pdf
+2025-06-02 23:00:27,217 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\2009_JApplPhys.pdf
+2025-06-02 23:00:29,103 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3116542
+2025-06-02 23:00:30,331 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
+2025-06-02 23:00:30,489 - ERROR - [process_pdf_entry:784] - PDF: 2009_JApplPhys.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:30,499 - INFO - [load_from_folder:924] - Successfully processed from folder: 2009_JApplPhys.pdf
+2025-06-02 23:00:30,500 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\2020 IWO J PHYS D APPL PHYS (1).pdf
+2025-06-02 23:00:32,495 - ERROR - [process_pdf_entry:784] - PDF: 2020 IWO J PHYS D APPL PHYS (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:00:32,495 - INFO - [load_from_folder:924] - Successfully processed from folder: 2020 IWO J PHYS D APPL PHYS (1).pdf
+2025-06-02 23:00:32,495 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\2020 IWO J PHYS D APPL PHYS.pdf
+2025-06-02 23:00:34,442 - ERROR - [process_pdf_entry:784] - PDF: 2020 IWO J PHYS D APPL PHYS.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:34,446 - INFO - [load_from_folder:924] - Successfully processed from folder: 2020 IWO J PHYS D APPL PHYS.pdf
+2025-06-02 23:00:34,446 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\2022, Solar RRL, 2100891.pdf
+2025-06-02 23:00:36,348 - WARNING - [process_pdf_entry:661] - PDF: 2022, Solar RRL, 2100891.pdf - File too small (<10KB), likely not a full paper. Path: D:\In2O3\data\raw_data\papers\2022, Solar RRL, 2100891.pdf
+2025-06-02 23:00:36,357 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 2022, Solar RRL, 2100891.pdf
+2025-06-02 23:00:36,357 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\202410880988_CN118955091A.pdf
+2025-06-02 23:00:50,753 - ERROR - [process_pdf_entry:784] - PDF: 202410880988_CN118955091A.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:50,761 - INFO - [load_from_folder:924] - Successfully processed from folder: 202410880988_CN118955091A.pdf
+2025-06-02 23:00:50,761 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\32-1.3467780-氧化铟和氧化锡.pdf
+2025-06-02 23:00:52,682 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3467780
+2025-06-02 23:00:53,954 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3467780
+2025-06-02 23:00:53,981 - ERROR - [process_pdf_entry:784] - PDF: 32-1.3467780-氧化铟和氧化锡.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:53,994 - INFO - [load_from_folder:924] - Successfully processed from folder: 32-1.3467780-氧化铟和氧化锡.pdf
+2025-06-02 23:00:53,994 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\84107416.pdf
+2025-06-02 23:00:55,873 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.5.094603
+2025-06-02 23:00:55,949 - ERROR - [process_pdf_entry:784] - PDF: 84107416.pdf - Error closing PDF document: document closed
+2025-06-02 23:00:55,949 - INFO - [load_from_folder:924] - Successfully processed from folder: 84107416.pdf
+2025-06-02 23:00:55,949 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\978-981-16-2982-2.pdf
+2025-06-02 23:00:58,194 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/978-981-16-2982-2
+2025-06-02 23:00:59,681 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1007/978-981-16-2982-2
+2025-06-02 23:01:06,319 - ERROR - [process_pdf_entry:784] - PDF: 978-981-16-2982-2.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:06,331 - INFO - [load_from_folder:924] - Successfully processed from folder: 978-981-16-2982-2.pdf
+2025-06-02 23:01:06,331 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\acs.nanolett.8b02452.pdf
+2025-06-02 23:01:08,274 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.nanolett.8b02452
+2025-06-02 23:01:08,289 - ERROR - [process_pdf_entry:784] - PDF: acs.nanolett.8b02452.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:08,301 - INFO - [load_from_folder:924] - Successfully processed from folder: acs.nanolett.8b02452.pdf
+2025-06-02 23:01:08,301 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\adfm.201901741.pdf
+2025-06-02 23:01:10,332 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/adfm.201901741
+2025-06-02 23:01:10,368 - ERROR - [process_pdf_entry:784] - PDF: adfm.201901741.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:10,368 - INFO - [load_from_folder:924] - Successfully processed from folder: adfm.201901741.pdf
+2025-06-02 23:01:10,368 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\AGRAWAL-DISSERTATION-2017.pdf
+2025-06-02 23:01:12,456 - ERROR - [process_pdf_entry:784] - PDF: AGRAWAL-DISSERTATION-2017.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:12,458 - INFO - [load_from_folder:924] - Successfully processed from folder: AGRAWAL-DISSERTATION-2017.pdf
+2025-06-02 23:01:12,458 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf
+2025-06-02 23:01:14,456 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/0022-3727/45/29/295304
+2025-06-02 23:01:15,594 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1088/0022-3727/45/29/295304
+2025-06-02 23:01:15,639 - ERROR - [process_pdf_entry:784] - PDF: An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:01:15,648 - INFO - [load_from_folder:924] - Successfully processed from folder: An_2012_J._Phys._D__Appl._Phys._45_295304(科研通-ablesci.com).pdf
+2025-06-02 23:01:15,648 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\APEX.1.015002---ITiO.pdf
+2025-06-02 23:01:17,614 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/APEX.1.015002
+2025-06-02 23:01:19,045 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/APEX.1.015002
+2025-06-02 23:01:19,286 - ERROR - [process_pdf_entry:784] - PDF: APEX.1.015002---ITiO.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:19,301 - INFO - [load_from_folder:924] - Successfully processed from folder: APEX.1.015002---ITiO.pdf
+2025-06-02 23:01:19,302 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\APEX.1.015002.pdf
+2025-06-02 23:01:21,159 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/APEX.1.015002
+2025-06-02 23:01:22,981 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/APEX.1.015002
+2025-06-02 23:01:23,220 - ERROR - [process_pdf_entry:784] - PDF: APEX.1.015002.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:23,220 - INFO - [load_from_folder:924] - Successfully processed from folder: APEX.1.015002.pdf
+2025-06-02 23:01:23,220 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\apexCeHIn2O3 (1).pdf
+2025-06-02 23:01:25,133 - ERROR - [process_pdf_entry:784] - PDF: apexCeHIn2O3 (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:01:25,133 - INFO - [load_from_folder:924] - Successfully processed from folder: apexCeHIn2O3 (1).pdf
+2025-06-02 23:01:25,133 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\apexCeHIn2O3.pdf
+2025-06-02 23:01:27,027 - ERROR - [process_pdf_entry:784] - PDF: apexCeHIn2O3.pdf - Error closing PDF document: document closed
+2025-06-02 23:01:27,031 - INFO - [load_from_folder:924] - Successfully processed from folder: apexCeHIn2O3.pdf
+2025-06-02 23:01:27,031 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Applied Physics Express 8,015505(2015).pdf
+2025-06-02 23:01:28,941 - ERROR - [process_pdf_entry:784] - PDF: Applied Physics Express 8,015505(2015).pdf - Error closing PDF document: document closed
+2025-06-02 23:01:28,949 - INFO - [load_from_folder:924] - Successfully processed from folder: Applied Physics Express 8,015505(2015).pdf
+2025-06-02 23:01:28,949 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ApplPhysLett_64_1395(科研通-ablesci.com).pdf
+2025-06-02 23:01:30,882 - ERROR - [process_pdf_entry:784] - PDF: ApplPhysLett_64_1395(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:01:30,890 - INFO - [load_from_folder:924] - Successfully processed from folder: ApplPhysLett_64_1395(科研通-ablesci.com).pdf
+2025-06-02 23:01:30,890 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf
+2025-06-02 23:01:32,793 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0118814
+2025-06-02 23:01:34,790 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0118814
+2025-06-02 23:01:49,598 - ERROR - [process_pdf_entry:784] - PDF: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:01:49,598 - INFO - [load_from_folder:924] - Successfully processed from folder: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com) (1).pdf
+2025-06-02 23:01:49,598 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf
+2025-06-02 23:01:51,439 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0118814
+2025-06-02 23:01:54,879 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0118814
+2025-06-02 23:02:10,014 - ERROR - [process_pdf_entry:784] - PDF: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:10,030 - INFO - [load_from_folder:924] - Successfully processed from folder: Aqueous-solution-synthesized gallium oxide dielectrics for high-mobility thin-film transistors enhanced by phosphorus incorporat(科研通-ablesci.com).pdf
+2025-06-02 23:02:10,030 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\B2O3  he In2O3 的相图.pdf
+2025-06-02 23:02:11,985 - WARNING - [process_pdf_entry:691] - PDF: B2O3  he In2O3 的相图.pdf - No text extracted from PDF.
+2025-06-02 23:02:11,986 - ERROR - [process_pdf_entry:784] - PDF: B2O3  he In2O3 的相图.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:11,994 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: B2O3  he In2O3 的相图.pdf
+2025-06-02 23:02:11,994 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\bhachu2015.pdf
+2025-06-02 23:02:13,960 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/cm503896h
+2025-06-02 23:02:13,980 - ERROR - [process_pdf_entry:784] - PDF: bhachu2015.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:13,993 - INFO - [load_from_folder:924] - Successfully processed from folder: bhachu2015.pdf
+2025-06-02 23:02:13,993 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\C9TC05759E.pdf
+2025-06-02 23:02:15,926 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/solr.201900088
+2025-06-02 23:02:15,973 - ERROR - [process_pdf_entry:784] - PDF: C9TC05759E.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:15,981 - INFO - [load_from_folder:924] - Successfully processed from folder: C9TC05759E.pdf
+2025-06-02 23:02:15,981 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf
+2025-06-02 23:02:17,934 - ERROR - [process_pdf_entry:784] - PDF: Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:17,943 - INFO - [load_from_folder:924] - Successfully processed from folder: Comparative_Studies_of_Rare-Earth_Element_Y-Doped_In2O3_by_First-Principles__Calculations(科研通-ablesci.com).pdf
+2025-06-02 23:02:17,943 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\crystals-09-00192-v2.pdf
+2025-06-02 23:02:19,951 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/cryst9040192
+2025-06-02 23:02:19,963 - ERROR - [process_pdf_entry:784] - PDF: crystals-09-00192-v2.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:19,972 - INFO - [load_from_folder:924] - Successfully processed from folder: crystals-09-00192-v2.pdf
+2025-06-02 23:02:19,972 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\draft_Proof_hi (2).pdf
+2025-06-02 23:02:21,936 - ERROR - [process_pdf_entry:784] - PDF: draft_Proof_hi (2).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:21,952 - INFO - [load_from_folder:924] - Successfully processed from folder: draft_Proof_hi (2).pdf
+2025-06-02 23:02:21,952 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 23:02:23,841 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssc.201600095
+2025-06-02 23:02:23,888 - ERROR - [process_pdf_entry:784] - PDF: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:23,904 - INFO - [load_from_folder:924] - Successfully processed from folder: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-02 23:02:23,904 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf
+2025-06-02 23:02:25,811 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.6.055401
+2025-06-02 23:02:25,877 - ERROR - [process_pdf_entry:784] - PDF: Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:25,891 - INFO - [load_from_folder:924] - Successfully processed from folder: Effective mass of high-mobility In2O3 -based transparent conductive oxides fabricated by solid-phase crystallization(科研通-ablesci.com).pdf
+2025-06-02 23:02:25,892 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf
+2025-06-02 23:02:27,777 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.5.094603
+2025-06-02 23:02:27,825 - ERROR - [process_pdf_entry:784] - PDF: Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:27,841 - INFO - [load_from_folder:924] - Successfully processed from folder: Effects of free carriers on the optical properties of high mobility transition metal doped In2O3 transparent conductors(科研通-ablesci.com).pdf
+2025-06-02 23:02:27,841 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf
+2025-06-02 23:02:29,659 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1107/S2052520617010988
+2025-06-02 23:02:31,111 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1107/S2052520617010988
+2025-06-02 23:02:31,114 - ERROR - [process_pdf_entry:784] - PDF: Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:31,122 - INFO - [load_from_folder:924] - Successfully processed from folder: Empirical Lewis acid strengths for 135 cations bonded to oxygen(科研通-ablesci.com) (1).pdf
+2025-06-02 23:02:31,122 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Eu掺杂.pdf
+2025-06-02 23:02:33,080 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1166/jnn.2014.10081
+2025-06-02 23:02:33,093 - ERROR - [process_pdf_entry:784] - PDF: Eu掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:33,101 - INFO - [load_from_folder:924] - Successfully processed from folder: Eu掺杂.pdf
+2025-06-02 23:02:33,101 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Ga2O3.pdf
+2025-06-02 23:02:35,021 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/1367-2630/13/8/085014
+2025-06-02 23:02:36,304 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1088/1367-2630/13/8/085014
+2025-06-02 23:02:36,345 - ERROR - [process_pdf_entry:784] - PDF: Ga2O3.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:36,354 - INFO - [load_from_folder:924] - Successfully processed from folder: Ga2O3.pdf
+2025-06-02 23:02:36,354 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Gd掺杂氧化铟.pdf
+2025-06-02 23:02:38,197 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2007.09.012
+2025-06-02 23:02:38,197 - ERROR - [process_pdf_entry:784] - PDF: Gd掺杂氧化铟.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:38,197 - INFO - [load_from_folder:924] - Successfully processed from folder: Gd掺杂氧化铟.pdf
+2025-06-02 23:02:38,197 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Hf 掺杂.pdf
+2025-06-02 23:02:40,043 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.apsusc.2016.11.239
+2025-06-02 23:02:40,070 - ERROR - [process_pdf_entry:784] - PDF: Hf 掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:40,078 - INFO - [load_from_folder:924] - Successfully processed from folder: Hf 掺杂.pdf
+2025-06-02 23:02:40,078 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 23:02:41,994 - ERROR - [process_pdf_entry:784] - PDF: High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:41,994 - INFO - [load_from_folder:924] - Successfully processed from folder: High Electron-Mobility of a Transparent and Conductive Zr-Doped In2O3 Deposited by Reactive Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 23:02:41,994 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf
+2025-06-02 23:02:43,831 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2337281
+2025-06-02 23:02:45,393 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2337281
+2025-06-02 23:02:45,566 - ERROR - [process_pdf_entry:784] - PDF: High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:45,575 - INFO - [load_from_folder:924] - Successfully processed from folder: High-mobility transparent conductive Zr-doped In2O3(科研通-ablesci.com).pdf
+2025-06-02 23:02:45,575 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf
+2025-06-02 23:02:47,513 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0103270
+2025-06-02 23:02:50,889 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0103270
+2025-06-02 23:02:50,917 - ERROR - [process_pdf_entry:784] - PDF: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:50,925 - INFO - [load_from_folder:924] - Successfully processed from folder: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com) (1).pdf
+2025-06-02 23:02:50,925 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf
+2025-06-02 23:02:52,758 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0103270
+2025-06-02 23:02:54,096 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0103270
+2025-06-02 23:02:54,113 - ERROR - [process_pdf_entry:784] - PDF: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:02:54,128 - INFO - [load_from_folder:924] - Successfully processed from folder: High-performance multiple-doped In2O3 transparent conductive oxide films in near-infrared light region(科研通-ablesci.com).pdf
+2025-06-02 23:02:54,128 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf
+2025-06-02 23:02:56,013 - ERROR - [process_pdf_entry:784] - PDF: High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:56,029 - INFO - [load_from_folder:924] - Successfully processed from folder: High_Electron-Mobility_of_a_Transparent_and_Conductive_Zr-Doped_In2O3_Deposited_by_Reactive_Magnetron_Sputtering.pdf
+2025-06-02 23:02:56,029 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ICO-104.7.pdf
+2025-06-02 23:02:57,857 - WARNING - [process_pdf_entry:661] - PDF: ICO-104.7.pdf - File too small (<10KB), likely not a full paper. Path: D:\In2O3\data\raw_data\papers\ICO-104.7.pdf
+2025-06-02 23:02:57,857 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: ICO-104.7.pdf
+2025-06-02 23:02:57,857 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ICO-H-129.pdf
+2025-06-02 23:02:59,738 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 23:02:59,784 - ERROR - [process_pdf_entry:784] - PDF: ICO-H-129.pdf - Error closing PDF document: document closed
+2025-06-02 23:02:59,792 - INFO - [load_from_folder:924] - Successfully processed from folder: ICO-H-129.pdf
+2025-06-02 23:02:59,792 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ICO研究报告.pdf
+2025-06-02 23:03:01,661 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.7567/APEX.8.015505
+2025-06-02 23:03:07,317 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.7567/APEX.8.015505
+2025-06-02 23:03:07,453 - ERROR - [process_pdf_entry:784] - PDF: ICO研究报告.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:07,469 - INFO - [load_from_folder:924] - Successfully processed from folder: ICO研究报告.pdf
+2025-06-02 23:03:07,469 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ICRO-100以上.pdf
+2025-06-02 23:03:09,332 - ERROR - [process_pdf_entry:784] - PDF: ICRO-100以上.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:09,348 - INFO - [load_from_folder:924] - Successfully processed from folder: ICRO-100以上.pdf
+2025-06-02 23:03:09,348 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IHFO-79.6.pdf
+2025-06-02 23:03:11,250 - ERROR - [process_pdf_entry:784] - PDF: IHFO-79.6.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:11,262 - INFO - [load_from_folder:924] - Successfully processed from folder: IHFO-79.6.pdf
+2025-06-02 23:03:11,263 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ijms-23-12912-v2.pdf
+2025-06-02 23:03:13,164 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/ijms232112912
+2025-06-02 23:03:13,166 - ERROR - [process_pdf_entry:784] - PDF: ijms-23-12912-v2.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:13,180 - INFO - [load_from_folder:924] - Successfully processed from folder: ijms-23-12912-v2.pdf
+2025-06-02 23:03:13,180 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IMO_author_accepted_version_20-01-14 (1).pdf
+2025-06-02 23:03:15,102 - ERROR - [process_pdf_entry:784] - PDF: IMO_author_accepted_version_20-01-14 (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:03:15,111 - INFO - [load_from_folder:924] - Successfully processed from folder: IMO_author_accepted_version_20-01-14 (1).pdf
+2025-06-02 23:03:15,111 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IMO_author_accepted_version_20-01-14.pdf
+2025-06-02 23:03:17,078 - ERROR - [process_pdf_entry:784] - PDF: IMO_author_accepted_version_20-01-14.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:17,088 - INFO - [load_from_folder:924] - Successfully processed from folder: IMO_author_accepted_version_20-01-14.pdf
+2025-06-02 23:03:17,088 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ITGAO-93.7.pdf
+2025-06-02 23:03:18,976 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-020-05068-x
+2025-06-02 23:03:19,011 - ERROR - [process_pdf_entry:784] - PDF: ITGAO-93.7.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:19,011 - INFO - [load_from_folder:924] - Successfully processed from folder: ITGAO-93.7.pdf
+2025-06-02 23:03:19,011 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ITGO------Ti-Ga.pdf
+2025-06-02 23:03:20,951 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2022.01.278
+2025-06-02 23:03:20,963 - ERROR - [process_pdf_entry:784] - PDF: ITGO------Ti-Ga.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:20,974 - INFO - [load_from_folder:924] - Successfully processed from folder: ITGO------Ti-Ga.pdf
+2025-06-02 23:03:20,974 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ITiO-100以上.pdf
+2025-06-02 23:03:22,886 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0175864
+2025-06-02 23:03:24,099 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0175864
+2025-06-02 23:03:24,125 - ERROR - [process_pdf_entry:784] - PDF: ITiO-100以上.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:24,136 - INFO - [load_from_folder:924] - Successfully processed from folder: ITiO-100以上.pdf
+2025-06-02 23:03:24,136 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\ITiO-101-108.pdf
+2025-06-02 23:03:25,992 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.egypro.2014.12.357
+2025-06-02 23:03:26,001 - ERROR - [process_pdf_entry:784] - PDF: ITiO-101-108.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:26,012 - INFO - [load_from_folder:924] - Successfully processed from folder: ITiO-101-108.pdf
+2025-06-02 23:03:26,012 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IWO-73.pdf
+2025-06-02 23:03:27,936 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.matlet.2006.05.010
+2025-06-02 23:03:27,936 - ERROR - [process_pdf_entry:784] - PDF: IWO-73.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:27,948 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO-73.pdf
+2025-06-02 23:03:27,948 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IWO-RPD-120.pdf
+2025-06-02 23:03:29,907 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jallcom.2023.169394
+2025-06-02 23:03:29,920 - ERROR - [process_pdf_entry:784] - PDF: IWO-RPD-120.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:29,935 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO-RPD-120.pdf
+2025-06-02 23:03:29,935 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf
+2025-06-02 23:03:31,995 - ERROR - [process_pdf_entry:784] - PDF: IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:32,005 - INFO - [load_from_folder:924] - Successfully processed from folder: IWO和ITO薄膜的制备及其性能的研究_于天宇.pdf
+2025-06-02 23:03:32,005 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\IZrO-77.pdf
+2025-06-02 23:03:33,969 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/adfm.201901741
+2025-06-02 23:03:34,017 - ERROR - [process_pdf_entry:784] - PDF: IZrO-77.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:34,017 - INFO - [load_from_folder:924] - Successfully processed from folder: IZrO-77.pdf
+2025-06-02 23:03:34,017 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\JMR.2005.0184-MO.pdf
+2025-06-02 23:03:35,883 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1557/JMR.2005.0184
+2025-06-02 23:03:37,050 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1557/JMR.2005.0184
+2025-06-02 23:03:37,077 - ERROR - [process_pdf_entry:784] - PDF: JMR.2005.0184-MO.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:37,080 - INFO - [load_from_folder:924] - Successfully processed from folder: JMR.2005.0184-MO.pdf
+2025-06-02 23:03:37,080 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf
+2025-06-02 23:03:38,911 - ERROR - [process_pdf_entry:784] - PDF: Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:38,919 - INFO - [load_from_folder:924] - Successfully processed from folder: Low-Resistivity_Sputtered_Films_of_Transparent_Con.pdf
+2025-06-02 23:03:38,919 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\materials-12-00266.pdf
+2025-06-02 23:03:40,857 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/ma12020266
+2025-06-02 23:03:40,872 - ERROR - [process_pdf_entry:784] - PDF: materials-12-00266.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:40,890 - INFO - [load_from_folder:924] - Successfully processed from folder: materials-12-00266.pdf
+2025-06-02 23:03:40,890 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\mmc4.pdf
+2025-06-02 23:03:42,930 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.joule.2022.06.026
+2025-06-02 23:03:43,009 - ERROR - [process_pdf_entry:784] - PDF: mmc4.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:43,014 - INFO - [load_from_folder:924] - Successfully processed from folder: mmc4.pdf
+2025-06-02 23:03:43,014 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Molybdenum doped indium oxide thin films grown on mica substrates with.pdf
+2025-06-02 23:03:44,937 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2024.04.172
+2025-06-02 23:03:44,948 - ERROR - [process_pdf_entry:784] - PDF: Molybdenum doped indium oxide thin films grown on mica substrates with.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:44,958 - INFO - [load_from_folder:924] - Successfully processed from folder: Molybdenum doped indium oxide thin films grown on mica substrates with.pdf
+2025-06-02 23:03:44,958 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\nagata2019(科研通-ablesci.com).pdf
+2025-06-02 23:03:46,958 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/B978-0-08-102096-8.00015-X
+2025-06-02 23:03:49,921 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1016/B978-0-08-102096-8.00015-X
+2025-06-02 23:03:49,947 - ERROR - [process_pdf_entry:784] - PDF: nagata2019(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:03:49,954 - INFO - [load_from_folder:924] - Successfully processed from folder: nagata2019(科研通-ablesci.com).pdf
+2025-06-02 23:03:49,954 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\nanomaterials-12-01125.pdf
+2025-06-02 23:03:51,853 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/nano12071125
+2025-06-02 23:03:51,861 - ERROR - [process_pdf_entry:784] - PDF: nanomaterials-12-01125.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:51,873 - INFO - [load_from_folder:924] - Successfully processed from folder: nanomaterials-12-01125.pdf
+2025-06-02 23:03:51,873 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\nanomaterials-12-03902-v3.pdf
+2025-06-02 23:03:53,811 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.3390/nano12213902
+2025-06-02 23:03:53,822 - ERROR - [process_pdf_entry:784] - PDF: nanomaterials-12-03902-v3.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:53,822 - INFO - [load_from_folder:924] - Successfully processed from folder: nanomaterials-12-03902-v3.pdf
+2025-06-02 23:03:53,822 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf
+2025-06-02 23:03:55,765 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201700553
+2025-06-02 23:03:55,784 - ERROR - [process_pdf_entry:784] - PDF: n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:55,800 - INFO - [load_from_folder:924] - Successfully processed from folder: n型透明导电氧化物的设计——以In2O3中过渡金属掺杂为例.pdf
+2025-06-02 23:03:55,800 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf
+2025-06-02 23:03:57,725 - ERROR - [process_pdf_entry:784] - PDF: Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf - Error closing PDF document: document closed
+2025-06-02 23:03:57,734 - INFO - [load_from_folder:924] - Successfully processed from folder: Optimization of the post-deposition annealing process of high-mobility In2O3 H for photovoltaic applications.pdf
+2025-06-02 23:03:57,734 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\PhD-Borgersen-2023.pdf
+2025-06-02 23:03:59,829 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/5.0134699
+2025-06-02 23:04:00,943 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/5.0134699
+2025-06-02 23:04:01,546 - ERROR - [process_pdf_entry:784] - PDF: PhD-Borgersen-2023.pdf - Error closing PDF document: document closed
+2025-06-02 23:04:01,562 - INFO - [load_from_folder:924] - Successfully processed from folder: PhD-Borgersen-2023.pdf
+2025-06-02 23:04:01,562 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf
+2025-06-02 23:04:03,502 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssb.200844359
+2025-06-02 23:04:03,533 - ERROR - [process_pdf_entry:784] - PDF: Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:03,542 - INFO - [load_from_folder:924] - Successfully processed from folder: Physica Status Solidi  b - 2009 - Aliabad - Optical properties of pure and transition metal‐doped indium oxide(科研通-ablesci.com).pdf
+2025-06-02 23:04:03,542 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\PhysRevB.92.205308(科研通-ablesci.com).pdf
+2025-06-02 23:04:05,496 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevB.92.205308
+2025-06-02 23:04:05,547 - ERROR - [process_pdf_entry:784] - PDF: PhysRevB.92.205308(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:05,559 - INFO - [load_from_folder:924] - Successfully processed from folder: PhysRevB.92.205308(科研通-ablesci.com).pdf
+2025-06-02 23:04:05,559 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 23:04:07,474 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 23:04:07,505 - ERROR - [process_pdf_entry:784] - PDF: Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:07,513 - INFO - [load_from_folder:924] - Successfully processed from folder: Power conversion efficiency of 25.26% for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 23:04:07,513 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 23:04:09,454 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3565
+2025-06-02 23:04:09,487 - ERROR - [process_pdf_entry:784] - PDF: Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:09,495 - INFO - [load_from_folder:924] - Successfully processed from folder: Power conversion efficiency of 25.26_ for silicon heterojunction solar cell with transition metal element doped indium oxide tra(科研通-ablesci.com).pdf
+2025-06-02 23:04:09,495 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf
+2025-06-02 23:04:11,480 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 23:04:11,527 - ERROR - [process_pdf_entry:784] - PDF: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:11,535 - INFO - [load_from_folder:924] - Successfully processed from folder: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium (1).pdf
+2025-06-02 23:04:11,535 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf
+2025-06-02 23:04:13,514 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pip.3388
+2025-06-02 23:04:13,560 - ERROR - [process_pdf_entry:784] - PDF: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf - Error closing PDF document: document closed
+2025-06-02 23:04:13,570 - INFO - [load_from_folder:924] - Successfully processed from folder: Progress in Photovoltaics - 2021 - Tutsch - The sputter deposition of broadband transparent and highly conductive cerium.pdf
+2025-06-02 23:04:13,570 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf
+2025-06-02 23:04:15,437 - ERROR - [process_pdf_entry:784] - PDF: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:15,446 - INFO - [load_from_folder:924] - Successfully processed from folder: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com) (1).pdf
+2025-06-02 23:04:15,446 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 23:04:17,366 - ERROR - [process_pdf_entry:784] - PDF: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:04:17,374 - INFO - [load_from_folder:924] - Successfully processed from folder: Properties of Germanium-Doped Indium Oxide Thin Films Prepared by DC Magnetron Sputtering(科研通-ablesci.com).pdf
+2025-06-02 23:04:17,374 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\pssa.201600486.pdf
+2025-06-02 23:04:19,266 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201600486
+2025-06-02 23:05:02,385 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\pssa.201600486.pdf
+2025-06-02 23:05:02,390 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: pssa.201600486.pdf
+2025-06-02 23:05:02,390 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\RAREMETALS----IWO.pdf
+2025-06-02 23:05:04,357 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s12598-012-0485-8
+2025-06-02 23:05:04,365 - ERROR - [process_pdf_entry:784] - PDF: RAREMETALS----IWO.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:04,373 - INFO - [load_from_folder:924] - Successfully processed from folder: RAREMETALS----IWO.pdf
+2025-06-02 23:05:04,373 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\RAREMETALSLiYuan.pdf
+2025-06-02 23:05:06,285 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s12598-012-0483-x
+2025-06-02 23:05:06,292 - ERROR - [process_pdf_entry:784] - PDF: RAREMETALSLiYuan.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:06,302 - INFO - [load_from_folder:924] - Successfully processed from folder: RAREMETALSLiYuan.pdf
+2025-06-02 23:05:06,302 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf
+2025-06-02 23:05:08,217 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.tsf.2021.138759
+2025-06-02 23:05:08,226 - ERROR - [process_pdf_entry:784] - PDF: Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:08,234 - INFO - [load_from_folder:924] - Successfully processed from folder: Role of MoTi diffusion barrier in amorphous indium-gallium-zinc-oxide.pdf
+2025-06-02 23:05:08,234 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf
+2025-06-02 23:05:10,152 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.nanolett.6b01171
+2025-06-02 23:05:10,164 - ERROR - [process_pdf_entry:784] - PDF: runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:10,173 - INFO - [load_from_folder:924] - Successfully processed from folder: runnerstrom-et-al-2016-defect-engineering-in-plasmonic-metal-oxide-nanocrystals.pdf
+2025-06-02 23:05:10,173 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s00339-004-2593-2.pdf
+2025-06-02 23:05:12,094 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s00339-004-2593-2
+2025-06-02 23:05:12,136 - ERROR - [process_pdf_entry:784] - PDF: s00339-004-2593-2.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:12,145 - INFO - [load_from_folder:924] - Successfully processed from folder: s00339-004-2593-2.pdf
+2025-06-02 23:05:12,145 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s00339-022-05639-1(科研通-ablesci.com).pdf
+2025-06-02 23:05:14,008 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s00339-022-05639-1
+2025-06-02 23:05:14,050 - ERROR - [process_pdf_entry:784] - PDF: s00339-022-05639-1(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:05:14,059 - INFO - [load_from_folder:924] - Successfully processed from folder: s00339-022-05639-1(科研通-ablesci.com).pdf
+2025-06-02 23:05:14,059 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s10853-006-0844-7.pdf
+2025-06-02 23:05:15,896 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10853-006-0844-7
+2025-06-02 23:05:15,951 - ERROR - [process_pdf_entry:784] - PDF: s10853-006-0844-7.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:15,959 - INFO - [load_from_folder:924] - Successfully processed from folder: s10853-006-0844-7.pdf
+2025-06-02 23:05:15,959 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s10854-021-06097-w.pdf
+2025-06-02 23:05:17,805 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-021-06097-w
+2025-06-02 23:05:17,836 - ERROR - [process_pdf_entry:784] - PDF: s10854-021-06097-w.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:17,843 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-021-06097-w.pdf
+2025-06-02 23:05:17,843 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s10854-021-07689-2.pdf
+2025-06-02 23:05:19,675 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-021-07689-2
+2025-06-02 23:05:19,713 - ERROR - [process_pdf_entry:784] - PDF: s10854-021-07689-2.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:19,721 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-021-07689-2.pdf
+2025-06-02 23:05:19,721 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s10854-023-10269-1.pdf
+2025-06-02 23:05:21,583 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s10854-023-10269-1
+2025-06-02 23:05:21,612 - ERROR - [process_pdf_entry:784] - PDF: s10854-023-10269-1.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:21,621 - INFO - [load_from_folder:924] - Successfully processed from folder: s10854-023-10269-1.pdf
+2025-06-02 23:05:21,621 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s11801-012-2321-7.pdf
+2025-06-02 23:05:23,506 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s11801-012-2321-7
+2025-06-02 23:05:23,546 - ERROR - [process_pdf_entry:784] - PDF: s11801-012-2321-7.pdf - Error closing PDF document: document closed
+2025-06-02 23:05:23,555 - INFO - [load_from_folder:924] - Successfully processed from folder: s11801-012-2321-7.pdf
+2025-06-02 23:05:23,556 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s41427-022-00421-4.pdf
+2025-06-02 23:05:25,495 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1038/s41427-022-00421-4
+2025-06-02 23:06:08,565 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\s41427-022-00421-4.pdf
+2025-06-02 23:06:08,565 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: s41427-022-00421-4.pdf
+2025-06-02 23:06:08,565 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\s42341-024-00536-1.pdf
+2025-06-02 23:06:10,400 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1007/s42341-024-00536-1
+2025-06-02 23:06:10,429 - ERROR - [process_pdf_entry:784] - PDF: s42341-024-00536-1.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:10,429 - INFO - [load_from_folder:924] - Successfully processed from folder: s42341-024-00536-1.pdf
+2025-06-02 23:06:10,429 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Sm-Yb掺杂.pdf
+2025-06-02 23:06:12,284 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1143/JJAP.48.05EC04
+2025-06-02 23:06:19,341 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1143/JJAP.48.05EC04
+2025-06-02 23:06:19,368 - ERROR - [process_pdf_entry:784] - PDF: Sm-Yb掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:19,376 - INFO - [load_from_folder:924] - Successfully processed from folder: Sm-Yb掺杂.pdf
+2025-06-02 23:06:19,376 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\stanek2007(科研通-ablesci.com).pdf
+2025-06-02 23:06:21,207 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevB.75.134101
+2025-06-02 23:06:21,294 - ERROR - [process_pdf_entry:784] - PDF: stanek2007(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:21,302 - INFO - [load_from_folder:924] - Successfully processed from folder: stanek2007(科研通-ablesci.com).pdf
+2025-06-02 23:06:21,302 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf
+2025-06-02 23:06:23,224 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.apsusc.2007.12.035
+2025-06-02 23:06:23,231 - ERROR - [process_pdf_entry:784] - PDF: Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:23,239 - INFO - [load_from_folder:924] - Successfully processed from folder: Structural, optical and electrical characterization of highly conducting Mo-doped In2O3 thin films.pdf
+2025-06-02 23:06:23,239 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf
+2025-06-02 23:06:25,309 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acsami.0c16021
+2025-06-02 23:06:25,319 - ERROR - [process_pdf_entry:784] - PDF: swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:25,327 - INFO - [load_from_folder:924] - Successfully processed from folder: swallow-et-al-2021-indium-gallium-oxide-alloys-electronic-structure-optical-gap-surface-space-charge-and-chemical.pdf
+2025-06-02 23:06:25,329 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf
+2025-06-02 23:06:27,213 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/sdtp.16231
+2025-06-02 23:06:27,244 - ERROR - [process_pdf_entry:784] - PDF: Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:27,264 - INFO - [load_from_folder:924] - Successfully processed from folder: Symp Digest of Tech Papers - 2023 - Ning - 9 3  High Mobility and Stability Indium Oxide Thin‐film Transistor with(科研通-ablesci.com).pdf
+2025-06-02 23:06:27,265 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Tate.HighElectronMobilityW-doped.pdf
+2025-06-02 23:06:29,148 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2048829
+2025-06-02 23:06:31,083 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2048829
+2025-06-02 23:06:31,105 - ERROR - [process_pdf_entry:784] - PDF: Tate.HighElectronMobilityW-doped.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:31,115 - INFO - [load_from_folder:924] - Successfully processed from folder: Tate.HighElectronMobilityW-doped.pdf
+2025-06-02 23:06:31,115 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Tb掺杂ITO.pdf
+2025-06-02 23:06:33,325 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1021/acs.jpclett.7b00524
+2025-06-02 23:06:39,579 - ERROR - [process_pdf_entry:784] - PDF: Tb掺杂ITO.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:39,589 - INFO - [load_from_folder:924] - Successfully processed from folder: Tb掺杂ITO.pdf
+2025-06-02 23:06:39,589 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Tetsuya Yamamoto Kochi University of Technology.pdf
+2025-06-02 23:06:41,486 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1088/1361-6463/ab938b
+2025-06-02 23:06:42,733 - ERROR - [query_crossref_by_doi:101] - CrossRef: API request failed for DOI 10.1088/1361-6463/: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.1088/1361-6463/
+2025-06-02 23:06:42,770 - ERROR - [process_pdf_entry:784] - PDF: Tetsuya Yamamoto Kochi University of Technology.pdf - Error closing PDF document: document closed
+2025-06-02 23:06:42,779 - INFO - [load_from_folder:924] - Successfully processed from folder: Tetsuya Yamamoto Kochi University of Technology.pdf
+2025-06-02 23:06:42,779 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf
+2025-06-02 23:06:44,660 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.202200187
+2025-06-02 23:06:45,246 - ERROR - [process_pdf_entry:784] - PDF: The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:45,262 - INFO - [load_from_folder:924] - Successfully processed from folder: The Effect of the Charge Transfer Transition of the Tetravalent Terbium on the Photostability of Oxide Thin‐Film Transistors(科研通-ablesci.com).pdf
+2025-06-02 23:06:45,262 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:47,134 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.202000487
+2025-06-02 23:06:47,173 - ERROR - [process_pdf_entry:784] - PDF: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:47,181 - INFO - [load_from_folder:924] - Successfully processed from folder: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:47,181 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf
+2025-06-02 23:06:49,047 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.202000487
+2025-06-02 23:06:49,085 - ERROR - [process_pdf_entry:784] - PDF: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:49,095 - INFO - [load_from_folder:924] - Successfully processed from folder: Thermal and Damp Heat Stability of High‐Mobility In2O3‐Based Transparent Conducting Films Fabricated at Low Process Temperatures(科研通-ablesci.com).pdf
+2025-06-02 23:06:49,095 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:50,964 - ERROR - [process_pdf_entry:784] - PDF: Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:50,972 - INFO - [load_from_folder:924] - Successfully processed from folder: Titania as a Sintering Additive in Indium Oxide Ceramics(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:50,973 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:52,851 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 23:06:54,759 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 23:06:54,925 - ERROR - [process_pdf_entry:784] - PDF: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:54,934 - INFO - [load_from_folder:924] - Successfully processed from folder: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (1).pdf
+2025-06-02 23:06:54,934 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf
+2025-06-02 23:06:56,767 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1995957
+2025-06-02 23:06:58,272 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1995957
+2025-06-02 23:06:58,430 - ERROR - [process_pdf_entry:784] - PDF: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf - Error closing PDF document: document closed
+2025-06-02 23:06:58,446 - INFO - [load_from_folder:924] - Successfully processed from folder: Titanium-doped indium oxide_ A high-mobility transparent conductor(科研通-ablesci.com) (2).pdf
+2025-06-02 23:06:58,446 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\warmsingh2004(科研通-ablesci.com).pdf
+2025-06-02 23:07:00,272 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.1646468
+2025-06-02 23:07:01,489 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.1646468
+2025-06-02 23:07:01,659 - ERROR - [process_pdf_entry:784] - PDF: warmsingh2004(科研通-ablesci.com).pdf - Error closing PDF document: document closed
+2025-06-02 23:07:01,668 - INFO - [load_from_folder:924] - Successfully processed from folder: warmsingh2004(科研通-ablesci.com).pdf
+2025-06-02 23:07:01,668 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\WCPEC3_11.pdf
+2025-06-02 23:07:03,498 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1109/WCPEC.2003.1305213
+2025-06-02 23:07:04,733 - ERROR - [query_crossref_by_doi:101] - CrossRef: API request failed for DOI 10.1109/WCPEC.2003.1305213: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.1109/WCPEC.2003.1305213
+2025-06-02 23:07:04,841 - ERROR - [process_pdf_entry:784] - PDF: WCPEC3_11.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:04,851 - INFO - [load_from_folder:924] - Successfully processed from folder: WCPEC3_11.pdf
+2025-06-02 23:07:04,851 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\xu2018.pdf
+2025-06-02 23:07:06,739 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201700553
+2025-06-02 23:07:06,768 - ERROR - [process_pdf_entry:784] - PDF: xu2018.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:06,778 - INFO - [load_from_folder:924] - Successfully processed from folder: xu2018.pdf
+2025-06-02 23:07:06,778 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\yeh2015.pdf
+2025-06-02 23:07:08,722 - ERROR - [process_pdf_entry:784] - PDF: yeh2015.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:08,722 - INFO - [load_from_folder:924] - Successfully processed from folder: yeh2015.pdf
+2025-06-02 23:07:08,722 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf
+2025-06-02 23:07:10,601 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1103/PhysRevMaterials.3.084608
+2025-06-02 23:07:10,664 - ERROR - [process_pdf_entry:784] - PDF: Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:10,664 - INFO - [load_from_folder:924] - Successfully processed from folder: Zr-doped indium oxide electrodes Annealing and thickness effects on microstructure.pdf
+2025-06-02 23:07:10,664 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\Zr掺杂.pdf
+2025-06-02 23:07:12,556 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2337281
+2025-06-02 23:07:15,103 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.2337281
+2025-06-02 23:07:15,274 - ERROR - [process_pdf_entry:784] - PDF: Zr掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:15,276 - INFO - [load_from_folder:924] - Successfully processed from folder: Zr掺杂.pdf
+2025-06-02 23:07:15,276 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\中科院-RPD制备氧化铟铈薄膜-高迁.pdf
+2025-06-02 23:07:17,209 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.matlet.2018.04.102
+2025-06-02 23:07:17,218 - ERROR - [process_pdf_entry:784] - PDF: 中科院-RPD制备氧化铟铈薄膜-高迁.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:17,228 - INFO - [load_from_folder:924] - Successfully processed from folder: 中科院-RPD制备氧化铟铈薄膜-高迁.pdf
+2025-06-02 23:07:17,228 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\功函数  aelm201600529-sup-0001-s1.pdf
+2025-06-02 23:07:19,077 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-02 23:07:19,093 - ERROR - [process_pdf_entry:784] - PDF: 功函数  aelm201600529-sup-0001-s1.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:19,109 - INFO - [load_from_folder:924] - Successfully processed from folder: 功函数  aelm201600529-sup-0001-s1.pdf
+2025-06-02 23:07:19,109 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf
+2025-06-02 23:07:21,117 - ERROR - [process_pdf_entry:784] - PDF: 原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf - Error closing PDF document: document closed
+2025-06-02 23:07:21,127 - INFO - [load_from_folder:924] - Successfully processed from folder: 原子层沉积制备高迁移率In...3_H薄膜及其光电性能研究_杨锦业.pdf
+2025-06-02 23:07:21,127 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 23:08:06,140 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 23:08:06,148 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 掺杂稀土氧化物—一种金属氧化物透明导电薄膜及其应用2021.2.3申请.pdf
+2025-06-02 23:08:06,148 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 23:08:51,166 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 23:08:51,173 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 掺钨氧化铟透明导电氧化物薄膜性能研究_臧传伟.pdf
+2025-06-02 23:08:51,175 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\氧化铟基TCO薄膜文献.pdf
+2025-06-02 23:08:53,175 - ERROR - [process_pdf_entry:784] - PDF: 氧化铟基TCO薄膜文献.pdf - Error closing PDF document: document closed
+2025-06-02 23:08:53,182 - INFO - [load_from_folder:924] - Successfully processed from folder: 氧化铟基TCO薄膜文献.pdf
+2025-06-02 23:08:53,183 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\氧化铟基透明导电薄膜的研究进展_林剑荣.pdf
+2025-06-02 23:08:55,099 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.20038/j.cnki.mra.2022.000302
+2025-06-02 23:08:55,111 - ERROR - [process_pdf_entry:784] - PDF: 氧化铟基透明导电薄膜的研究进展_林剑荣.pdf - Error closing PDF document: document closed
+2025-06-02 23:08:55,121 - INFO - [load_from_folder:924] - Successfully processed from folder: 氧化铟基透明导电薄膜的研究进展_林剑荣.pdf
+2025-06-02 23:08:55,121 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf
+2025-06-02 23:08:57,333 - ERROR - [process_pdf_entry:784] - PDF: 溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf - Error closing PDF document: document closed
+2025-06-02 23:08:57,341 - INFO - [load_from_folder:924] - Successfully processed from folder: 溅射制备氧化铟基TCO中间连接层及其叠层太阳电池应用_张海川.pdf
+2025-06-02 23:08:57,342 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf
+2025-06-02 23:08:59,262 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.19912/j.0254-0096.tynxb.2022-1088
+2025-06-02 23:08:59,284 - ERROR - [process_pdf_entry:784] - PDF: 用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf - Error closing PDF document: document closed
+2025-06-02 23:08:59,286 - INFO - [load_from_folder:924] - Successfully processed from folder: 用于晶硅异质结太阳电池的透明导电薄膜研究进展_王梦笑 (2).pdf
+2025-06-02 23:08:59,286 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf
+2025-06-02 23:09:01,446 - ERROR - [process_pdf_entry:784] - PDF: 硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:01,446 - INFO - [load_from_folder:924] - Successfully processed from folder: 硅基异质结太阳电池中窗口层材料及其溅射损伤特性研究_刘鹏.pdf
+2025-06-02 23:09:01,446 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf
+2025-06-02 23:09:03,324 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.ceramint.2021.11.294
+2025-06-02 23:09:03,334 - ERROR - [process_pdf_entry:784] - PDF: 磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:03,344 - INFO - [load_from_folder:924] - Successfully processed from folder: 磁控溅射过程中 IGZO 陶瓷靶材微观结构的演变.pdf
+2025-06-02 23:09:03,344 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\路易斯酸强度.pdf
+2025-06-02 23:09:05,234 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1107/S2052520617010988
+2025-06-02 23:09:06,442 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1107/S2052520617010988
+2025-06-02 23:09:06,443 - ERROR - [process_pdf_entry:784] - PDF: 路易斯酸强度.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:06,453 - INFO - [load_from_folder:924] - Successfully processed from folder: 路易斯酸强度.pdf
+2025-06-02 23:09:06,453 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\路易斯酸强度2.pdf
+2025-06-02 23:09:08,528 - ERROR - [process_pdf_entry:784] - PDF: 路易斯酸强度2.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:08,537 - INFO - [load_from_folder:924] - Successfully processed from folder: 路易斯酸强度2.pdf
+2025-06-02 23:09:08,538 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\铈掺杂.pdf
+2025-06-02 23:09:10,470 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1380/ejssnt.2012.471
+2025-06-02 23:09:10,486 - ERROR - [process_pdf_entry:784] - PDF: 铈掺杂.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:10,495 - INFO - [load_from_folder:924] - Successfully processed from folder: 铈掺杂.pdf
+2025-06-02 23:09:10,495 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\铬掺杂氧化铟-溶胶法制备薄膜-main.pdf
+2025-06-02 23:09:12,462 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jallcom.2013.04.089
+2025-06-02 23:09:12,475 - ERROR - [process_pdf_entry:784] - PDF: 铬掺杂氧化铟-溶胶法制备薄膜-main.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:12,486 - INFO - [load_from_folder:924] - Successfully processed from folder: 铬掺杂氧化铟-溶胶法制备薄膜-main.pdf
+2025-06-02 23:09:12,487 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf
+2025-06-02 23:09:14,480 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.11868/j.issn.1005-5053.2018.000035
+2025-06-02 23:09:14,490 - ERROR - [process_pdf_entry:784] - PDF: 非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:14,500 - INFO - [load_from_folder:924] - Successfully processed from folder: 非晶态ITO透明导电薄膜的制备及热处理晶化技术研究进展.pdf
+2025-06-02 23:09:14,500 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf
+2025-06-02 23:09:16,580 - ERROR - [process_pdf_entry:784] - PDF: 面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:16,590 - INFO - [load_from_folder:924] - Successfully processed from folder: 面向异质结太阳能电池的氧化铟基靶材研究_王倓.pdf
+2025-06-02 23:09:16,590 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\高迁专利-ReO.pdf
+2025-06-02 23:09:18,503 - WARNING - [process_pdf_entry:691] - PDF: 高迁专利-ReO.pdf - No text extracted from PDF.
+2025-06-02 23:09:18,503 - ERROR - [process_pdf_entry:784] - PDF: 高迁专利-ReO.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:18,515 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 高迁专利-ReO.pdf
+2025-06-02 23:09:18,515 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf
+2025-06-02 23:09:20,366 - ERROR - [process_pdf_entry:784] - PDF: 高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:20,378 - INFO - [load_from_folder:924] - Successfully processed from folder: 高迁移率的钛掺杂氧化铟薄膜...结电池上的应用研究（英文）_黄金.pdf
+2025-06-02 23:09:20,378 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf
+2025-06-02 23:09:22,384 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1039/c9mh01014a
+2025-06-02 23:09:22,415 - ERROR - [process_pdf_entry:784] - PDF: 高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:22,434 - INFO - [load_from_folder:924] - Successfully processed from folder: 高迁移率透明导体的谐振掺杂——以Mo掺杂In2O3为例.pdf
+2025-06-02 23:09:22,434 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\patents\000000_20121121_0A_CN_0.pdf
+2025-06-02 23:09:24,263 - WARNING - [process_pdf_entry:691] - PDF: 000000_20121121_0A_CN_0.pdf - No text extracted from PDF.
+2025-06-02 23:09:24,263 - ERROR - [process_pdf_entry:784] - PDF: 000000_20121121_0A_CN_0.pdf - Error closing PDF document: document closed
+2025-06-02 23:09:24,273 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 000000_20121121_0A_CN_0.pdf
+2025-06-02 23:09:24,273 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\patents\中山智隆-一种氧化铟铈靶材及其制备方法与应用-2024.06.28.pdf
+2025-06-02 23:10:09,282 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\patents\中山智隆-一种氧化铟铈靶材及其制备方法与应用-2024.06.28.pdf
+2025-06-02 23:10:09,291 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 中山智隆-一种氧化铟铈靶材及其制备方法与应用-2024.06.28.pdf
+2025-06-02 23:10:09,292 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\patents\日本专利薄膜迁移率-100以上-2016年.pdf
+2025-06-02 23:10:11,273 - WARNING - [process_pdf_entry:691] - PDF: 日本专利薄膜迁移率-100以上-2016年.pdf - No text extracted from PDF.
+2025-06-02 23:10:11,273 - ERROR - [process_pdf_entry:784] - PDF: 日本专利薄膜迁移率-100以上-2016年.pdf - Error closing PDF document: document closed
+2025-06-02 23:10:11,281 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 日本专利薄膜迁移率-100以上-2016年.pdf
+2025-06-02 23:10:11,281 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\patents\日本专利薄膜迁移率-100以上2011年.pdf
+2025-06-02 23:10:56,289 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\patents\日本专利薄膜迁移率-100以上2011年.pdf
+2025-06-02 23:10:56,293 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 日本专利薄膜迁移率-100以上2011年.pdf
+2025-06-02 23:10:56,293 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\patents\芜湖映日-202411316961_CN119241212A.pdf
+2025-06-02 23:11:41,304 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\patents\芜湖映日-202411316961_CN119241212A.pdf
+2025-06-02 23:11:41,311 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 芜湖映日-202411316961_CN119241212A.pdf
+2025-06-02 23:11:41,311 - INFO - [load_from_folder:928] - Folder processing summary: Successfully processed 146/162 PDFs.
+2025-06-02 23:11:41,311 - INFO - [main:1039] - Total papers processed (pre-deduplication): 146
+2025-06-02 23:11:41,311 - INFO - [main:1040] - Total unique papers to be saved: 138
+2025-06-02 23:11:41,336 - INFO - [save_paper_list:939] - Successfully saved 138 processed paper entries to data\processed_text\processed_papers.json
+2025-06-02 23:11:41,336 - INFO - [main:1045] - PDF processing pipeline finished.
+2025-06-03 16:46:07,026 - INFO - [main:966] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-03 16:46:07,027 - INFO - [main:1008] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-03 16:46:07,027 - INFO - [main:1023] - Processing PDFs from folder: data/raw_data
+2025-06-03 16:46:07,042 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 16:46:52,066 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 16:46:52,074 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 000000_20240618_0A_CN_0.pdf
+2025-06-03 16:46:52,074 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 16:46:54,165 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-03 16:46:54,361 - ERROR - [process_pdf_entry:784] - PDF: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf - Error closing PDF document: document closed
+2025-06-03 16:46:54,371 - INFO - [load_from_folder:924] - Successfully processed from folder: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 16:46:54,371 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-03 16:46:56,382 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201700506
+2025-06-03 16:46:56,407 - ERROR - [process_pdf_entry:784] - PDF: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf - Error closing PDF document: document closed
+2025-06-03 16:55:27,921 - INFO - [main:966] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-03 16:55:27,921 - INFO - [main:1008] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-03 16:55:27,921 - INFO - [main:1023] - Processing PDFs from folder: data/raw_data
+2025-06-03 16:55:27,931 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 16:56:12,951 - WARNING - [run_with_timeout:818] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 16:56:12,958 - WARNING - [load_from_folder:926] - Failed or timed out processing from folder: 000000_20240618_0A_CN_0.pdf
+2025-06-03 16:56:12,958 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 16:56:14,987 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-03 16:56:15,194 - ERROR - [process_pdf_entry:784] - PDF: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf - Error closing PDF document: document closed
+2025-06-03 16:56:15,204 - INFO - [load_from_folder:924] - Successfully processed from folder: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 16:56:15,204 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-03 16:56:17,168 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201700506
+2025-06-03 16:56:17,235 - ERROR - [process_pdf_entry:784] - PDF: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf - Error closing PDF document: document closed
+2025-06-03 16:56:17,244 - INFO - [load_from_folder:924] - Successfully processed from folder: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-03 16:56:17,244 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-03 16:56:19,215 - ERROR - [process_pdf_entry:784] - PDF: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf - Error closing PDF document: document closed
+2025-06-03 16:56:19,224 - INFO - [load_from_folder:924] - Successfully processed from folder: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-03 16:56:19,224 - INFO - [load_from_folder:914] - Attempting to process from folder: data\raw_data\papers\05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-03 16:56:24,201 - ERROR - [process_pdf_entry:784] - PDF: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf - Error closing PDF document: document closed
+2025-06-03 17:00:39,983 - INFO - [main:961] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-03 17:00:39,983 - INFO - [main:1003] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-03 17:00:39,983 - INFO - [main:1018] - Processing PDFs from folder: data/raw_data
+2025-06-03 17:00:39,993 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 17:01:25,005 - WARNING - [run_with_timeout:813] - Function process_pdf_entry timed out after 45s for PDF: data\raw_data\papers\000000_20240618_0A_CN_0.pdf
+2025-06-03 17:01:25,014 - WARNING - [load_from_folder:921] - Failed or timed out processing from folder: 000000_20240618_0A_CN_0.pdf
+2025-06-03 17:01:25,014 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 17:01:27,183 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/aelm.201600529
+2025-06-03 17:01:27,400 - INFO - [load_from_folder:919] - Successfully processed from folder: 01 Transparent Electrodes for Efficient Optoelectronics Morales-Masis_et_al-2017-Advanced_Electronic_Materials.pdf
+2025-06-03 17:01:27,400 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-03 17:01:29,582 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssa.201700506
+2025-06-03 17:01:29,659 - INFO - [load_from_folder:919] - Successfully processed from folder: 02  Physica Status Solidi  a - 2018 - Koida - In2O3‐Based Transparent Conducting Oxide Films with High Electron Mobility.pdf
+2025-06-03 17:01:29,660 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-03 17:01:31,808 - INFO - [load_from_folder:919] - Successfully processed from folder: 03  High-mobility transparent conductive thin films of cerium-doped hydrogenated indium oxide  Applied Physics Express 8,015505(2015).pdf
+2025-06-03 17:01:31,808 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-03 17:01:34,814 - INFO - [load_from_folder:919] - Successfully processed from folder: 05  磁控溅射制备ITO、IWO、SCOT、SRE薄膜及其在SHJ太阳电池的应用.pdf
+2025-06-03 17:01:34,815 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-03 17:01:36,977 - INFO - [load_from_folder:919] - Successfully processed from folder: 06  16-沉积温度对SCOT光电性能及表面形貌的影响-刘奕阳.pdf
+2025-06-03 17:01:36,978 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\061515_1_online(科研通-ablesci.com).pdf
+2025-06-03 17:01:39,010 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1116/1.4824163
+2025-06-03 17:01:40,200 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1116/1.4824163
+2025-06-03 17:01:40,241 - INFO - [load_from_folder:919] - Successfully processed from folder: 061515_1_online(科研通-ablesci.com).pdf
+2025-06-03 17:01:40,241 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-03 17:01:42,204 - INFO - [load_from_folder:919] - Successfully processed from folder: 07  High mobility transparent conducting oxides for thin film solar cells.pdf
+2025-06-03 17:01:42,204 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-03 17:01:44,168 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.mtnano.2023.100329
+2025-06-03 17:01:44,261 - INFO - [load_from_folder:919] - Successfully processed from folder: 08  Status and perspectives of transparent conductive oxide films for silicon heterojunction solar cells.pdf
+2025-06-03 17:01:44,261 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\083547_1_online(科研通-ablesci.com).pdf
+2025-06-03 17:01:46,347 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.3116542
+2025-06-03 17:01:47,595 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
+2025-06-03 17:01:47,635 - INFO - [load_from_folder:919] - Successfully processed from folder: 083547_1_online(科研通-ablesci.com).pdf
+2025-06-03 17:01:47,635 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
