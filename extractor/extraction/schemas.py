@@ -8,7 +8,7 @@ from typing import List, Optional, Dict, Any, Union
 from pydantic import BaseModel, Field, model_validator, RootModel
 
 # --- Base Schema Configuration ---
-class BaseTCOSchema(BaseModel):
+class BaseSchema(BaseModel):
     """Base schema with common configurations for TCO models."""
     model_config = {
         "extra": "allow",  # Allow extra fields not explicitly defined
@@ -18,13 +18,13 @@ class BaseTCOSchema(BaseModel):
 
 # --- Detailed Sub-Schemas for TCOs ---
 
-class TCODopantSchema(BaseTCOSchema):
+class TCODopantSchema(BaseSchema):
     element: Optional[str] = Field(default=None, description="Symbol or name of the dopant element (e.g., 'Sn', 'W', 'Mo').")
     concentration_value: Optional[float] = Field(default=None, description="Numerical value of doping concentration.")
     concentration_unit: Optional[str] = Field(default=None, description="Unit of doping concentration (e.g., 'at.%', 'wt.%', 'mol%').")
     concentration_text: Optional[str] = Field(default=None, description="Full doping concentration as text, e.g., '5 at.%', '1-3 wt.%'. Use if value/unit parsing is complex.")
 
-class TCODesignSchema(BaseTCOSchema):
+class TCODesignSchema(BaseSchema):
     host_material: Optional[str] = Field(default="In2O3", alias="HostMaterial", description="Primary host oxide material, typically In2O3.")
     primary_dopant: Optional[TCODopantSchema] = Field(default_factory=TCODopantSchema, alias="PrimaryDopant", description="Main dopant details.")
     co_dopants: Optional[List[TCODopantSchema]] = Field(default_factory=list, alias="CoDopants", description="List of co-dopants, if any.")
@@ -32,7 +32,7 @@ class TCODesignSchema(BaseTCOSchema):
     composite_materials: Optional[str] = Field(default=None, alias="CompositeMaterials", description="Other materials in a composite structure, if applicable.")
     material_description_source: Optional[str] = Field(default=None, alias="MaterialDescriptionSource", description="Source of the material if commercial, e.g., 'Commercial ITO target (99.99% purity)'.")
 
-class TCODepositionParamsSchema(BaseTCOSchema):
+class TCODepositionParamsSchema(BaseSchema):
     base_pressure: Optional[str] = Field(default=None, alias="BasePressure", description="Base pressure before deposition, e.g., '1x10^-6 Torr'.")
     working_pressure: Optional[str] = Field(default=None, alias="WorkingPressure", description="Working pressure during deposition, e.g., '3 mTorr'.")
     deposition_temperature: Optional[str] = Field(default=None, alias="DepositionTemperature", description="Substrate temperature during deposition, e.g., '300°C', 'Room Temperature'.")
@@ -44,13 +44,13 @@ class TCODepositionParamsSchema(BaseTCOSchema):
     deposition_rate: Optional[str] = Field(default=None, alias="DepositionRate", description="Rate of film growth, e.g., '0.5 nm/s'.")
     # Add other method-specific parameters (e.g., precursor details for ALD/CVD, laser parameters for PLD)
 
-class TCOAnnealingSchema(BaseTCOSchema):
+class TCOAnnealingSchema(BaseSchema):
     temperature: Optional[str] = Field(default=None, alias="Temperature", description="Annealing temperature, e.g., '500°C'.")
     atmosphere: Optional[str] = Field(default=None, alias="Atmosphere", description="Annealing atmosphere, e.g., 'N2', 'Vacuum', 'Forming Gas (5% H2/95% N2)'.")
     duration: Optional[str] = Field(default=None, alias="Duration", description="Annealing duration, e.g., '1 hour', '30 min'.")
     ramp_rate: Optional[str] = Field(default=None, alias="RampRate", description="Heating/cooling ramp rate if specified.")
 
-class TCOFabricationSchema(BaseTCOSchema):
+class TCOFabricationSchema(BaseSchema):
     deposition_method: Optional[str] = Field(default=None, alias="DepositionMethod", description="Primary method used for film deposition.")
     substrate_material: Optional[str] = Field(default=None, alias="SubstrateMaterial", description="Material of the substrate, e.g., 'Glass', 'PET', 'Si'.")
     precursor_materials_text: Optional[str] = Field(default=None, alias="PrecursorMaterialsText", description="Precursor materials used (for sol-gel, CVD, ALD), as text.")
@@ -64,7 +64,7 @@ class TCOFabricationSchema(BaseTCOSchema):
     film_thickness_text: Optional[str] = Field(default=None, alias="FilmThicknessText", description="Full film thickness as text, e.g., '150 nm', 'approx. 200 nm'.")
     # Any other general fabrication notes
 
-class TCOElectricalPropertiesSchema(BaseTCOSchema):
+class TCOElectricalPropertiesSchema(BaseSchema):
     resistivity: Optional[str] = Field(default=None, alias="Resistivity", description="Electrical resistivity, e.g., '3.5 x 10^-4 Ω·cm'.")
     sheet_resistance: Optional[str] = Field(default=None, alias="SheetResistance", description="Sheet resistance, e.g., '10 Ω/sq'.")
     conductivity: Optional[str] = Field(default=None, alias="Conductivity", description="Electrical conductivity, e.g., '2857 S/cm'.")
@@ -73,7 +73,7 @@ class TCOElectricalPropertiesSchema(BaseTCOSchema):
     hall_mobility: Optional[str] = Field(default=None, alias="HallMobility", description="Hall mobility, e.g., '45 cm²/Vs'.")
     measurement_conditions_electrical: Optional[str] = Field(default=None, alias="MeasurementConditionsElectrical", description="Conditions under which electrical properties were measured, e.g., 'Room temperature, Van der Pauw method'.")
 
-class TCOOpticalPropertiesSchema(BaseTCOSchema):
+class TCOOpticalPropertiesSchema(BaseSchema):
     average_transmittance: Optional[str] = Field(default=None, alias="AverageTransmittance", description="Average optical transmittance, e.g., '>90% in visible range (400-700nm)'.")
     transmittance_at_550nm: Optional[str] = Field(default=None, alias="TransmittanceAt550nm", description="Transmittance at specific wavelength, e.g., '92% at 550 nm'.")
     wavelength_range_transmittance: Optional[str] = Field(default=None, alias="WavelengthRangeTransmittance", description="Wavelength range for transmittance measurement.")
@@ -85,7 +85,7 @@ class TCOOpticalPropertiesSchema(BaseTCOSchema):
     extinction_coefficient: Optional[str] = Field(default=None, alias="ExtinctionCoefficient", description="Extinction coefficient (k).")
     haze: Optional[str] = Field(default=None, alias="Haze", description="Haze percentage, e.g., '< 1%'.")
 
-class TCOOtherPerformanceSchema(BaseTCOSchema):
+class TCOOtherPerformanceSchema(BaseSchema):
     work_function_value: Optional[float] = Field(default=None, alias="WorkFunctionValue", description="Numerical value of work function (Φ).")
     work_function_unit: Optional[str] = Field(default="eV", alias="WorkFunctionUnit", description="Unit for work function, typically 'eV'.")
     work_function_text: Optional[str] = Field(default=None, alias="WorkFunctionText", description="Full work function as text, e.g., '4.8 eV'.")
@@ -96,7 +96,7 @@ class TCOOtherPerformanceSchema(BaseTCOSchema):
     surface_roughness_ra: Optional[str] = Field(default=None, alias="SurfaceRoughnessRa", description="Average surface roughness (Ra).")
     stability: Optional[str] = Field(default=None, alias="Stability", description="Notes on material stability (thermal, chemical, environmental).")
 
-class TCOStructuralPropertiesSchema(BaseTCOSchema):
+class TCOStructuralPropertiesSchema(BaseSchema):
     crystal_structure: Optional[str] = Field(default=None, alias="CrystalStructure", description="Crystal structure and phases identified, e.g., 'Cubic bixbyite In2O3', 'Amorphous'.")
     preferred_orientation: Optional[str] = Field(default=None, alias="PreferredOrientation", description="Preferred crystallographic orientation, e.g., '(222)', '(400)'.")
     grain_size: Optional[str] = Field(default=None, alias="GrainSize", description="Average grain size, e.g., '30-50 nm'.")
@@ -104,7 +104,7 @@ class TCOStructuralPropertiesSchema(BaseTCOSchema):
     xrd_notes: Optional[str] = Field(default=None, alias="XRDNotes", description="Key findings from XRD analysis.")
 
 
-class TCOPerformanceSchema(BaseTCOSchema):
+class TCOPerformanceSchema(BaseSchema):
     electrical_properties: Optional[TCOElectricalPropertiesSchema] = Field(default_factory=TCOElectricalPropertiesSchema, alias="ElectricalProperties")
     optical_properties: Optional[TCOOpticalPropertiesSchema] = Field(default_factory=TCOOpticalPropertiesSchema, alias="OpticalProperties")
     structural_properties: Optional[TCOStructuralPropertiesSchema] = Field(default_factory=TCOStructuralPropertiesSchema, alias="StructuralProperties")
@@ -112,21 +112,20 @@ class TCOPerformanceSchema(BaseTCOSchema):
     general_performance_summary: Optional[str] = Field(default=None, alias="GeneralPerformanceSummary", description="A general summary if specific values are not broken down.")
 
 
-class TCODeviceSchema(BaseTCOSchema):
+class TCODeviceSchema(BaseSchema):
     device_type: Optional[str] = Field(default=None, alias="DeviceType", description="Type of device where TCO is used, e.g., 'Perovskite Solar Cell', 'OLED'.")
     tco_role_in_device: Optional[str] = Field(default=None, alias="TCORoleInDevice", description="Role of the TCO in the device, e.g., 'Anode', 'Transparent Top Electrode'.")
     device_performance_metric_name: Optional[str] = Field(default=None, alias="DevicePerformanceMetricName", description="Name of the key device performance metric, e.g., 'Power Conversion Efficiency (PCE)', 'External Quantum Efficiency (EQE)'.")
     device_performance_metric_value: Optional[str] = Field(default=None, alias="DevicePerformanceMetricValue", description="Value of the key device performance metric, e.g., '18.5%', '25 cd/A'.")
     other_device_details: Optional[str] = Field(default=None, alias="OtherDeviceDetails", description="Other relevant details about the device construction or performance.")
 
-class TCOApplicationSchema(BaseTCOSchema):
+class TCOApplicationSchema(BaseSchema):
     potential_application_area: Optional[str] = Field(default=None, alias="PotentialApplicationArea", description="General field of application, e.g., 'Photovoltaics', 'Flexible Electronics'.")
     demonstrated_in_device: Optional[TCODeviceSchema] = Field(default_factory=TCODeviceSchema, alias="DemonstratedInDevice")
     # If multiple devices, this could be List[TCODeviceSchema] but prompt asks for one entry per "sample"
     # so this might be specific to the device that *this particular sample* was tested in.
 
-
-class TCOSpecificDetailsSchema(BaseTCOSchema): # This is what goes into "Details" for a TCO entry
+class TCOSpecificDetailsSchema(BaseSchema): # This is what goes into "Details" for a TCO entry
     Design: Optional[TCODesignSchema] = Field(default_factory=TCODesignSchema)
     Fabrication: Optional[TCOFabricationSchema] = Field(default_factory=TCOFabricationSchema)
     Performance: Optional[TCOPerformanceSchema] = Field(default_factory=TCOPerformanceSchema)
@@ -144,10 +143,16 @@ class TCOSpecificDetailsSchema(BaseTCOSchema): # This is what goes into "Details
         return data
 
 
+# --- Schemas for others ---
+# ........................
+# ........................
+# ........................
+# ........................
+
 
 
 # --- Main Schemas for LLM Output and Individual Entries ---
-class ExtractedMaterialEntrySchema(BaseTCOSchema):
+class ExtractedMaterialEntrySchema(BaseSchema):
     """Schema for a single extracted material entry (can be TCO or Membrane)."""
     # This should match the "MaterialName" key from your new TCO prompt
     MaterialName: str = Field(..., min_length=1, description="Descriptive name of the extracted material/sample.")
