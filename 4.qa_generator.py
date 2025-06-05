@@ -7,7 +7,7 @@ from typing import List, Dict, Any
 
 # --- Configuration ---
 # Path to the JSON file output by your 'extractor' script
-INPUT_STRUCTURED_DATA_PATH = "data/extracted_json/structured_extraction.json"  # Or your actual output path from extractor
+INPUT_STRUCTURED_DATA_PATH = "data/extracted_json/json_load_directly/structured_extraction.json"  # Or your actual output path from extractor
 # Path to save the generated QA pairs
 OUTPUT_QA_PAIRS_PATH = "data/generated_qa_pairs/qa_pairs_from_structured.jsonl"  # Outputting as JSONL is common for fine-tuning data
 CHECKPOINT_PATH_QA_GEN = "data/generated_qa_pairs/checkpoint_qa.json"

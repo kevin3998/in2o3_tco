@@ -83,7 +83,7 @@ For each distinct TCO material/sample, extract and return the following categori
     * DopingConcentration: (This information should primarily be captured within the PrimaryDopant object's "concentration_text" field. This separate field can be omitted if redundant or used for an overall doping level if distinct from PrimaryDopant).
     * CoDopants: This MUST BE A LIST OF JSON OBJECTS if co-dopants or other significant elemental additions are present and are not chosen as the PrimaryDopant. Each object in the list should describe one co-dopant, including its "element" (e.g., "H", "Ce") and "concentration_text" (e.g., "from H2 annealing", "2 wt.% CeO2 target precursor"). If no co-dopants are mentioned or applicable, provide an empty list [] or omit the "CoDopants" field entirely. DO NOT put a simple string here; it must be a list of objects or omitted/empty list.
     * TargetStoichiometry: The intended chemical formula or target composition (e.g., "In(2-x)SnxO3", "In2O3:Sn (10 at.%)", "Nominal composition In2O3 with 1 wt% WO3").
-
+ 
 2.  **Fabrication**:
     * DepositionMethod (e.g., "DC Magnetron Sputtering", "Pulsed Laser Deposition (PLD)", "Sol-gel spin coating", "Atomic Layer Deposition (ALD)").
     * SubstrateMaterial (e.g., "Corning Eagle Glass", "PET flexible substrate", "Si wafer with SiO2 layer").
