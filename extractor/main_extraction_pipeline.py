@@ -1,28 +1,40 @@
 # src/main_extraction_pipeline.py
+"""
+Module: main_extraction_pipeline
+Functionality: Serves as the main entry point for running the information
+               extraction pipeline. It handles command-line argument parsing,
+               initializes necessary components (LLM client, configurations,
+               processor), loads input data, orchestrates the processing,
+               and saves the final results and statistics.
+"""
 import argparse
 import logging
 import json
 import os
-from typing import Dict, List, Any
+import traceback
+from typing import List, Dict, Any
 from extractor.utils.logging_config import setup_logging
 from extractor.utils.llm_client_setup import get_openai_client
 from extractor.utils.file_operations import load_json_data, save_json_data
 from extractor.utils.general_utils import PromptManager
 from extractor.config.domain_specific_configs import get_domain_config
 from extractor.config.prompt_templates import load_prompts as load_all_extraction_prompts
-from extractor.extraction.core_processor import PaperProcessor  # PaperProcessor will take a new arg
+from extractor.extraction.core_processor import PaperProcessor
 
-setup_logging(level=logging.INFO)
+# Setup logging as early as possible
+setup_logging(level=logging.INFO)  # Set to logging.DEBUG for more verbosity
 logger = logging.getLogger(__name__)
 
 
 def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_path: str):
-    # ... (Your existing calculate_and_log_stats function remains here) ...
-    # This function will now report "SKIPPED" for Pydantic steps if validation was disabled.
+    """
+    Calculates and logs detailed validation statistics, then saves them to a file.
+    """
     if not all_paper_stats:
-        logger.info("No statistics collected to calculate rates.")
+        logger.info("No statistics collected to calculate rates. Stats file will not be created.")
         return
 
+    # --- Initialize Counters ---
     total_papers_attempted = len(all_paper_stats)
     total_parseable_llm_responses = 0
     total_initial_entries_from_llm = 0
@@ -35,6 +47,7 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
     total_entries_passing_domain_details_validation = 0
     entries_with_domain_details_skipped = 0
 
+    # --- Aggregate Data ---
     for stats in all_paper_stats:
         if stats.get("raw_llm_response_parseable_as_json", False):
             total_parseable_llm_responses += 1
@@ -49,28 +62,21 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
             total_entries_attempted_domain_details_validation += num_entries_this_paper
             total_entries_passing_domain_details_validation += stats.get(
                 "count_entries_passing_domain_details_validation", 0)
-            # Count entries where domain validation was skipped (because top-level passed, but domain was skipped)
-            for entry_stat in stats.get("domain_specific_validation_results", []):
-                if entry_stat.get("passed") == "SKIPPED":
-                    entries_with_domain_details_skipped += 1
-
         elif top_level_status == "SKIPPED":
             papers_with_top_level_skipped += 1
-            # If top-level is skipped, domain-specific is also skipped. Count all entries as "skipped" for domain.
-            num_entries_this_paper = stats.get("num_entries_after_top_level_validation",
-                                               0)  # Should be initial_entry_count if top-level skipped
-            total_entries_after_top_level_validation += num_entries_this_paper  # These didn't fail, they were skipped
+            num_entries_this_paper = stats.get("num_entries_after_top_level_validation", 0)
+            total_entries_after_top_level_validation += num_entries_this_paper
+            # In skipped mode, assume all entries would be attempted for domain validation
             total_entries_attempted_domain_details_validation += num_entries_this_paper
-            # In skipped mode, count_entries_passing_domain_details_validation would count all as "passed" by skipping
+            # In skipped mode, all are counted as "passing" by bypassing validation
             total_entries_passing_domain_details_validation += stats.get(
                 "count_entries_passing_domain_details_validation", 0)
             entries_with_domain_details_skipped += num_entries_this_paper
 
-    # Calculate Rates
+    # --- Calculate Rates ---
     json_parse_rate = (
                 total_parseable_llm_responses / total_papers_attempted * 100) if total_papers_attempted > 0 else 0
 
-    # Top-Level Schema Validation Rate (only for those not skipped)
     parseable_and_not_skipped_top_level = total_parseable_llm_responses - papers_with_top_level_skipped
     top_level_schema_validation_rate_per_paper = (
                 papers_passing_top_level_validation / parseable_and_not_skipped_top_level * 100) if parseable_and_not_skipped_top_level > 0 else 0
@@ -78,19 +84,14 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
     entry_survival_after_top_level_rate = (
                 total_entries_after_top_level_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
 
-    # Domain-Specific Details Validation Rate (only for those not skipped)
     attempted_and_not_skipped_domain = total_entries_attempted_domain_details_validation - entries_with_domain_details_skipped
     domain_specific_details_validation_rate_per_entry = (
-                total_entries_passing_domain_details_validation / attempted_and_not_skipped_domain * 100) if attempted_and_not_skipped_domain > 0 else 0
-    if papers_with_top_level_skipped == total_parseable_llm_responses and total_parseable_llm_responses > 0:  # All skipped
-        domain_specific_details_validation_rate_per_entry = "SKIPPED"
+                total_entries_passing_domain_details_validation / attempted_and_not_skipped_domain * 100) if attempted_and_not_skipped_domain > 0 else "N/A"
 
-    # End-to-End Validation Success Rate
-    # If validation is skipped, this reflects entries that didn't fail basic parsing and made it to the end.
-    # If validation is enabled, this reflects entries that passed all Pydantic checks.
     end_to_end_entry_success_rate = (
                 total_entries_passing_domain_details_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
 
+    # --- Log Summary to Console ---
     logger.info("--- Pydantic Validation Statistics ---")
     logger.info(f"Total Papers Attempted: {total_papers_attempted}")
     logger.info(f"LLM Responses Parseable as JSON: {total_parseable_llm_responses} ({json_parse_rate:.2f}%)")
@@ -99,31 +100,58 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
 
     if parseable_and_not_skipped_top_level > 0:
         logger.info(
-            f"Papers Passing Top-Level Pydantic Schema Validation (LLMOutputSchema): {papers_passing_top_level_validation} out of {parseable_and_not_skipped_top_level} attempted ({top_level_schema_validation_rate_per_paper:.2f}%)")
+            f"Papers Passing Top-Level Schema Validation: {papers_passing_top_level_validation} / {parseable_and_not_skipped_top_level} attempted ({top_level_schema_validation_rate_per_paper:.2f}%)")
     else:
-        logger.info("Top-Level Pydantic Schema Validation was not performed on any papers (or all were skipped).")
+        logger.info("Top-Level Schema Validation was not performed on any papers (or all were skipped).")
 
-    logger.info(f"Total Initial Material Entries from LLM (sum over all papers): {total_initial_entries_from_llm}")
-    logger.info(f"Total Entries After Top-Level Validation/Processing: {total_entries_after_top_level_validation}")
+    logger.info(f"Total Initial Material Entries from LLM: {total_initial_entries_from_llm}")
     logger.info(
-        f"  - Entry Survival Rate after Top-Level Processing (vs Initial LLM Entries): {entry_survival_after_top_level_rate:.2f}%")
+        f"Total Entries Surviving Top-Level Processing: {total_entries_after_top_level_validation} ({entry_survival_after_top_level_rate:.2f}% of initial)")
 
     if attempted_and_not_skipped_domain > 0:
         logger.info(
-            f"Total Entries Attempted for Domain-Specific Details Validation (and not skipped): {attempted_and_not_skipped_domain}")
-        logger.info(
-            f"Entries Passing Domain-Specific Details Pydantic Validation: {total_entries_passing_domain_details_validation} ({domain_specific_details_validation_rate_per_entry:.2f}%)")
-    elif isinstance(domain_specific_details_validation_rate_per_entry,
-                    str) and domain_specific_details_validation_rate_per_entry == "SKIPPED":
-        logger.info("Domain-Specific Details Pydantic Validation was SKIPPED for all entries.")
+            f"Entries Passing Domain-Specific Details Validation: {total_entries_passing_domain_details_validation} / {attempted_and_not_skipped_domain} attempted ({domain_specific_details_validation_rate_per_entry:.2f}%)")
     else:
-        logger.info(
-            "Domain-Specific Details Pydantic Validation was not performed on any entries (or all were skipped).")
+        logger.info("Domain-Specific Details Validation was not performed on any entries (or all were skipped).")
 
-    logger.info(
-        f"End-to-End Entry Success Rate (vs Initial LLM Entries): {end_to_end_entry_success_rate:.2f}% (Note: if validation skipped, this reflects entries passing basic parsing)")
+    logger.info(f"End-to-End Entry Success Rate (vs Initial): {end_to_end_entry_success_rate:.2f}%")
     logger.info("------------------------------------")
-    # ... (rest of saving detailed_stats_to_save as before) ...
+
+    # --- Save Detailed Stats to File ---
+    logger.info("Attempting to save detailed validation statistics...")
+
+    detailed_stats_to_save = {
+        "summary_rates": {
+            "total_papers_attempted": total_papers_attempted,
+            "json_parse_rate_percent": json_parse_rate,
+            "top_level_schema_validation_rate_per_parseable_paper_percent": top_level_schema_validation_rate_per_paper,
+            "entry_survival_after_top_level_processing_percent": entry_survival_after_top_level_rate,
+            "domain_specific_details_validation_rate_per_entry_percent": domain_specific_details_validation_rate_per_entry,
+            "end_to_end_entry_success_rate_percent": end_to_end_entry_success_rate,
+            "total_initial_entries_from_llm": total_initial_entries_from_llm,
+            "total_fully_validated_entries": total_entries_passing_domain_details_validation
+        },
+        "per_paper_details": all_paper_stats
+    }
+
+    try:
+        output_dir = os.path.dirname(stats_output_path)
+        if output_dir and not os.path.exists(output_dir):
+            logger.info(f"Creating output directory for stats file: {output_dir}")
+            os.makedirs(output_dir, exist_ok=True)
+
+        logger.info(f"Writing stats to file: {stats_output_path}")
+        with open(stats_output_path, "w", encoding="utf-8") as f_stats:
+            json.dump(detailed_stats_to_save, f_stats, indent=2, ensure_ascii=False)
+        logger.info(f"✅ Detailed validation statistics saved successfully to: {stats_output_path}")
+    except TypeError as te:
+        logger.error(f"❌ FAILED TO SAVE STATS FILE due to a TypeError (object not JSON serializable).")
+        logger.error(f"Error Message: {te}")
+    except Exception as e:
+        logger.error(f"❌ FAILED TO SAVE STATS FILE due to an unexpected exception.")
+        logger.error(f"Error Type: {type(e).__name__}")
+        logger.error(f"Error Message: {e}")
+        logger.error(f"Traceback:\n{traceback.format_exc()}")
 
 
 def main():
@@ -132,7 +160,7 @@ def main():
                         help="Path to the input JSON file containing paper data (output from PDF processor).")
     parser.add_argument("--output_file", type=str, required=True,
                         help="Path to save the extracted structured information (final valid data).")
-    parser.add_argument("--stats_file", type=str, default="data/output/extraction_validation_stats.json",
+    parser.add_argument("--stats_file", type=str, default="data/extraction_validation_stats.json",
                         help="Path to save the detailed Pydantic validation statistics.")
     parser.add_argument("--checkpoint_file", type=str, default="checkpoint_extraction.json",
                         help="Path for the checkpoint file.")
@@ -141,18 +169,16 @@ def main():
     parser.add_argument("--language", type=str, default="en", help="Language of the papers and prompts (e.g., 'en').")
     parser.add_argument("--model_name", type=str, default="DeepSeek-R1-671B",
                         help="Name of the LLM to use for extraction.")
-    # --- NEW ARGUMENT ---
     parser.add_argument(
         "--disable_pydantic_validation",
-        action="store_true",  # If flag is present, set to True
+        action="store_true",
         help="If set, Pydantic schema validation will be skipped."
     )
 
     args = parser.parse_args()
     logger.info(f"Starting extraction pipeline with args: {args}")
 
-    # Determine if Pydantic validation should be enabled
-    pydantic_enabled = not args.disable_pydantic_validation  # Enable if flag is NOT set
+    pydantic_enabled = not args.disable_pydantic_validation
     if not pydantic_enabled:
         logger.warning("PYDANTIC VALIDATION IS DISABLED VIA COMMAND-LINE ARGUMENT.")
 
@@ -169,7 +195,7 @@ def main():
             prompt_manager=prompt_manager,
             domain_config=domain_config,
             model_name=args.model_name,
-            pydantic_validation_enabled=pydantic_enabled  # <--- PASS THE FLAG
+            pydantic_validation_enabled=pydantic_enabled
         )
         logger.info(
             f"PaperProcessor initialized with model: {args.model_name} and Pydantic validation {'enabled' if pydantic_enabled else 'disabled'}.")
@@ -185,11 +211,10 @@ def main():
             domain_name=args.domain,
             language=args.language,
             checkpoint_file_path=args.checkpoint_file
-            # pydantic_enabled is now part of the processor instance
         )
 
         save_json_data(extracted_results, args.output_file)
-        logger.info(f"Extraction complete. {len(extracted_results)} material entries saved to {args.output_file}")
+        logger.info(f"Extraction complete. {len(extracted_results)} valid material entries saved to {args.output_file}")
 
         calculate_and_log_stats(all_paper_stats, args.stats_file)
 

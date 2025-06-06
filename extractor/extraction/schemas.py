@@ -52,7 +52,7 @@ class TCOAnnealingSchema(BaseSchema):
 
 class TCOFabricationSchema(BaseSchema):
     deposition_method: Optional[str] = Field(default=None, alias="DepositionMethod", description="Primary method used for film deposition.")
-    substrate_material: Optional[str] = Field(default=None, alias="SubstrateMaterial", description="Material of the substrate, e.g., 'Glass', 'PET', 'Si'.")
+    substrate_material: Optional[Union[str, List[str]]] = Field(default=None,alias="SubstrateMaterial",description="Material of the substrate. Can be a single string or a list of strings if multiple substrates are used.")
     precursor_materials_text: Optional[str] = Field(default=None, alias="PrecursorMaterialsText", description="Precursor materials used (for sol-gel, CVD, ALD), as text.")
     target_material_text: Optional[str] = Field(default=None, alias="TargetMaterialText", description="Target material composition (for sputtering, PLD), as text.")
     deposition_parameters: Optional[TCODepositionParamsSchema] = Field(default_factory=TCODepositionParamsSchema, alias="DepositionParameters")
@@ -73,10 +73,11 @@ class TCOElectricalPropertiesSchema(BaseSchema):
     hall_mobility: Optional[str] = Field(default=None, alias="HallMobility", description="Hall mobility, e.g., '45 cm²/Vs'.")
     measurement_conditions_electrical: Optional[str] = Field(default=None, alias="MeasurementConditionsElectrical", description="Conditions under which electrical properties were measured, e.g., 'Room temperature, Van der Pauw method'.")
 
-class TCOOpticalPropertiesSchema(BaseSchema):
+class TCOOpticalPropertiesSchema(BaseSchema): # Modified
     average_transmittance: Optional[str] = Field(default=None, alias="AverageTransmittance", description="Average optical transmittance, e.g., '>90% in visible range (400-700nm)'.")
     transmittance_at_550nm: Optional[str] = Field(default=None, alias="TransmittanceAt550nm", description="Transmittance at specific wavelength, e.g., '92% at 550 nm'.")
     wavelength_range_transmittance: Optional[str] = Field(default=None, alias="WavelengthRangeTransmittance", description="Wavelength range for transmittance measurement.")
+    optical_transmittance_description: Optional[str] = Field(default=None, alias="OpticalTransmittanceDescription", description="General description of optical transmittance if specific values/ranges are not given.") # <<< NEW FIELD
     optical_band_gap_value: Optional[float] = Field(default=None, alias="OpticalBandGapValue", description="Numerical value of optical band gap (Eg).")
     optical_band_gap_unit: Optional[str] = Field(default="eV", alias="OpticalBandGapUnit", description="Unit for optical band gap, typically 'eV'.")
     optical_band_gap_text: Optional[str] = Field(default=None, alias="OpticalBandGapText", description="Full optical band gap as text, e.g., '3.75 eV'.")

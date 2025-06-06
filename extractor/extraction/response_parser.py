@@ -28,7 +28,7 @@ def parse_llm_response(
         paper_meta: Dict,
         domain_config: DomainConfig,
         language: str,
-        pydantic_validation_enabled: bool = True  # <--- NEW PARAMETER WITH DEFAULT
+        pydantic_validation_enabled: bool = True
 ) -> Tuple[List[Dict], Dict[str, Any]]:
     parsed_material_entries_for_paper = []
     paper_id = paper_meta.get("doi", paper_meta.get("filename", "unknown_paper"))
@@ -38,7 +38,7 @@ def parse_llm_response(
         "raw_llm_response_parseable_as_json": False,
         "json_decode_error": None,
         "initial_entry_count_from_llm": 0,
-        "top_level_validation_passed": False if pydantic_validation_enabled else "SKIPPED",  # Initialize based on flag
+        "top_level_validation_passed": False if pydantic_validation_enabled else "SKIPPED",
         "top_level_validation_errors": None,
         "time_top_level_validation_seconds": 0.0,
         "num_entries_after_top_level_validation": 0,
@@ -48,7 +48,10 @@ def parse_llm_response(
     }
 
     meta_doi = paper_meta.get("doi", "N/A_DOI")
-    # ... (meta_title, meta_journal, meta_year for constructing output if needed)
+    # meta_title, etc. for constructing final output
+    meta_title = paper_meta.get("retrieved_title", "Unknown Title")
+    meta_journal = paper_meta.get("retrieved_journal", "Unknown Journal")
+    meta_year = paper_meta.get("retrieved_year", "Unknown Year")
 
     try:
         json_str_cleaned = re.sub(r"[\x00-\x1F]", "", llm_content)
@@ -74,47 +77,37 @@ def parse_llm_response(
         standardized_llm_output_obj = recursive_standardize_keys(raw_data_from_llm)
         paper_stats["initial_entry_count_from_llm"] = len(standardized_llm_output_obj.get("Output", []))
 
-        material_entries_to_iterate = []  # This will hold Pydantic models if validation enabled, else dicts
+        material_entries_to_iterate = []
 
         if pydantic_validation_enabled:
-            # --- 1. Top-level Schema Validation (LLMOutputSchema) ---
             time_start_top_val = time.time()
             try:
                 validated_llm_root = LLMOutputSchema.model_validate(standardized_llm_output_obj)
                 paper_stats["top_level_validation_passed"] = True
                 paper_stats["num_entries_after_top_level_validation"] = len(validated_llm_root.Output)
-                material_entries_to_iterate = validated_llm_root.Output  # List of Pydantic ExtractedMaterialEntrySchema objects
+                material_entries_to_iterate = validated_llm_root.Output
             except ValidationError as e_root:
                 logger.error(
                     f"Pydantic Validation Error for overall LLM output structure (Paper ID {paper_id}): {e_root.errors()}")
                 paper_stats["top_level_validation_errors"] = e_root.errors()
                 return [], paper_stats
-            except ImportError:  # Should ideally not happen if setup is correct
-                logger.critical("Pydantic schemas.py not found or LLMOutputSchema missing. Cannot validate.")
-                paper_stats["top_level_validation_errors"] = [
-                    {"type": "ImportError", "msg": "Pydantic schemas missing"}]
-                return [], paper_stats
             finally:
                 paper_stats["time_top_level_validation_seconds"] = time.time() - time_start_top_val
-        else:  # Pydantic validation is disabled for top-level
+        else:
             logger.info(f"Pydantic Top-Level Validation SKIPPED for Paper ID {paper_id}")
-            # Use the raw (but key-standardized) list of entries directly
             material_entries_to_iterate = standardized_llm_output_obj.get("Output", [])
             if not isinstance(material_entries_to_iterate, list):
-                logger.warning(
-                    f"'Output' field from LLM is not a list for Paper ID {paper_id} (validation skipped). Got: {type(material_entries_to_iterate)}. Treating as empty.")
                 material_entries_to_iterate = []
             paper_stats["num_entries_after_top_level_validation"] = len(material_entries_to_iterate)
 
-        # --- 2. Process and Validate Each Material Entry's Details ---
-        for entry_data in material_entries_to_iterate:  # entry_data is Pydantic model if enabled, else dict
+        for entry_data in material_entries_to_iterate:
             material_name_for_stats = ""
             details_dict_for_standardization = {}
 
-            if pydantic_validation_enabled and isinstance(entry_data, BaseModel):  # Check if it's a Pydantic model
+            if pydantic_validation_enabled and isinstance(entry_data, BaseModel):
                 material_name_for_stats = entry_data.MaterialName
-                details_dict_for_standardization = entry_data.Details  # This is Dict[str, Any] from ExtractedMaterialEntrySchema
-            elif isinstance(entry_data, dict):  # If Pydantic disabled, entry_data is a dict
+                details_dict_for_standardization = entry_data.Details
+            elif isinstance(entry_data, dict):
                 material_name_for_stats = clean_material_name(extract_material_from_entry_dict(entry_data))
                 details_dict_for_standardization = entry_data.get("Details", {})
             else:
@@ -122,9 +115,9 @@ def parse_llm_response(
                 continue
 
             if not isinstance(details_dict_for_standardization, dict):
+                details_dict_for_standardization = {}
                 logger.warning(
                     f"Details for material {material_name_for_stats} (Paper ID {paper_id}) was not a dict. Using empty.")
-                details_dict_for_standardization = {}
 
             entry_domain_details_passed_status = False if pydantic_validation_enabled else "SKIPPED"
             entry_domain_details_error_list = None
@@ -134,7 +127,7 @@ def parse_llm_response(
                                                                           domain_config)
             final_details_for_processing = ensure_required_sections(standardized_sub_details)
 
-            details_to_store_in_final_output = final_details_for_processing  # Default if validation skipped or fails
+            details_to_store_in_final_output = final_details_for_processing
 
             if pydantic_validation_enabled:
                 time_start_details_val = time.time()
@@ -142,11 +135,9 @@ def parse_llm_response(
                     current_domain = domain_config.domain
                     validated_domain_specific_details_model = None
                     if current_domain == "membrane":
-                        # from .schemas import MembraneSpecificDetailsSchema (ensure imported at top)
-                        # validated_domain_specific_details_model = MembraneSpecificDetailsSchema.model_validate(final_details_for_processing)
                         logger.warning(
-                            f"MembraneSpecificDetailsSchema validation not fully active in this example for Paper ID {paper_id}.")
-                        entry_domain_details_passed_status = True  # Placeholder
+                            f"MembraneSpecificDetailsSchema validation not fully implemented. Paper ID {paper_id}.")
+                        entry_domain_details_passed_status = True
                     elif current_domain == "in2o3_tco":
                         validated_domain_specific_details_model = TCOSpecificDetailsSchema.model_validate(
                             final_details_for_processing)
@@ -154,12 +145,11 @@ def parse_llm_response(
                     else:
                         logger.warning(
                             f"No specific Pydantic 'Details' schema for domain: {current_domain}. Paper ID {paper_id}, Material: {material_name_for_stats}.")
-                        entry_domain_details_passed_status = True  # No schema to fail against
+                        entry_domain_details_passed_status = True
 
                     if validated_domain_specific_details_model:
                         details_to_store_in_final_output = validated_domain_specific_details_model.model_dump(
-                            exclude_none=True, by_alias=True
-                        )
+                            exclude_none=True, by_alias=True)
                 except ValidationError as e_details:
                     logger.error(
                         f"Pydantic Validation Error for '{current_domain}' Details (Material: {material_name_for_stats}, Paper ID {paper_id}): {e_details.errors()}")
@@ -167,11 +157,6 @@ def parse_llm_response(
                     entry_domain_details_passed_status = False
                 finally:
                     time_details_validation_seconds = time.time() - time_start_details_val
-            else:  # Pydantic domain-specific validation is disabled
-                logger.info(
-                    f"Pydantic Domain-Specific Details Validation SKIPPED for Paper ID {paper_id}, Material: {material_name_for_stats}")
-                # `details_to_store_in_final_output` is already `final_details_for_processing`
-                # `entry_domain_details_passed_status` is already "SKIPPED"
 
             paper_stats["domain_specific_validation_results"].append({
                 "material_name": material_name_for_stats,
@@ -180,15 +165,14 @@ def parse_llm_response(
                 "time_details_validation_seconds": time_details_validation_seconds
             })
 
-            # Add to final list only if passed (or if validation was skipped)
             if entry_domain_details_passed_status is True or entry_domain_details_passed_status == "SKIPPED":
                 paper_stats["count_entries_passing_domain_details_validation"] += 1
                 parsed_material_entries_for_paper.append({
                     "meta_source_paper": {
                         "doi": paper_meta.get("doi", "N/A_DOI"),
-                        "title": paper_meta.get("retrieved_title", "Unknown Title"),
-                        "journal": paper_meta.get("retrieved_journal", "Unknown Journal"),
-                        "year": paper_meta.get("retrieved_year", "Unknown Year"),
+                        "title": meta_title,
+                        "journal": meta_journal,
+                        "year": meta_year,
                         "original_filename": paper_meta.get("filename", ""),
                         "local_path": paper_meta.get("local_path", "")
                     },
@@ -202,11 +186,9 @@ def parse_llm_response(
     except Exception as e:
         logger.error(f"Overall parsing or Pydantic validation failure for Paper ID {paper_id}: {e}", exc_info=True)
         paper_stats["overall_parsing_exception"] = str(e)
-        if paper_stats["raw_llm_response_parseable_as_json"] and \
-                (paper_stats["top_level_validation_passed"] is not False and paper_stats[
-                    "top_level_validation_passed"] != "SKIPPED") and \
-                not paper_stats["top_level_validation_errors"]:
-            paper_stats["top_level_validation_errors"] = [{"type": "GeneralExceptionInParser", "msg": str(e)}]
+        if paper_stats["raw_llm_response_parseable_as_json"] and paper_stats[
+            "top_level_validation_passed"] is True and not paper_stats["top_level_validation_errors"]:
+            paper_stats["top_level_validation_errors"] = [{"type": type(e).__name__, "msg": str(e)}]
         return [], paper_stats
 
     return parsed_material_entries_for_paper, paper_stats
