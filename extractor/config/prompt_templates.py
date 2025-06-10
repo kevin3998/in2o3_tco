@@ -72,128 +72,109 @@ Input Text:
 # This would be in your src/config/prompt_templates.py
 
 # --- In2O3 TCO Prompt (Refined and Complete) ---
-IN2O3_TCO_PROMPT_EN = """You are given the cleaned full text of a paper on Indium Oxide (In2O3) based materials, doped to become Transparent Conducting Oxides (TCOs).
-Please extract structured information for **each distinct TCO composition or sample described with unique properties/fabrication conditions in the text**.
+# --- In2O3 TCO Prompt (FINAL CORRECTED VERSION) ---
+IN2O3_TCO_PROMPT_EN = """You are an expert academic extraction assistant specializing in materials science. You will be given the full text of a paper on Indium Oxide (In2O3) based Transparent Conducting Oxides (TCOs).
+Your task is to extract structured information for **each distinct TCO composition or sample that has unique properties or fabrication conditions described in the text**.
 
-For each distinct In2O3-based TCO material/sample, extract and return the following categories of information (omit any missing category or sub-field if the information is not present):
+For each distinct material/sample, you MUST extract the following categories of information. If information for a category or a specific sub-field is not present, omit that key from the output.
 
 1.  **Design**:
-    * HostMaterial: (e.g., "In2O3").
-    * PrimaryDopant: This MUST BE A SINGLE JSON OBJECT describing the main dopant. Include its "Element" (e.g., "Sn") and "Concentration_text" (e.g., "5 at.%"). If multiple elements seem equally primary (e.g., "Ti and W co-doped In2O3"), select ONE as PrimaryDopant and list other(s) under "CoDopants". If no specific primary dopant, this can be an empty object {{}} or omitted.
-    * CoDopants: This MUST BE A LIST OF JSON OBJECTS if co-dopants are present. Each object should have "Element" and "Concentration_text". If none, provide an empty list [] or omit. DO NOT use a simple string here.
-    * TargetStoichiometry: (e.g., "In(2-x)SnxO3", "Target: In2O3 with 1 wt% WO3").
-    * MaterialDescriptionSource: (e.g., "Commercial ITO target (99.99% purity)").
+    * `HostMaterial`: (e.g., "In2O3").
+    * `PrimaryDopant`: This MUST BE A SINGLE JSON OBJECT describing the main dopant. Include its `Element` (e.g., "Sn") and `Concentration_text` (e.g., "5 at.%", "Target: 10 wt.% SnO2"). If no specific primary dopant is mentioned, this can be an empty object `{{}}`.
+    * `CoDopants`: This MUST BE A LIST OF JSON OBJECTS if co-dopants are present. Each object must have `Element` and `Concentration_text`. If none, provide an empty list `[]`.
+    * `TargetStoichiometry`: (e.g., "In(2-x)SnxO3", "Target: In2O3 with 1 wt% WO3").
+    * `MaterialDescriptionSource`: (e.g., "Commercial ITO target (99.99% purity)").
 
 2.  **Fabrication**:
-    * DepositionMethod: (e.g., "DC Magnetron Sputtering").
-    * SubstrateMaterial: (e.g., "Glass (Corning Eagle)").
-    * PrecursorMaterialsText: (For sol-gel, CVD, ALD etc.).
-    * TargetMaterialText: (For sputtering, PLD etc., e.g., "ITO ceramic target (90 wt% In2O3, 10 wt% SnO2)").
-    * DepositionParameters: This SHOULD BE A JSON OBJECT with specific keys like "BasePressure", "WorkingPressure", "DepositionTemperature", "GasAtmosphere", "GasFlowRates", "DepositionPower".
-    * DepositionParametersTextSummary: If ONLY a general descriptive statement about deposition (e.g., "low-temperature deposition") is found AND specific parameters for the `DepositionParameters` object are NOT available, put the statement here. If specific parameters are extracted into the `DepositionParameters` object, omit this summary field or leave it null.
-    * AnnealingConditions: This SHOULD BE A JSON OBJECT with specific keys like "Temperature", "Atmosphere", "Duration".
-    * AnnealingConditionsTextSummary: If ONLY a general descriptive statement about annealing is found AND specific parameters for the `AnnealingConditions` object are NOT available, put the statement here. If specific parameters are extracted into `AnnealingConditions` object, omit this summary field or leave it null.
-    * FilmThicknessText: (e.g., "150 nm", including measurement method if specified).
+    * `DepositionMethod`: (e.g., "DC Magnetron Sputtering").
+    * `SubstrateMaterial`: (e.g., "Glass (Corning Eagle)").
+    * `TargetMaterialText`: For sputtering/PLD, extract the full description (e.g., "Ceramic target of In2O3 with 10 wt.% SnO2").
+    * `DepositionParameters`: This MUST BE A JSON OBJECT. Extract specific key-value pairs like `BasePressure`, `WorkingPressure`, `DepositionTemperature`, `GasAtmosphere`, `GasFlowRates`, `DepositionPower`.
+    * `DepositionParametersTextSummary`: Use this field ONLY if specific parameters for the `DepositionParameters` object are NOT available, but a general description (e.g., "films were deposited at low temperature") is. If specific parameters are extracted, OMIT this summary field.
+    * `AnnealingConditions`: This MUST BE A JSON OBJECT with keys like `Temperature`, `Atmosphere`, `Duration`.
+    * `AnnealingConditionsTextSummary`: Use this field ONLY if specific parameters for the `AnnealingConditions` object are NOT available. If specific parameters are extracted, OMIT this summary field.
+    * `FilmThicknessText`: Extract the full thickness description as text (e.g., "approx. 150 nm", "100-1200 nm").
 
 3.  **Performance**:
-    * Resistivity: (e.g., "3.5 x 10^-4 Ω·cm").
-    * SheetResistance: (e.g., "10 Ω/sq").
-    * CarrierConcentration: (e.g., "6.2 x 10^20 cm⁻³").
-    * CarrierType: (e.g., "n-type", "p-type", if mentioned alongside carrier concentration or Hall mobility).
-    * HallMobility: (e.g., "45 cm²/Vs").
-    * AverageTransmittance: (For average values over a range, e.g., ">90% in visible range (400-700nm)").
-    * TransmittanceAt550nm: (For specific wavelength values, e.g., "92% at 550 nm").
-    * OpticalTransmittanceDescription: If only a general textual description of transmittance is available (e.g., "High in visible and near-infrared regions", "Decreases with Sn doping"), put it here. Prioritize extracting specific values into AverageTransmittance or TransmittanceAt550nm if possible.
-    * OpticalBandGapText: (Eg) (e.g., "3.75 eV (Tauc plot)").
-    * WorkFunctionText: (Φ) (e.g., "4.8 eV (UPS)").
-    * FigureOfMerit: (Type and value, e.g., "Haacke's FoM: 15 x 10^-3 Ω⁻¹").
-    * Haze: (e.g., "< 1%").
-    * CrystalStructure: (e.g., "Cubic bixbyite In2O3", "Amorphous", "Preferred (222) orientation").
-    * GrainSize: (e.g., "30-50 nm").
-    * SurfaceRoughnessRMS: (e.g., "0.5 nm (RMS)").
+    * **CRITICAL:** All performance metrics MUST be nested within their corresponding sub-objects (`ElectricalProperties`, `OpticalProperties`, etc.) as shown in the example.
+    * `ElectricalProperties`: A JSON object containing:
+        * `Resistivity`: (e.g., "3.5 x 10^-4 Ω·cm").
+        * `SheetResistance`: (e.g., "10 Ω/sq").
+        * `CarrierConcentration`: (e.g., "6.2 x 10^20 cm⁻³").
+        * `HallMobility`: (e.g., "45 cm²/Vs").
+        * `CarrierType`: (e.g., "n-type").
+    * `OpticalProperties`: A JSON object containing:
+        * `AverageTransmittance`: For average values (e.g., ">90% in visible range (400-700nm)").
+        * `TransmittanceAt550nm`: For specific values (e.g., "92% at 550 nm").
+        * `OpticalBandGapText`: Extract the full text value (e.g., "3.75 eV (Tauc plot)").
+        * `OpticalTransmittanceDescription`: Use for general textual descriptions (e.g., "High in visible and near-infrared regions") if specific values are not available.
+        * `Haze`: (e.g., "< 1%").
+    * `StructuralProperties`: A JSON object containing:
+        * `CrystalStructure`: (e.g., "Cubic bixbyite", "Amorphous").
+        * `PreferredOrientation`: (e.g., "(222)").
+        * `GrainSize`: (e.g., "30-50 nm").
+    * `OtherPerformanceMetrics`: A JSON object containing:
+        * `WorkFunctionText`: (e.g., "4.8 eV (UPS)").
+        * `FigureOfMeritValue`: (e.g., "15 x 10^-3 Ω⁻¹").
+        * `SurfaceRoughnessRMS`: (e.g., "0.5 nm (RMS)").
 
 4.  **Application**:
-    * PotentialApplicationArea: (e.g., "Transparent electrode for perovskite solar cells").
-    * DevicePerformance: (If TCO used in a device and its performance reported, e.g., "Solar cell efficiency (PCE): 18.5%").
+    * `PotentialApplicationArea`: (e.g., "Transparent electrode for perovskite solar cells").
+    * `DevicePerformance`: If used in a device and performance is reported (e.g., "Solar cell efficiency (PCE): 18.5%").
 
-Strictly implement the following requirements:
-1.  Return a strict JSON object. The root of this object MUST contain an "output" key, and its value MUST be a list. Each item in the "output" list corresponds to one TCO material/sample.
-    Example Structure:
+**Strictly implement the following requirements:**
+1.  **JSON Format:** Return a single strict JSON object. The root of this object MUST be an `"output"` key, and its value MUST be a list of material entries. Do not include any extra text or markdown backticks.
+2.  **Data Specificity:** Extract data that corresponds ONLY to a specific, unique material or sample's synthesis and characterization as described in the paper. If the text contains general review tables listing typical properties for a class of materials (e.g., a summary of different TCOs), **DO NOT** use that data to populate the fields for a specific experimental sample mentioned elsewhere.
+3.  **Field Nesting:** All performance metrics MUST be nested inside their respective sub-objects (`ElectricalProperties`, `OpticalProperties`, `StructuralProperties`, `OtherPerformanceMetrics`) as shown in the example below. Do not place fields like `Resistivity` or `HallMobility` directly under the `Performance` object.
+4.  **Omit Missing Information:** If a category, sub-object, or field is not mentioned in the text for a specific material, omit that key entirely from the JSON output. Do not use `null` or empty strings for missing information.
+
+**Example of Desired Output Structure:**
+{{
+  "output": [
     {{
-      "output": [
-        {{
-          "MaterialName": "Sn-doped In2O3 (10 wt% SnO2 in target)", // Example: Descriptive material name
-          "Details": {{
-            "Design": {{
-              "HostMaterial": "In2O3",
-              "PrimaryDopant": {{ "Element": "Sn", "Concentration_text": "Target: 10 wt.% SnO2" }},
-              "CoDopants": [], // Empty list if no co-dopants
-              "TargetStoichiometry": "In2O3 with 10 wt.% SnO2 in target"
-            }},
-            "Fabrication": {{
-              "DepositionMethod": "DC Magnetron Sputtering",
-              "SubstrateMaterial": "Glass",
-              "TargetMaterialText": "Ceramic target of In2O3 with 10 wt.% SnO2",
-              "DepositionParameters": {{ // Populated object
-                "WorkingPressure": "0.4 Pa",
-                "DepositionTemperature": "Room Temperature",
-                "GasAtmosphere": "Ar (20 sccm), O2 (0.1 sccm)",
-                "DepositionPower": "100W"
-              }},
-              // DepositionParametersTextSummary would be omitted or null here
-              "AnnealingConditions": {{ // Populated object
-                "Temperature": "300°C",
-                "Atmosphere": "N2",
-                "Duration": "1 hour"
-              }},
-              "FilmThicknessText": "180 nm"
-            }},
-            "Performance": {{
-              "Resistivity": "2.5 x 10^-4 Ω·cm",
-              "CarrierConcentration": "7.5 x 10^20 cm⁻³",
-              "CarrierType": "n-type",
-              "HallMobility": "33 cm²/Vs",
-              "AverageTransmittance": ">85% (400-800 nm)",
-              "OpticalBandGapText": "3.85 eV",
-              "CrystalStructure": "Polycrystalline cubic bixbyite"
-            }},
-            "Application": {{
-              "PotentialApplicationArea": "Transparent electrodes for solar cells"
-            }}
+      "MaterialName": "ICO:H film (post-annealed)",
+      "Details": {{
+        "Design": {{
+          "HostMaterial": "In2O3",
+          "PrimaryDopant": {{ "Element": "Ce", "Concentration_text": "3 wt % CeO2 in target" }},
+          "CoDopants": [{{ "Element": "H", "Concentration_text": "1.3 at.%" }}],
+          "MaterialDescriptionSource": "ICO pellets (Sumitomo Metal Mining)"
+        }},
+        "Fabrication": {{
+          "DepositionMethod": "dc arc-discharge ion plating (IP)",
+          "SubstrateMaterial": "Corning Eagle XG glass",
+          "DepositionParameters": {{
+            "DepositionTemperature": "150 °C",
+            "WorkingPressure": "0.45 Pa",
+            "GasAtmosphere": "Ar, O2 (8–13 vol %), H2 (1.0 vol %)"
+          }},
+          "AnnealingConditions": {{
+            "Temperature": "200 °C",
+            "Duration": "30 min",
+            "Atmosphere": "air"
+          }},
+          "FilmThicknessText": "100-nm-thick"
+        }},
+        "Performance": {{
+          "ElectricalProperties": {{
+            "HallMobility": "130–145 cm2 V-1 s-1",
+            "CarrierType": "n-type"
+          }},
+          "StructuralProperties": {{
+            "CrystalStructure": "bixbyte In2O3 polycrystalline structure"
+          }},
+          "OtherPerformanceMetrics": {{
+            "SurfaceRoughnessRMS": "0.296 nm"
           }}
         }},
-        {{
-          "MaterialName": "In2O3 film (Low Temp RPD)",
-          "Details": {{
-            "Design": {{
-              "HostMaterial": "In2O3",
-              "PrimaryDopant": {{}} // No specific dopant mentioned as primary
-            }},
-            "Fabrication": {{
-              "DepositionMethod": "Reactive Plasma Deposition (RPD)",
-              "SubstrateMaterial": "Glass",
-              "DepositionParameters": {{}}, // No specific parameters, summary below
-              "DepositionParametersTextSummary": "Films were prepared by RPD at substrate temperatures below 60°C using Ar, O2, and H2O vapor.",
-              "AnnealingConditions": {{ // Only some specific annealing info
-                "Temperature": "250°C",
-                "Atmosphere": "Vacuum"
-              }},
-              // AnnealingConditionsTextSummary could be "Vacuum annealing was performed." if Temperature/Atmosphere were not extractable
-              "FilmThicknessText": "220 nm"
-            }},
-            "Performance": {{
-              "OpticalTransmittanceDescription": "High transmittance in visible and NIR." // General description
-            }},
-            "Application": {{}} // Empty if no specific application details
-          }}
+        "Application": {{
+          "PotentialApplicationArea": "Transparent electrodes for solar cells"
         }}
-      ]
+      }}
     }}
-Only return the JSON. Do not include any extra explanations or markdown backticks.
-2.  Inside each entry in the "output" list, use "MaterialName" as the descriptive name. The "Details" object holds the 4 categories.
-3.  If a category or sub-field is not mentioned, omit it or use null if appropriate for an optional field that has no value.
-4.  For `DepositionParameters` and `AnnealingConditions`: prioritize populating their structured JSON objects with specific key-value data. If such specific data is NOT available and only a general textual description exists, place that text in `DepositionParametersTextSummary` or `AnnealingConditionsTextSummary` respectively, and the corresponding structured object (`DepositionParameters` or `AnnealingConditions`) should then be an empty object `{{}}` or omitted.
-5.  For `PrimaryDopant`, provide a single JSON object. For `CoDopants`, provide a LIST of JSON objects; if none, use an empty list `[]`.
+  ]
+}}
+
 Input Text:
 {text}
 """

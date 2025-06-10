@@ -1364,3 +1364,24 @@
 2025-06-03 17:01:47,595 - INFO - [query_crossref_by_doi:95] - CrossRef: Successfully fetched metadata for DOI: 10.1063/1.3116542
 2025-06-03 17:01:47,635 - INFO - [load_from_folder:919] - Successfully processed from folder: 083547_1_online(科研通-ablesci.com).pdf
 2025-06-03 17:01:47,635 - INFO - [load_from_folder:909] - Attempting to process from folder: data\raw_data\papers\09  硅异质结太阳能电池用透TCO的现状及趋势.pdf
+2025-06-06 16:52:32,831 - INFO - [main:961] - Running in IDE_RUN mode with hardcoded defaults.
+2025-06-06 16:52:32,831 - INFO - [main:1003] - Using email for CrossRef API: chenlintao3998@gmail.com
+2025-06-06 16:52:32,831 - INFO - [main:1018] - Processing PDFs from folder: papers_test
+2025-06-06 16:52:32,841 - INFO - [load_from_folder:909] - Attempting to process from folder: papers_test/1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-06 16:52:32,892 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.jpowsour.2021.230101
+2025-06-06 16:52:32,902 - INFO - [load_from_folder:919] - Successfully processed from folder: 1-s2.0-S037877532100625X-main--IWTO.pdf
+2025-06-06 16:52:32,902 - INFO - [load_from_folder:909] - Attempting to process from folder: papers_test/1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-06 16:52:32,957 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1016/j.solmat.2024.112727
+2025-06-06 16:52:32,969 - INFO - [load_from_folder:919] - Successfully processed from folder: 1-s2.0-S0927024824000394-main- Ti、W、Ga、Mo、Zr-H.pdf
+2025-06-06 16:52:32,970 - INFO - [load_from_folder:909] - Attempting to process from folder: papers_test/1.2711768.pdf
+2025-06-06 16:52:33,007 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1063/1.2711768
+2025-06-06 16:53:17,977 - WARNING - [run_with_timeout:813] - Function process_pdf_entry timed out after 45s for PDF: papers_test/1.2711768.pdf
+2025-06-06 16:53:17,983 - WARNING - [load_from_folder:921] - Failed or timed out processing from folder: 1.2711768.pdf
+2025-06-06 16:53:17,984 - INFO - [load_from_folder:909] - Attempting to process from folder: papers_test/Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-06 16:53:18,067 - INFO - [_find_doi_in_text:626] - Found DOI in text: 10.1002/pssc.201600095
+2025-06-06 16:53:18,118 - INFO - [load_from_folder:919] - Successfully processed from folder: Effect of Nb doping on the structural, morphological, optical and electrical properties of RF magnetron sputtered In2O3 nanostru(科研通-ablesci.com).pdf
+2025-06-06 16:53:18,118 - INFO - [load_from_folder:923] - Folder processing summary: Successfully processed 3/4 PDFs.
+2025-06-06 16:53:18,118 - INFO - [main:1034] - Total papers processed (pre-deduplication): 3
+2025-06-06 16:53:18,118 - INFO - [main:1035] - Total unique papers to be saved: 3
+2025-06-06 16:53:18,119 - INFO - [save_paper_list:934] - Successfully saved 3 processed paper entries to data/processed_text/processed_test.json
+2025-06-06 16:53:18,119 - INFO - [main:1040] - PDF processing pipeline finished.

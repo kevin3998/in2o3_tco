@@ -112,8 +112,8 @@ if __name__ == "__main__":
 
     # PyCharm直接运行时可以修改这里的默认值，或通过命令行参数覆盖
     # Pycharm run example:
-    SCRIPT_INPUT_FILE = "data/extracted_json/pydantic/structured2.json"
-    SCRIPT_OUTPUT_FILE = "data/extracted_json/pydantic/material_data_only2.json"
+    SCRIPT_INPUT_FILE = "data/extracted_json/pydantic/structured_info.json"
+    SCRIPT_OUTPUT_FILE = "data/extracted_json/pydantic/material_data_only.json"
     SCRIPT_TARGET_KEY = "extracted_material_data"
     extract_data_fields(SCRIPT_INPUT_FILE, SCRIPT_OUTPUT_FILE, SCRIPT_TARGET_KEY)
 

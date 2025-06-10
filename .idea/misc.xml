@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="C:\Anaconda3\envs\membrane" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="C:\Anaconda3\envs\in2o3" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="in2o3_env" project-jdk-type="Python SDK" />
 </project>

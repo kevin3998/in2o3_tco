@@ -155,28 +155,56 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run the academic paper information extraction pipeline.")
-    parser.add_argument("--input_file", type=str, required=True,
-                        help="Path to the input JSON file containing paper data (output from PDF processor).")
-    parser.add_argument("--output_file", type=str, required=True,
-                        help="Path to save the extracted structured information (final valid data).")
-    parser.add_argument("--stats_file", type=str, default="data/extraction_validation_stats.json",
-                        help="Path to save the detailed Pydantic validation statistics.")
-    parser.add_argument("--checkpoint_file", type=str, default="checkpoint_extraction.json",
-                        help="Path for the checkpoint file.")
-    parser.add_argument("--domain", type=str, default="in2o3_tco",
-                        help="The domain for extraction (e.g., 'membrane', 'in2o3_tco').")
-    parser.add_argument("--language", type=str, default="en", help="Language of the papers and prompts (e.g., 'en').")
-    parser.add_argument("--model_name", type=str, default="DeepSeek-R1-671B",
-                        help="Name of the LLM to use for extraction.")
-    parser.add_argument(
-        "--disable_pydantic_validation",
-        action="store_true",
-        help="If set, Pydantic schema validation will be skipped."
-    )
+    # =================================================================================
+    # === Configuration Block for PyCharm/IDE Run ===
+    # Set to True to use the settings below.
+    # Set to False to use command-line arguments when running from the terminal.
+    IDE_RUN_CONFIG = True
+    # =================================================================================
 
-    args = parser.parse_args()
-    logger.info(f"Starting extraction pipeline with args: {args}")
+    args = None
+    if IDE_RUN_CONFIG:
+        logger.info("--- RUNNING IN IDE MODE: Using parameters defined in the script. ---")
+        # Use a simple class to mimic the argparse.Namespace object
+        class Args:
+            pass
+        args = Args()
+
+        # --- SET YOUR PARAMETERS FOR IDE RUNS HERE ---
+        args.input_file = "../data/processed_text/processed_papers.json"
+        args.output_file = "../data/extracted_json/pydantic/structured_info.json"
+        args.stats_file = "../data/extracted_json/pydantic/stats.json"
+        args.checkpoint_file = "checkpoint_extraction.json"
+        args.domain = "in2o3_tco"
+        args.language = "en"
+        args.model_name = "DeepSeek-R1-671B"
+        args.disable_pydantic_validation = False
+        # ---------------------------------------------
+
+    else:
+        logger.info("--- RUNNING IN COMMAND-LINE MODE: Parsing arguments from terminal. ---")
+        parser = argparse.ArgumentParser(description="Run the academic paper information extraction pipeline.")
+        parser.add_argument("--input_file", type=str, required=True,
+                            help="Path to the input JSON file containing paper data (output from PDF processor).")
+        parser.add_argument("--output_file", type=str, required=True,
+                            help="Path to save the extracted structured information (final valid data).")
+        parser.add_argument("--stats_file", type=str, default="data/extraction_validation_stats.json",
+                            help="Path to save the detailed Pydantic validation statistics.")
+        parser.add_argument("--checkpoint_file", type=str, default="checkpoint_extraction.json",
+                            help="Path for the checkpoint file.")
+        parser.add_argument("--domain", type=str, default="in2o3_tco",
+                            help="The domain for extraction (e.g., 'membrane', 'in2o3_tco').")
+        parser.add_argument("--language", type=str, default="en", help="Language of the papers and prompts (e.g., 'en').")
+        parser.add_argument("--model_name", type=str, default="DeepSeek-R1-671B",
+                            help="Name of the LLM to use for extraction.")
+        parser.add_argument(
+            "--disable_pydantic_validation",
+            action="store_true",
+            help="If set, Pydantic schema validation will be skipped."
+        )
+        args = parser.parse_args()
+
+    logger.info(f"Starting extraction pipeline with args: {vars(args)}")
 
     pydantic_enabled = not args.disable_pydantic_validation
     if not pydantic_enabled:

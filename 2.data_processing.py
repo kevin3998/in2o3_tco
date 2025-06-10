@@ -946,9 +946,9 @@ def main():
     # --- Default values for PyCharm execution (Modify these as needed) ---
     # These are only used if IDE_RUN is True
     IDE_DEFAULT_SOURCE_TYPE = "folder"  # Options: "folder" or "db"
-    IDE_DEFAULT_FOLDER_PATH = "data/raw_data"  # Path to your PDF folder
+    IDE_DEFAULT_FOLDER_PATH = "papers_test"  # Path to your PDF folder
     IDE_DEFAULT_DB_PATH = "your_database.db"  # Path to your SQLite DB
-    IDE_DEFAULT_OUTPUT_PATH = "data/processed_text/processed_papers.json"
+    IDE_DEFAULT_OUTPUT_PATH = "data/processed_text/processed_test.json"
     IDE_DEFAULT_EMAIL = "chenlintao3998@gmail.com"  # IMPORTANT: Set your email
 
     # --- Variables to hold determined paths and settings ---

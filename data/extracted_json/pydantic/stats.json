@@ -1,0 +1,4646 @@
+{
+  "summary_rates": {
+    "total_papers_attempted": 138,
+    "json_parse_rate_percent": 99.27536231884058,
+    "top_level_schema_validation_rate_per_parseable_paper_percent": 99.27007299270073,
+    "entry_survival_after_top_level_processing_percent": 99.54233409610984,
+    "domain_specific_details_validation_rate_per_entry_percent": 100.0,
+    "end_to_end_entry_success_rate_percent": 99.54233409610984,
+    "total_initial_entries_from_llm": 437,
+    "total_fully_validated_entries": 435
+  },
+  "per_paper_details": [
+    {
+      "paper_id": "local.1694769443.1784051.cf272d63",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.00011706352233886719,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO (Sn-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002079010009765625
+        },
+        {
+          "material_name": "IO:H (Hydrogen-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.8160552978515625e-05
+        },
+        {
+          "material_name": "ICO:H (Ce, H co-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 3.695487976074219e-05
+        },
+        {
+          "material_name": "IWO:H (W, H co-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 3.0994415283203125e-05
+        },
+        {
+          "material_name": "Amorphous IZO (In-Zn Oxide)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 3.0040740966796875e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1689158015.3802135.82547528",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.888938903808594e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "poly-In2O3 film (deposited at 200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00029587745666503906
+        },
+        {
+          "material_name": "In2O3:W film (WO3:1 wt.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.915496826171875e-05
+        },
+        {
+          "material_name": "spc-In2O3:H film (post-annealed at 250°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.700920104980469e-05
+        },
+        {
+          "material_name": "spc-In2O3:Ce,H film (CeO2:3 wt.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.031990051269531e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1689132672.746959.bd20b246",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.507469177246094e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (post-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004029273986816406
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1689131305.2434588.81e367fb",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.700920104980469e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO (95:5 SnO2:In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00033283233642578125
+        },
+        {
+          "material_name": "IWO (99:1 In2O3:WO3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013780593872070312
+        },
+        {
+          "material_name": "SCOT",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.7738037109375e-05
+        },
+        {
+          "material_name": "SRE",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.507469177246094e-05
+        },
+        {
+          "material_name": "IO (Undoped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1689817436.904722.1e8c0bce",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.507469177246094e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "SCOT films",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00043702125549316406
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1116/1.4824163",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.103515625e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "(In1−xMnx)2O3 (x=0)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0005729198455810547
+        },
+        {
+          "material_name": "(In1−xMnx)2O3 (x=0.04)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001010894775390625
+        },
+        {
+          "material_name": "(In1−xMnx)2O3 (x=0.05)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.202957153320312e-05
+        },
+        {
+          "material_name": "(In1−xMnx)2O3 (x=0.085)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.508827209472656e-05
+        },
+        {
+          "material_name": "(In1−xMnx)2O3 (x=0.137)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.698204040527344e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1698833246.717294.5f54fe17",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.702278137207031e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Mo (TRE)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002989768981933594
+        },
+        {
+          "material_name": "In2O3:Mo (PLD)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.893013000488281e-05
+        },
+        {
+          "material_name": "In2O3:Ti (PLD)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.3882598876953125e-05
+        },
+        {
+          "material_name": "In2O3:H (Hydrogen-doped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.601478576660156e-05
+        },
+        {
+          "material_name": "In2O3:W (DCMS)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.7206878662109375e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1688947203.3092051.4d7ca195",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 7,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.511543273925781e-05,
+      "num_entries_after_top_level_validation": 7,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO (97/3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003409385681152344
+        },
+        {
+          "material_name": "ITO (90/10)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.274482727050781e-05
+        },
+        {
+          "material_name": "IO:H",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.891654968261719e-05
+        },
+        {
+          "material_name": "IWO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.008148193359375e-05
+        },
+        {
+          "material_name": "AZO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.793571472167969e-05
+        },
+        {
+          "material_name": "IMO:H",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.982948303222656e-05
+        },
+        {
+          "material_name": "ICO:H",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.890296936035156e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 7,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.3116542",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 12,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.009506225585938e-05,
+      "num_entries_after_top_level_validation": 12,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IO-43",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032520294189453125
+        },
+        {
+          "material_name": "IO-4",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001049041748046875
+        },
+        {
+          "material_name": "IZrO-1",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.890296936035156e-05
+        },
+        {
+          "material_name": "IZrO-27",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.079673767089844e-05
+        },
+        {
+          "material_name": "IZrO film (pure Ar)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0017628669738769531
+        },
+        {
+          "material_name": "ITO-4",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014591217041015625
+        },
+        {
+          "material_name": "ITO-5",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.198883056640625e-05
+        },
+        {
+          "material_name": "ITZO-5",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.2928924560546875e-05
+        },
+        {
+          "material_name": "ITZO-3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.506111145019531e-05
+        },
+        {
+          "material_name": "ITZO-005",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.673004150390625e-05
+        },
+        {
+          "material_name": "ITO-004",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.2438507080078125e-05
+        },
+        {
+          "material_name": "IZrO-027",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.00543212890625e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 12,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722908546.2123451.d2ff0996",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.507469177246094e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO film (RT deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032591819763183594
+        },
+        {
+          "material_name": "ITO film (RT deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011920928955078125
+        },
+        {
+          "material_name": "ICO film (200°C deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010895729064941406
+        },
+        {
+          "material_name": "ITO film (200°C deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.0108642578125e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729136820.1176118.a1b4e389",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.316734313964844e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Mo-doped In2O3 (IMO) thin film via mist-CVD",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032782554626464844
+        },
+        {
+          "material_name": "Sputtered IMO thin film (optimized)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012493133544921875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729648824.5258265.cda4c3b5",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.604194641113281e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWTO film (HT, O2-medium)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0006749629974365234
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1735783272.1018622.62cad40",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.00016880035400390625,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3 epitaxial film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00018906593322753906
+        },
+        {
+          "material_name": "0.7% Nb-doped In2O3 epitaxial film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.104873657226562e-05
+        },
+        {
+          "material_name": "3.2% Nb-doped In2O3 epitaxial film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.507469177246094e-05
+        },
+        {
+          "material_name": "9.1% Nb-doped In2O3 epitaxial film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.935264587402344e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729137112.1018622.93a081db",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1975250244140625e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3 epitaxial thin film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002770423889160156
+        },
+        {
+          "material_name": "0.7 at% Nb-doped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.012222290039062e-05
+        },
+        {
+          "material_name": "3.2 at% Nb-doped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.678436279296875e-05
+        },
+        {
+          "material_name": "9.1 at% Nb-doped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.033348083496094e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722910216.697484.dce386cc",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.0008571147918701172,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (QH=1.0%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0005209445953369141
+        },
+        {
+          "material_name": "ICO film (QH=0%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011515617370605469
+        },
+        {
+          "material_name": "ITO film (QH=0%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.510185241699219e-05
+        },
+        {
+          "material_name": "IO:H film (QH=1.0%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.604194641113281e-05
+        },
+        {
+          "material_name": "IO:H film (QH=2.0%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.723403930664062e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729069200.5176980.b833c198",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.91278076171875e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO:H film (fH2 0%, L-Fgas)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003809928894042969
+        },
+        {
+          "material_name": "IMO:H film (fH2 0.1%, L-Fgas)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011801719665527344
+        },
+        {
+          "material_name": "IMO:H film (fH2 0.2%, L-Fgas)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.58306884765625e-05
+        },
+        {
+          "material_name": "IMO:H film (fH2 0.2%, H-Fgas)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.605552673339844e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722590000.1876442.e5059056",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.00010395050048828125,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:VO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0005068778991699219
+        },
+        {
+          "material_name": "In-Hg-Sn-O:VO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00017690658569335938
+        },
+        {
+          "material_name": "In-Zn-Sn-O",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014400482177734375
+        },
+        {
+          "material_name": "In-Ni-Sn-O:VO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.4849853515625e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.1687984",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.794929504394531e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Mo (1 wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00044798851013183594
+        },
+        {
+          "material_name": "In2O3:Mo (2 wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00019598007202148438
+        },
+        {
+          "material_name": "In2O3:Mo (3 wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001399517059326172
+        },
+        {
+          "material_name": "In2O3:Mo (4 wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.012222290039062e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.1995957",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.316734313964844e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Titanium-doped In2O3 (combinatorial)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003409385681152344
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.2711768",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 9.083747863769531e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Zr-doped In2O3 film (x=0.022)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00039768218994140625
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.3224946",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Mo-doped In2O3 (0.5 at.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003361701965332031
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1694161731.2791508.6dcf3272",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.887580871582031e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO:H film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003190040588378906
+        },
+        {
+          "material_name": "IMO:H+SnOx bilayer film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001399517059326172
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1728876856.323040.94bcbd56",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO (Sn-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003688335418701172
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1694163949.2542867.3aab0351",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.4849853515625e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO:H film (1% H2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00043272972106933594
+        },
+        {
+          "material_name": "ITO film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00017905235290527344
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1694161731.2791508.130aa0f5",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.792213439941406e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped SnOx film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003170967102050781
+        },
+        {
+          "material_name": "IMO:H+SnOx bilayer film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.225440979003906e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1143/JJAP.39.6422",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.888938903808594e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Fluorine-doped In2O3 films (InF3 pellets)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032782554626464844
+        },
+        {
+          "material_name": "Fluorine-doped In2O3 films (CF4 gas)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.581710815429688e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722323098.843750.9edc82a2",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.4080276489257812e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722322752.843750.1b6f679f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.8848648071289062e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1731920138.715457.d6c3633",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.104873657226562e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Example 1",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0009450912475585938
+        },
+        {
+          "material_name": "Example 4",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013327598571777344
+        },
+        {
+          "material_name": "Example 5",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.392333984375e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.3467780",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.4080276489257812e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722222634.2219760.91e38d7f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.698204040527344e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:W",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003199577331542969
+        },
+        {
+          "material_name": "In2O3:Mo",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011110305786132812
+        },
+        {
+          "material_name": "In2O3:Zr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.295608520507812e-05
+        },
+        {
+          "material_name": "In2O3:Ti",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.318092346191406e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1007/978-981-16-2982-2",
+      "raw_llm_response_parseable_as_json": false,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": false,
+      "top_level_error_message": "LLM call failed after 3 retries: Error code: 400 - {'error': {'message': '格式错误', 'type': 'invalid_request_error', 'param': None, 'code': '400'}, 'request_id': '8c49c2a14dbbe97f'}",
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0
+    },
+    {
+      "paper_id": "local.1728982308.4054630.12537ba7",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.82012939453125e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "c-In2O3 (300°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003612041473388672
+        },
+        {
+          "material_name": "a-In2O3 (200°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001518726348876953
+        },
+        {
+          "material_name": "c-In2O3 (350°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011873245239257812
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729642280.2564075.64151810",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.314018249511719e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IZRO film (as-deposited)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001659393310546875
+        },
+        {
+          "material_name": "IZRO film (annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.985664367675781e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722841752.12174446.65dc0160",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.00011110305786132812,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "FITO (F, Sn:In2O3) 20 nm cubes",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0009829998016357422
+        },
+        {
+          "material_name": "ITO (Sn:In2O3) 1% doped 6 nm NCs",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00019598007202148438
+        },
+        {
+          "material_name": "ITO (Sn:In2O3) 10% doped 6 nm NCs",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001430511474609375
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1088/0022-3727/45/29/295304",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.125999450683594e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "4 at% Mn-doped In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002989768981933594
+        },
+        {
+          "material_name": "5 at% Mn-doped In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.392333984375e-05
+        },
+        {
+          "material_name": "8.5 at% Mn-doped In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.508827209472656e-05
+        },
+        {
+          "material_name": "13.7 at% Mn-doped In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.486343383789062e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1143/APEX.1.015002",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.793571472167969e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Post-annealed ITiO thin film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004279613494873047
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722909362.458600.41319093",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.886222839355469e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (post-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00030994415283203125
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721024878.458600.d0f55edc",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.6253204345703125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (post-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00036907196044921875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1689132596.770093.7e38b13f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.5789947509765625e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (post-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004019737243652344
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1730963234.278376.48e02ba4",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.794929504394531e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Ge",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003478527069091797
+        },
+        {
+          "material_name": "In2O3:Si (Si/In=0.07)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015306472778320312
+        },
+        {
+          "material_name": "In2O3:Sn (ITO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011897087097167969
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/5.0118814",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.0994415283203125e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721972120.2878661.11fec4d4",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.295608520507812e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003750324249267578
+        },
+        {
+          "material_name": "Sn-doped In2O3 (2 mol.% Sn)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00016307830810546875
+        },
+        {
+          "material_name": "Mo-doped In2O3 (2 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000141143798828125
+        },
+        {
+          "material_name": "Mo-doped In2O3 (5 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011181831359863281
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1723026358.1495982.adbfc778",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.082389831542969e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "As-sputtered NiOx film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00036406517028808594
+        },
+        {
+          "material_name": "Post-annealed NiOx (250°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001647472381591797
+        },
+        {
+          "material_name": "O2-plasma treated NiOx (250°C annealed + 30W plasma)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014281272888183594
+        },
+        {
+          "material_name": "KCl-passivated NiOx (250°C annealed + KCl + 30W plasma)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012993812561035156
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1735794902.912251.6571fc7e",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.888938903808594e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In1.9375Y0.0625O3 (d-site substitution)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032806396484375
+        },
+        {
+          "material_name": "In1.875Y0.125O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011086463928222656
+        },
+        {
+          "material_name": "In2Y0.0625O3 (Yi interstitial)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010395050048828125
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1728958026.5037183.f0a03a8c",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.9087066650390625e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722504226.2353295.17a171e0",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.222724914550781e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "CsPb0.875Cu0.125Br3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003859996795654297
+        },
+        {
+          "material_name": "CsPb0.25Cu0.75Br3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001621246337890625
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729143224.1269434.223d8557",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.20159912109375e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3 film (N0)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00041794776916503906
+        },
+        {
+          "material_name": "1 wt% Nb-doped In2O3 film (N1)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00017070770263671875
+        },
+        {
+          "material_name": "2 wt% Nb-doped In2O3 film (N2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001728534698486328
+        },
+        {
+          "material_name": "3 wt% Nb-doped In2O3 film (N3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014281272888183594
+        },
+        {
+          "material_name": "5 wt% Nb-doped In2O3 film (N5)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013518333435058594
+        },
+        {
+          "material_name": "7 wt% Nb-doped In2O3 film (N7)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012373924255371094
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722324944.2340005.ae0312ce",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.009506225585938e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "spc-In2O3:H",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004260540008544922
+        },
+        {
+          "material_name": "spc-In2O3:Ce,H (1 wt.% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001900196075439453
+        },
+        {
+          "material_name": "spc-In2O3:W,H (1 wt.% WO3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00021409988403320312
+        },
+        {
+          "material_name": "spc-In2O3:Sn,H (1 wt.% SnO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00017499923706054688
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729070054.2114489.92862b2e",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 9.179115295410156e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:W",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003218650817871094
+        },
+        {
+          "material_name": "In2O3:Zr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.082389831542969e-05
+        },
+        {
+          "material_name": "In2O3:Mo",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.605552673339844e-05
+        },
+        {
+          "material_name": "In2O3:Ti",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.602836608886719e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1107/S2052520617010988",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.9087066650390625e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722218952.481427.e6cc41a9",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.817413330078125e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "EIO thin film deposited at 25°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003170967102050781
+        },
+        {
+          "material_name": "EIO thin film deposited at 100°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001087188720703125
+        },
+        {
+          "material_name": "EIO thin film deposited at 200°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00023603439331054688
+        },
+        {
+          "material_name": "EIO thin film deposited at 300°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001342296600341797
+        },
+        {
+          "material_name": "EIO thin film deposited at 400°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1088/1367-2630/13/8/085014",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.079673767089844e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 single crystal",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003559589385986328
+        },
+        {
+          "material_name": "Ga2O3 single crystal",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014495849609375
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722215756.579740.9874e9ed",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": false,
+      "top_level_validation_errors": [
+        {
+          "type": "missing",
+          "loc": [
+            "Output",
+            0,
+            "MaterialName"
+          ],
+          "msg": "Field required",
+          "input": {
+            "Details": {
+              "Design": {
+                "HostMaterial": "In2O3",
+                "PrimaryDopant": {
+                  "Element": "Gd",
+                  "Concentration_text": "2 atomic weight percent"
+                },
+                "CoDopants": [],
+                "TargetStoichiometry": "In2O3 with 2 at.% Gd",
+                "MaterialDescriptionSource": "Target prepared by solid-state reaction of In2O3 and Gd2O3"
+              },
+              "Fabrication": {
+                "DepositionMethod": "Pulsed Laser Deposition",
+                "SubstrateMaterial": "quartz",
+                "TargetMaterialText": "Cold-pressed and sintered target of In2O3 with 2 at.% Gd2O3",
+                "DepositionParameters": {
+                  "BasePressure": "1.2×10^-3 Pa",
+                  "DepositionTemperature": "600 °C",
+                  "WorkingPressure": "1.2×10^-3 Pa (vacuum)",
+                  "GasAtmosphere": "Vacuum",
+                  "LaserPulseRate": "10 Hz",
+                  "LaserEnergy": "300 mJ/pulse"
+                },
+                "FilmThicknessText": "approximately 100 nm"
+              },
+              "Performance": {
+                "ElectricalProperties": {
+                  "Resistivity": "2.80×10^-4 Ω·cm",
+                  "CarrierConcentration": "1.74×10^20 cm⁻³",
+                  "HallMobility": "128 cm²/Vs",
+                  "CarrierType": "n-type"
+                },
+                "StructuralProperties": {
+                  "CrystalStructure": "Cubic bixbyite",
+                  "GrainSize": "~23 nm",
+                  "SurfaceRoughnessRMS": "1.7 nm"
+                },
+                "OpticalProperties": {
+                  "AverageTransmittance": "High transparency (increases with growth temperature)"
+                }
+              }
+            }
+          },
+          "url": "https://errors.pydantic.dev/2.11/v/missing"
+        },
+        {
+          "type": "missing",
+          "loc": [
+            "Output",
+            1,
+            "MaterialName"
+          ],
+          "msg": "Field required",
+          "input": {
+            "Details": {
+              "Design": {
+                "HostMaterial": "In2O3",
+                "PrimaryDopant": {
+                  "Element": "Gd",
+                  "Concentration_text": "2 atomic weight percent"
+                },
+                "CoDopants": [],
+                "TargetStoichiometry": "In2O3 with 2 at.% Gd",
+                "MaterialDescriptionSource": "Target prepared by solid-state reaction of In2O3 and Gd2O3"
+              },
+              "Fabrication": {
+                "DepositionMethod": "Pulsed Laser Deposition",
+                "SubstrateMaterial": "quartz",
+                "TargetMaterialText": "Cold-pressed and sintered target of In2O3 with 2 at.% Gd2O3",
+                "DepositionParameters": {
+                  "BasePressure": "1.2×10^-3 Pa",
+                  "DepositionTemperature": "400 °C",
+                  "WorkingPressure": "5.0×10^-3 Pa",
+                  "GasAtmosphere": "O2 at 5.0×10^-3 Pa",
+                  "LaserPulseRate": "10 Hz",
+                  "LaserEnergy": "300 mJ/pulse"
+                },
+                "FilmThicknessText": "approximately 100 nm"
+              },
+              "Performance": {
+                "ElectricalProperties": {
+                  "Resistivity": "3.02×10^-4 Ω·cm",
+                  "CarrierConcentration": "1.63×10^20 cm⁻³",
+                  "HallMobility": "128 cm²/Vs",
+                  "CarrierType": "n-type"
+                },
+                "StructuralProperties": {
+                  "CrystalStructure": "Cubic bixbyite",
+                  "SurfaceRoughnessRMS": "1.7 nm"
+                },
+                "OpticalProperties": {
+                  "AverageTransmittance": "High transparency (increases with oxygen pressure)"
+                }
+              }
+            }
+          },
+          "url": "https://errors.pydantic.dev/2.11/v/missing"
+        }
+      ],
+      "time_top_level_validation_seconds": 0.0005667209625244141,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722236488.483705.6143a118",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.29425048828125e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Hf-doped In2O3 (IHFO) film (as-deposited)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003948211669921875
+        },
+        {
+          "material_name": "Hf-doped In2O3 (IHFO) film (annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00018095970153808594
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1733895330.8819042.b8e2159f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.8160552978515625e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Zr-doped In2O3 (IZrO) films",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000347137451171875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.2337281",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.723403930664062e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Zr-doped In2O3 (0.3–0.5 at.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00039505958557128906
+        },
+        {
+          "material_name": "Undoped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015807151794433594
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/5.0103270",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.984306335449219e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Multiple-doped In2O3 film (2% oxygen)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003540515899658203
+        },
+        {
+          "material_name": "ITO film (comparison)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.295608520507812e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722311566.4421850.5855faaf",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.4836273193359375e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Zr-doped In2O3 (IZrO) film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00041794776916503906
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729579060.5825862.65ba203f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1021575927734375e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Ce,H film (N2 annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000335693359375
+        },
+        {
+          "material_name": "In2O3:Ce,H film (air annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013399124145507812
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.7567/APEX.8.015505",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.601478576660156e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO:H film (post-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003352165222167969
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729755562.322758.60fcb61",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.792213439941406e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Cr film (7.5e-6 Torr O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00029087066650390625
+        },
+        {
+          "material_name": "In2O3:Cr film (7.5e-5 Torr O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012183189392089844
+        },
+        {
+          "material_name": "In2O3:Cr film (7.5e-3 Torr O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.198883056640625e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729495826.1820504.6ff99186",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.985664367675781e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IHFO film (16 sccm Ar, as-deposited)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00036406517028808594
+        },
+        {
+          "material_name": "IHFO film (16 sccm Ar, annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010609626770019531
+        },
+        {
+          "material_name": "IHFO film (807 nm thick)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.605552673339844e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1745283998.3898982.27bc2232",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.389617919921875e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IPO (0% P)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003409385681152344
+        },
+        {
+          "material_name": "IPO (3% P)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010085105895996094
+        },
+        {
+          "material_name": "IPO (6% P)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.295608520507812e-05
+        },
+        {
+          "material_name": "IPO (9% P)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.604194641113281e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1734923466.1386043.1f909149",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 8,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.890296936035156e-05,
+      "num_entries_after_top_level_validation": 8,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003178119659423828
+        },
+        {
+          "material_name": "Sn-doped In2O3 (2 mol.% Sn)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011897087097167969
+        },
+        {
+          "material_name": "Mo-doped In2O3 (1 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.987022399902344e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (2 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.604194641113281e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (3 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.0067901611328125e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (4 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (5 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.4836273193359375e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (7 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.7206878662109375e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 8,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1728983398.1386043.4ac85825",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 8,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.914138793945312e-05,
+      "num_entries_after_top_level_validation": 8,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0006170272827148438
+        },
+        {
+          "material_name": "Sn-doped In2O3 (2 mol.% Sn)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.605552673339844e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (1 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.508827209472656e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (2 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.507469177246094e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (3 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.1975250244140625e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (4 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.673004150390625e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (5 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        },
+        {
+          "material_name": "Mo-doped In2O3 (7 mol.% Mo)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.673004150390625e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 8,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1732091890.1451028.247a67fa",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.106231689453125e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITGZO film (RT deposition, 200°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004410743713378906
+        },
+        {
+          "material_name": "ITGZO film (70°C deposition, 200°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00020194053649902344
+        },
+        {
+          "material_name": "ITGZO film (160°C deposition, 200°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015091896057128906
+        },
+        {
+          "material_name": "ITGZO film (RT deposition, 350°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013589859008789062
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729499694.8903849.eb57e89c",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.507469177246094e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "0-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00032520294189453125
+        },
+        {
+          "material_name": "0.01-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011801719665527344
+        },
+        {
+          "material_name": "0.02-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.009506225585938e-05
+        },
+        {
+          "material_name": "0.03-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.698204040527344e-05
+        },
+        {
+          "material_name": "0.04-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.6743621826171875e-05
+        },
+        {
+          "material_name": "0.05-IGTO/COP",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.602836608886719e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/5.0175864",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.125999450683594e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ti-doped In2O3 film (co-sputtered, 400°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000308990478515625
+        },
+        {
+          "material_name": "Ti-doped In2O3 film (co-sputtered, 200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.58306884765625e-05
+        },
+        {
+          "material_name": "Ti-doped In2O3 film (co-sputtered, RT)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.176399230957031e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729558080.2297367.4890c2c7",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.318092346191406e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITiO RF 1 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000335693359375
+        },
+        {
+          "material_name": "ITiO RF 5 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.584426879882812e-05
+        },
+        {
+          "material_name": "ITiO RF 10 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.866455078125e-05
+        },
+        {
+          "material_name": "ITiO PDC 1 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.91278076171875e-05
+        },
+        {
+          "material_name": "ITiO PDC 5 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.7220458984375e-05
+        },
+        {
+          "material_name": "ITiO PDC 10 mTorr",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004601478576660156
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729149580.244338.713ccc9b",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.508827209472656e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO(7.0) film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000370025634765625
+        },
+        {
+          "material_name": "IWO(5.0) film (1.0 vol.% O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00016689300537109375
+        },
+        {
+          "material_name": "ITO film (10 wt.% SnO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013494491577148438
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729561662.6324002.8825f89d",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.079673767089844e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO (0.5 wt% WO3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00047516822814941406
+        },
+        {
+          "material_name": "ITO (10 wt% SnO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013780593872070312
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740650064.7264758.d96cb279",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.389617919921875e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO thin films",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00036978721618652344
+        },
+        {
+          "material_name": "ITO thin films",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015497207641601562
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729586620.2564075.a73a9e29",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.887580871582031e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IZRO film (as-deposited)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00030303001403808594
+        },
+        {
+          "material_name": "IZRO film (annealed at 200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010704994201660156
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1557/JMR.2005.0184",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.887580871582031e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO films",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00034689903259277344
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729147100.528175.cb751d09",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ta-doped In2O3 (InTaO) film (350°C, pO2=0 Torr)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0006010532379150391
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729155682.3568912.e04c5a5c",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1975250244140625e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:H2O (as-deposited, state II)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0009851455688476562
+        },
+        {
+          "material_name": "In2O3:H (post-annealed in air, state IV)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010085105895996094
+        },
+        {
+          "material_name": "In2O3:H (post-annealed in UHV, state V)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001957416534423828
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1723514060.3953702.6ddcd890",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.078315734863281e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO substrate",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003058910369873047
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721996272.4187854.f194db7b",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.91278076171875e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMoO/mica film (optimal growth condition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003657341003417969
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1016/B978-0-08-102096-8.00015-X",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.103515625e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 single crystal (LASSCGM, as-grown)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0005052089691162109
+        },
+        {
+          "material_name": "In2O3 single crystal (LASSCGM, annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001499652862548828
+        },
+        {
+          "material_name": "In2O3 epitaxial film on YSZ (MBE)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.605552673339844e-05
+        },
+        {
+          "material_name": "Mg-doped In2O3 film (as-grown)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.103515625e-05
+        },
+        {
+          "material_name": "Mg-doped In2O3 film (annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.935264587402344e-05
+        },
+        {
+          "material_name": "H-doped In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.887580871582031e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1745292658.2281362.b8612260",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.887580871582031e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In-B-O (0% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00021767616271972656
+        },
+        {
+          "material_name": "In-B-O (2% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.202957153320312e-05
+        },
+        {
+          "material_name": "In-B-O (5% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010180473327636719
+        },
+        {
+          "material_name": "In-B-O (10% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.489059448242188e-05
+        },
+        {
+          "material_name": "In-B-O (15% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.58306884765625e-05
+        },
+        {
+          "material_name": "In-B-O/ZrO2 TFTs (10% B)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.083747863769531e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722568424.3144153.8283d380",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 9,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.0013229846954345703,
+      "num_entries_after_top_level_validation": 9,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Undoped In2O3 TFT (300°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00022292137145996094
+        },
+        {
+          "material_name": "Undoped In2O3 TFT (350°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.389617919921875e-05
+        },
+        {
+          "material_name": "Undoped In2O3 TFT (400°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.673004150390625e-05
+        },
+        {
+          "material_name": "Pr:In2O3 TFT (300°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.082389831542969e-05
+        },
+        {
+          "material_name": "Pr:In2O3 TFT (350°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        },
+        {
+          "material_name": "Pr:In2O3 TFT (400°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.291534423828125e-05
+        },
+        {
+          "material_name": "Tb:In2O3 TFT (300°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.506111145019531e-05
+        },
+        {
+          "material_name": "Tb:In2O3 TFT (350°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.673004150390625e-05
+        },
+        {
+          "material_name": "Tb:In2O3 TFT (400°C annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.1961669921875e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 9,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722237874.1751612.48927",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.29425048828125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Mo-doped In2O3 (IMO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002827644348144531
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721996272.1015180.59fb1a9a",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1975250244140625e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IOH film (vacuum annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003502368927001953
+        },
+        {
+          "material_name": "IOH film (air-annealed, low ptot)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011014938354492188
+        },
+        {
+          "material_name": "IOH film (FLA-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.724761962890625e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/5.0134699",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.867813110351562e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 (undoped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002899169921875
+        },
+        {
+          "material_name": "In2O3:Sn (1% and 10% Sn-doped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.799003601074219e-05
+        },
+        {
+          "material_name": "In2O3:Mg (0.5% and 1% Mg-doped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.389617919921875e-05
+        },
+        {
+          "material_name": "(In1−xGax)2O3 (x=17.8%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.698204040527344e-05
+        },
+        {
+          "material_name": "ZnO (undoped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.128715515136719e-05
+        },
+        {
+          "material_name": "β-Ga2O3 (1% Si-doped)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012612342834472656
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1734945598.886529.b70b23bb",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.033348083496094e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002980232238769531
+        },
+        {
+          "material_name": "In1.5Sc0.5O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.796287536621094e-05
+        },
+        {
+          "material_name": "In1.5Y0.5O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.009506225585938e-05
+        },
+        {
+          "material_name": "In1.5La0.5O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.4836273193359375e-05
+        },
+        {
+          "material_name": "In1.5Ac0.5O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.410743713378906e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722823514.267348.7f90a0f2",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 (Bixbyite structure)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002830028533935547
+        },
+        {
+          "material_name": "Ga2O3 (Bixbyite structure)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.512901306152344e-05
+        },
+        {
+          "material_name": "Al2O3 (Corundum structure)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.177757263183594e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1734917876.2437321.703f18f7",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.0067901611328125e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO:H film (1% H2 concentration)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003452301025390625
+        },
+        {
+          "material_name": "Conventional ITO film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010085105895996094
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1734918186.2437321.bb12c5c3",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.506111145019531e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO:H film (1% H2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004329681396484375
+        },
+        {
+          "material_name": "ITO film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013303756713867188
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722914042.5809106.47da9375",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.1961669921875e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Ce,H (2 wt% CeO2, N2 annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00030994415283203125
+        },
+        {
+          "material_name": "In2O3:Ce,H (2 wt% CeO2, air annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.5789947509765625e-05
+        },
+        {
+          "material_name": "In2O3:H (0 wt% Ce, N2 annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.38690185546875e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722071130.5809119.6cbb15e4",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.699562072753906e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Ce,H (1 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000431060791015625
+        },
+        {
+          "material_name": "In2O3:Ce,H (2 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015211105346679688
+        },
+        {
+          "material_name": "In2O3:H (0 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012803077697753906
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1730961884.342071.ce56b32e",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.7697296142578125e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ge-doped In2O3 (5.5% Ge, 200°C deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003101825714111328
+        },
+        {
+          "material_name": "Ge-doped In2O3 (6.0% Ge, 20°C deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.891654968261719e-05
+        },
+        {
+          "material_name": "Ge-doped In2O3 (7.0% Ge, 200°C deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.389617919921875e-05
+        },
+        {
+          "material_name": "ITO (9.3% Sn-doped In2O3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.3882598876953125e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1730959754.342071.c4e68296",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.984306335449219e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ge-doped In2O3 film (5.5% Ge, 200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003120899200439453
+        },
+        {
+          "material_name": "Ge-doped In2O3 film (6.0% Ge, 20°C, amorphous)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.799003601074219e-05
+        },
+        {
+          "material_name": "Ge-doped In2O3 film (7.0% Ge, 200°C, amorphous)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00047326087951660156
+        },
+        {
+          "material_name": "ITO film (9.3% Sn, 200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.894371032714844e-05
+        },
+        {
+          "material_name": "ITO film (20°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.793571472167969e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729560532.427611.4b678477",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.507469177246094e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO film (2.8 wt.% W)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003008842468261719
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729229566.573610.9eb9a6bd",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.291534423828125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO film (optimal parameters)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002930164337158203
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721996274.8727338.d279f347",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.817413330078125e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "a-IGZO (Control)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003159046173095703
+        },
+        {
+          "material_name": "a-IGZO with Cu/Mo/IGZO contact",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012612342834472656
+        },
+        {
+          "material_name": "a-IGZO with Cu/Ti/IGZO contact",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00016498565673828125
+        },
+        {
+          "material_name": "a-IGZO with Cu/MoTi/IGZO contact",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.222724914550781e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722497938.2772350.c5ebde2a",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.982948303222656e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ce:In2O3 nanocrystals",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003046989440917969
+        },
+        {
+          "material_name": "Ce/Sn-codoped In2O3 nanocrystals",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010704994201660156
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1735788206.147521.f823b75b",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.316734313964844e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "InTaO film (2 wt% Ta2O5)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003540515899658203
+        },
+        {
+          "material_name": "InTaO film (5 wt% Ta2O5)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.799003601074219e-05
+        },
+        {
+          "material_name": "InTaO film (10 wt% Ta2O5)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.985664367675781e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721197586.2729249.721d921e",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 8.606910705566406e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Cr 0W ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00040912628173828125
+        },
+        {
+          "material_name": "Cr 20W ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00023698806762695312
+        },
+        {
+          "material_name": "Cr 30W ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010895729064941406
+        },
+        {
+          "material_name": "Cr 40W ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001468658447265625
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1729045864.168499.1158582d",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.2928924560546875e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITiO film (2.4 at.% Ti)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00028896331787109375
+        },
+        {
+          "material_name": "ITiO film (0.8 at.% Ti)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001049041748046875
+        },
+        {
+          "material_name": "ITiO film (1.6 at.% Ti)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.82012939453125e-05
+        },
+        {
+          "material_name": "ITO film (10 wt.% Sn)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.6743621826171875e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1745289874.1308251.38432566",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.412101745605469e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "InO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00028705596923828125
+        },
+        {
+          "material_name": "In5B",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.797645568847656e-05
+        },
+        {
+          "material_name": "In10B",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.008148193359375e-05
+        },
+        {
+          "material_name": "In20B",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.1021575927734375e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722911136.1051633.cfb16039",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.409385681152344e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003180503845214844
+        },
+        {
+          "material_name": "ICO film (optimized)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013828277587890625
+        },
+        {
+          "material_name": "ITO control",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010180473327636719
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722907776.856187.2a8e592f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.221366882324219e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ce-doped In2O3 (ICO) film (annealed at 210°C for 50 min)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004680156707763672
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1730960108.288422.b12c5f9e",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 9.226799011230469e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO:Nb film (RT)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00025200843811035156
+        },
+        {
+          "material_name": "ITO:Nb film (100°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.012222290039062e-05
+        },
+        {
+          "material_name": "ITO:Nb film (150°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.510185241699219e-05
+        },
+        {
+          "material_name": "ITO:Nb film (200°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.771087646484375e-05
+        },
+        {
+          "material_name": "ITO:Nb film (250°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.698204040527344e-05
+        },
+        {
+          "material_name": "ITO:Nb film (300°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.106231689453125e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1728629394.2027719.e50439c2",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.888938903808594e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Dual-Active Layer a-IGZO/a-IZO TFT",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0002930164337158203
+        },
+        {
+          "material_name": "IGZO film (RF sputtered)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010585784912109375
+        },
+        {
+          "material_name": "IGZO film (Pulsed-DC sputtered)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.508827209472656e-05
+        },
+        {
+          "material_name": "ITO/IGZO TFT",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.91278076171875e-05
+        },
+        {
+          "material_name": "IGZO TFT with CYTOP passivation",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.982948303222656e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1143/JJAP.48.05EC04",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.7220458984375e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003941059112548828
+        },
+        {
+          "material_name": "ITO:Yb film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012373924255371094
+        },
+        {
+          "material_name": "ITO:Sm film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011610984802246094
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1737357704.936647.2eca2837",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.266334533691406e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721996272.729779.eebd97a9",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.459785461425781e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Mo-doped In2O3 film (500°C, 1.0e-3 mbar O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0010840892791748047
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722824156.5087936.4f83ee2",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.698204040527344e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Combinatorial (InxGa1−x)2O3 film with Si doping",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003681182861328125
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722568602.517703.42bd0554",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 4.887580871582031e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "InPrWO (1 mol% W, annealed at 350 ℃)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00028896331787109375
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.2048829",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.316734313964844e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO film (x=0.028, SiO2, 400°C)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0009307861328125
+        },
+        {
+          "material_name": "IWO film (4 mtorr O2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014090538024902344
+        },
+        {
+          "material_name": "IWO film (525°C, SiO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010609626770019531
+        },
+        {
+          "material_name": "IWO film (525°C, YSZ)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010204315185546875
+        },
+        {
+          "material_name": "IWO film (x=0.016, high fluence)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.703636169433594e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722225408.5375889.f5e275a",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.316734313964844e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO:Tb (2.3 at.%) annealed at 550°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003650188446044922
+        },
+        {
+          "material_name": "AZO:Tb (0.6 at.%) annealed at 400°C",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013589859008789062
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1088/1361-6463/",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.888938903808594e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ce- and H-codoped In2O3 films (ICO:H)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00040721893310546875
+        },
+        {
+          "material_name": "W-doped In2O3 (IWO) film (5 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015211105346679688
+        },
+        {
+          "material_name": "W-doped In2O3 (IWO) film (30 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.179115295410156e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722224928.1518423.2c9b5dd6",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.4836273193359375e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Tb:In2O3 (5 wt.% Tb4O7)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003199577331542969
+        },
+        {
+          "material_name": "Pure In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010800361633300781
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722299722.2337398.653eb9a8",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.600120544433594e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Poly-In2O3:W film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015473365783691406
+        },
+        {
+          "material_name": "Poly-In2O3:Ce film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.103515625e-05
+        },
+        {
+          "material_name": "spc-In2O3:H film (low H)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.125999450683594e-05
+        },
+        {
+          "material_name": "spc-In2O3:H film (high H)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.482269287109375e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722236264.2337398.c42c38e8",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 6,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.818771362304688e-05,
+      "num_entries_after_top_level_validation": 6,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Poly-In2O3:W (1 wt% WO3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0004980564117431641
+        },
+        {
+          "material_name": "Poly-In2O3:Ce (2 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.890296936035156e-05
+        },
+        {
+          "material_name": "spc-In2O3:H (Low H)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.1975250244140625e-05
+        },
+        {
+          "material_name": "spc-In2O3:H (High H)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0008058547973632812
+        },
+        {
+          "material_name": "spc-In2O3:W,H (1 wt% WO3)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.799003601074219e-05
+        },
+        {
+          "material_name": "spc-In2O3:Ce,H (2 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.792213439941406e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 6,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1746778292.272641.883db9d0",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.914138793945312e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 (0 wt% TiO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003352165222167969
+        },
+        {
+          "material_name": "1 wt% TiO2–In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00013518333435058594
+        },
+        {
+          "material_name": "0.5 wt% TiO2–In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010204315185546875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1063/1.1646468",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1021575927734375e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "2 wt% Mo-doped In2O3 on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003960132598876953
+        },
+        {
+          "material_name": "4 wt% Mo-doped In2O3 on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00024700164794921875
+        },
+        {
+          "material_name": "1 wt% Mo-doped In2O3 on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000125885009765625
+        },
+        {
+          "material_name": "Undoped In2O3 on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.893013000488281e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "10.1109/WCPEC.2003.1305213",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.987022399902344e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IMO sputtered 4 wt% Mo on Corning 7059 glass",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00039124488830566406
+        },
+        {
+          "material_name": "IMO PLD 2 wt% Mo on Corning 1737 glass",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001862049102783203
+        },
+        {
+          "material_name": "IMO PLD 2 wt% Mo on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001430511474609375
+        },
+        {
+          "material_name": "IMO PLD 4 wt% Mo on Corning 1737 glass",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011992454528808594
+        },
+        {
+          "material_name": "IMO PLD 4 wt% Mo on YSZ",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010395050048828125
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721971834.1720001.7c355ffc",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.0994415283203125e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1698830187.616722.64559ea5",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 7,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.0001289844512939453,
+      "num_entries_after_top_level_validation": 7,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Crystalline ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0008640289306640625
+        },
+        {
+          "material_name": "a-In2O3",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00018310546875
+        },
+        {
+          "material_name": "a-IGO2.5",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015211105346679688
+        },
+        {
+          "material_name": "a-IGO5",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011801719665527344
+        },
+        {
+          "material_name": "a-GITO60",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011610984802246094
+        },
+        {
+          "material_name": "a-GITO80",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011706352233886719
+        },
+        {
+          "material_name": "Crystalline ITO with ZnO ALD capping",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010275840759277344
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 7,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1733895736.1819177.f83c8a5c",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 3,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 6.29425048828125e-05,
+      "num_entries_after_top_level_validation": 3,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Zr film (100 nm, air-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003771781921386719
+        },
+        {
+          "material_name": "In2O3:Zr film (50 nm, air-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00014901161193847656
+        },
+        {
+          "material_name": "In2O3:Zr film (15 nm, H2-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012493133544921875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 3,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722067496.767260.2c114f67",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 8,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.1975250244140625e-05,
+      "num_entries_after_top_level_validation": 8,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ICO film (5 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00017595291137695312
+        },
+        {
+          "material_name": "ICO film (10 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.602836608886719e-05
+        },
+        {
+          "material_name": "ICO film (20 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.982948303222656e-05
+        },
+        {
+          "material_name": "ICO film (30 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.220008850097656e-05
+        },
+        {
+          "material_name": "ICO film (50 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.1961669921875e-05
+        },
+        {
+          "material_name": "ICO film (100 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.315376281738281e-05
+        },
+        {
+          "material_name": "ICO film (150 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.100799560546875e-05
+        },
+        {
+          "material_name": "ICO film (300 nm)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 4.315376281738281e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 8,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1698830186.330724.ec8115e5",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 7,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.677078247070312e-05,
+      "num_entries_after_top_level_validation": 7,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:Ce:H (ICO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003161430358886719
+        },
+        {
+          "material_name": "In2O3:H (IOH)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010991096496582031
+        },
+        {
+          "material_name": "In2O3:H (IOH)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.489059448242188e-05
+        },
+        {
+          "material_name": "In2O3:Zn (IZO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.226799011230469e-05
+        },
+        {
+          "material_name": "In2O3:Sn (ITO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.512901306152344e-05
+        },
+        {
+          "material_name": "In2O3:Sn (ITO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.988380432128906e-05
+        },
+        {
+          "material_name": "TiO2:Nb",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.202957153320312e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 7,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740647072.4302120.5dbc8940",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.915496826171875e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3:H film (100℃ deposition)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003631114959716797
+        },
+        {
+          "material_name": "In2O3:H film (150℃ deposition, 600 cycles)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00016689300537109375
+        },
+        {
+          "material_name": "In2O3:H film (200℃ post-annealed in N2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001499652862548828
+        },
+        {
+          "material_name": "In2O3:H film (air-annealed)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011897087097167969
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721375708.3827332.9233eea4",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.602836608886719e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "poly-In2O3 film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003020763397216797
+        },
+        {
+          "material_name": "In2O3:W film (WO3: 1 wt.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.606910705566406e-05
+        },
+        {
+          "material_name": "In2O3:Ce film (CeO2: 1-3 wt.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 6.723403930664062e-05
+        },
+        {
+          "material_name": "spc-In2O3:H film",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 7.128715515136719e-05
+        },
+        {
+          "material_name": "spc-In2O3:Ce,H film (CeO2: 1-3 wt.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 5.602836608886719e-05
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722389966.1320948.a48aa54",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 22,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.0001239776611328125,
+      "num_entries_after_top_level_validation": 22,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "IWO film (Li et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00021028518676757812
+        },
+        {
+          "material_name": "InHfO film (Wang et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011801719665527344
+        },
+        {
+          "material_name": "InTiO film (Yao et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011897087097167969
+        },
+        {
+          "material_name": "InMnO film (Liu et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010323524475097656
+        },
+        {
+          "material_name": "InZnO film (Jothibas et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010609626770019531
+        },
+        {
+          "material_name": "InZrO film (Manoharan et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.131431579589844e-05
+        },
+        {
+          "material_name": "IMO film (Kaleemulla et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011277198791503906
+        },
+        {
+          "material_name": "IVO film (Islam et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.489059448242188e-05
+        },
+        {
+          "material_name": "ITO film (Najwa et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.489059448242188e-05
+        },
+        {
+          "material_name": "ITO film (Raoufi and Taherniya)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011396408081054688
+        },
+        {
+          "material_name": "ITO film (Zhu et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.988380432128906e-05
+        },
+        {
+          "material_name": "IMO film (Meng et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001862049102783203
+        },
+        {
+          "material_name": "IMO film (Jeon et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011706352233886719
+        },
+        {
+          "material_name": "IMO film (Han Donggang et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001049041748046875
+        },
+        {
+          "material_name": "IMO film (Yuan Guo et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.584426879882812e-05
+        },
+        {
+          "material_name": "IWO film (Li Yuan et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.393692016601562e-05
+        },
+        {
+          "material_name": "IWO film (Vishwanath et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.202957153320312e-05
+        },
+        {
+          "material_name": "IWO film (Gan et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.298324584960938e-05
+        },
+        {
+          "material_name": "InTiO film (Chaoumead et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 9.202957153320312e-05
+        },
+        {
+          "material_name": "InTiO film (Kim et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.916854858398438e-05
+        },
+        {
+          "material_name": "InTaO film (Xu Lei et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 8.916854858398438e-05
+        },
+        {
+          "material_name": "IVO film (Huibin Li et al.)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00016498565673828125
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 22,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740647268.9843725.274196fc",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740708888.2039403.d06da675",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.8848648071289062e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740981008.10365780.67a6cb44",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 4,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.605552673339844e-05,
+      "num_entries_after_top_level_validation": 4,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO (In2O3:SnO2=97:3wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00041484832763671875
+        },
+        {
+          "material_name": "ITO (In2O3:SnO2=90:10wt%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00018596649169921875
+        },
+        {
+          "material_name": "ITO (In2O3:SnO2=97:3wt%) post-annealed",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000164031982421875
+        },
+        {
+          "material_name": "HJT Solar Cell with Optimized ITO",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011110305786132812
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 4,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1739521482.19576389.a57da47f",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.218650817871094e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1730957916.501218.82e6654d",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 3.0279159545898438e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1722216304.340855.c08cd81b",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.6743621826171875e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ce-doped In2O3 (ICO) film (x=3 at.%)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003991127014160156
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721199148.2350601.24b192bc",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 5,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 7.605552673339844e-05,
+      "num_entries_after_top_level_validation": 5,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "In2O3 (x = 0.0)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00040411949157714844
+        },
+        {
+          "material_name": "In1.975Cr0.025O3 (x = 0.025)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00015616416931152344
+        },
+        {
+          "material_name": "In1.95Cr0.05O3 (x = 0.05)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001289844512939453
+        },
+        {
+          "material_name": "In1.925Cr0.075O3 (x = 0.075)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012183189392089844
+        },
+        {
+          "material_name": "In1.85Cr0.15O3 (x = 0.15)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0006811618804931641
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 5,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721198604.832895.1832be1",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 0,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 2.8371810913085938e-05,
+      "num_entries_after_top_level_validation": 0,
+      "domain_specific_validation_results": [],
+      "count_entries_passing_domain_details_validation": 0,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740724642.7564687.2f0fcfb9",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 9,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 0.00010585784912109375,
+      "num_entries_after_top_level_validation": 9,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "ITO 1 wt% SnO2 with TiO2/SiO2 (Microwave Sintered)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003859996795654297
+        },
+        {
+          "material_name": "ITO 2 wt% SnO2 with TiO2/SiO2 (Microwave Sintered)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001709461212158203
+        },
+        {
+          "material_name": "ITO 3 wt% SnO2 with TiO2/SiO2 (Microwave Sintered)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001380443572998047
+        },
+        {
+          "material_name": "ITO 1 wt% SnO2 (Cold Sintered + Microwave)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00012373924255371094
+        },
+        {
+          "material_name": "ITO 2 wt% SnO2 (Cold Sintered + Microwave)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001289844512939453
+        },
+        {
+          "material_name": "ITO 3 wt% SnO2 (Cold Sintered + Microwave)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011706352233886719
+        },
+        {
+          "material_name": "ITT-A (0.5 wt% Ta2O5, 0.5 wt% TiO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00011181831359863281
+        },
+        {
+          "material_name": "ITT-B (0.6 wt% Ta2O5, 0.4 wt% TiO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000102996826171875
+        },
+        {
+          "material_name": "ITC (0.5 wt% Ta2O5, 0.2 wt% TiO2, 0.3 wt% CeO2)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.00010418891906738281
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 9,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1740647082.2168021.22a3fb73",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 1,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.3882598876953125e-05,
+      "num_entries_after_top_level_validation": 1,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Ti-doped In2O3 (T100)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.000347137451171875
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 1,
+      "overall_parsing_exception": null
+    },
+    {
+      "paper_id": "local.1721982748.3480706.642267df",
+      "raw_llm_response_parseable_as_json": true,
+      "json_decode_error": null,
+      "initial_entry_count_from_llm": 2,
+      "top_level_validation_passed": true,
+      "top_level_validation_errors": null,
+      "time_top_level_validation_seconds": 5.698204040527344e-05,
+      "num_entries_after_top_level_validation": 2,
+      "domain_specific_validation_results": [
+        {
+          "material_name": "Mo-doped In2O3 (IMO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0003871917724609375
+        },
+        {
+          "material_name": "Sn-doped In2O3 (ITO)",
+          "passed": true,
+          "validation_errors": null,
+          "time_details_validation_seconds": 0.0001499652862548828
+        }
+      ],
+      "count_entries_passing_domain_details_validation": 2,
+      "overall_parsing_exception": null
+    }
+  ]
+}
