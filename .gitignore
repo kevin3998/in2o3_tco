@@ -1,0 +1,16 @@
+# Ignore model files and checkpoints
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Ignore entire results and checkpoint directories
+results/
+checkpoints/
+runs/
+
+# Ignore large compressed files
+*.zip
+*.rar
+*.7z
+*.gz
