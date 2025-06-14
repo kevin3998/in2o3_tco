@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # --- 1. 配置路径 (请仔细检查，确保这里的三个路径都是正确的) ---
 BASE_MODEL_PATH = "/Users/chenlintao/Desktop/models/Qwen3-14B"
-LORA_ADAPTER_PATH = "/results/qwen3-14b-lora-bf16_lr_2e-4_FR_CoT/final_checkpoint"
+LORA_ADAPTER_PATH = "../results/qwen3-14b-lora-bf16_lr-2e-4/final_checkpoint"
 MERGED_MODEL_OUTPUT_PATH = "/Users/chenlintao/Desktop/in2o3_tco/models/qwen3-14b-merged-diagnostics"
 
 # --- 2. 内建诊断：检查环境和路径 (这是解决问题的关键!) ---
