@@ -1,66 +1,96 @@
-# 7_merge_lora_model.py
 import os
+import sys
 import torch
-from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer
+import transformers
+import peft
+import huggingface_hub
 import logging
 
-# --- 日志设置 ---
+# --- 0. 日志和基本配置 ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# --- 1. 配置路径 (请仔细检查，确保这里的三个路径都是正确的) ---
+BASE_MODEL_PATH = "/Users/chenlintao/Desktop/models/Qwen3-14B"
+LORA_ADAPTER_PATH = "/results/qwen3-14b-lora-bf16_lr_2e-4_FR_CoT/final_checkpoint"
+MERGED_MODEL_OUTPUT_PATH = "/Users/chenlintao/Desktop/in2o3_tco/models/qwen3-14b-merged-diagnostics"
 
-# =================================================================================
-# === 1. 参数配置区 ===
-# =================================================================================
-class MergeConfig:
-    # --- 路径配置 ---
-    # 基础模型路径（您之前下载的原始Qwen2-14B模型）
-    base_model_path = "/Users/chenlintao/Desktop/models/Qwen3-14B"
+# --- 2. 内建诊断：检查环境和路径 (这是解决问题的关键!) ---
+print("=" * 50)
+print("--- 1. 开始执行内置诊断程序 ---")
+print("=" * 50)
+print(f"Python 版本: {sys.version}")
+print(f"PyTorch 版本: {torch.__version__}")
+print(f"Transformers 版本: {transformers.__version__}")
+print(f"PEFT 版本: {peft.__version__}")
+print(f"Huggingface Hub 版本: {huggingface_hub.__version__}")
+print("\n" + "-" * 50)
 
-    # LoRA适配器路径（您微调后得到的最佳断点）
-    # 请确保这个路径指向您训练输出的 final_best_checkpoint 文件夹
-    lora_adapter_path = "../results/qwen3-14b-lora-bf16/final_best_checkpoint"
+print(f"检查基础模型路径: {BASE_MODEL_PATH}")
+if not os.path.isdir(BASE_MODEL_PATH):
+    raise FileNotFoundError(f"错误: 基础模型路径不存在 -> {BASE_MODEL_PATH}")
+print("✅ 基础模型路径... OK")
+print("-" * 50)
 
-    # 合并后新模型的保存路径
-    merged_model_output_path = "../models/qwen3-14b-in2o3-tco-merged"
+print(f"检查LoRA适配器路径: {LORA_ADAPTER_PATH}")
+if not os.path.isdir(LORA_ADAPTER_PATH):
+    raise FileNotFoundError(f"错误: LoRA适配器路径不存在 -> {LORA_ADAPTER_PATH}")
+print("✅ LoRA适配器路径... OK")
+print("-" * 50)
 
+print("LoRA适配器文件夹内容:")
+try:
+    files_in_lora_dir = os.listdir(LORA_ADAPTER_PATH)
+    for f in files_in_lora_dir:
+        print(f"  - {f}")
+    if "adapter_config.json" not in files_in_lora_dir:
+        print("\n[警告] 文件夹中未找到 'adapter_config.json'!\n")
+    if not any(f.endswith((".bin", ".safetensors")) for f in files_in_lora_dir):
+        print("\n[警告] 文件夹中未找到模型权重文件 (.bin or .safetensors)!\n")
+except Exception as e:
+    print(f"错误: 无法列出文件夹内容: {e}")
 
-# =================================================================================
+print("=" * 50)
+print("--- 诊断程序结束 ---")
+print("=" * 50 + "\n")
 
-def main():
-    config = MergeConfig()
-    logging.info("--- 开始合并LoRA适配器与基础模型 ---")
+# --- 3. 主程序：加载并合并模型 ---
+try:
+    logging.info("--- 2. 开始执行模型合并 ---")
 
-    # 确保输出目录存在
-    os.makedirs(config.merged_model_output_path, exist_ok=True)
-
-    # 加载基础模型和Tokenizer
-    logging.info(f"加载基础模型: {config.base_model_path}")
-    base_model = AutoModelForCausalLM.from_pretrained(
-        config.base_model_path,
+    logging.info(f"加载基础模型: {BASE_MODEL_PATH}")
+    base_model = transformers.AutoModelForCausalLM.from_pretrained(
+        BASE_MODEL_PATH,
         torch_dtype=torch.bfloat16,
         trust_remote_code=True,
         device_map="auto"
     )
-    tokenizer = AutoTokenizer.from_pretrained(config.base_model_path, trust_remote_code=True)
+    tokenizer = transformers.AutoTokenizer.from_pretrained(BASE_MODEL_PATH, trust_remote_code=True)
+    logging.info("基础模型和分词器加载完成。")
 
-    # 加载LoRA适配器并与基础模型合并
-    logging.info(f"加载LoRA适配器: {config.lora_adapter_path}")
-    # PeftModel会自动将LoRA适配器加载到基础模型之上
-    model = PeftModel.from_pretrained(base_model, config.lora_adapter_path)
+    logging.info(f"加载PEFT LoRA适配器: {LORA_ADAPTER_PATH}")
+    # 使用最标准、最直接的方式加载适配器
+    model = peft.PeftModel.from_pretrained(
+        base_model,
+        LORA_ADAPTER_PATH,
+        is_trainable=False,
+    )
+    logging.info("LoRA适配器加载完成。")
 
     logging.info("开始合并权重...")
-    # merge_and_unload() 会将LoRA权重合并到模型自身的权重中，并卸载PEFT模块
     model = model.merge_and_unload()
     logging.info("权重合并完成。")
 
-    # 保存合并后的完整模型和Tokenizer
-    logging.info(f"保存合并后的模型到: {config.merged_model_output_path}")
-    model.save_pretrained(config.merged_model_output_path)
-    tokenizer.save_pretrained(config.merged_model_output_path)
+    logging.info(f"保存合并后的模型到: {MERGED_MODEL_OUTPUT_PATH}")
+    os.makedirs(MERGED_MODEL_OUTPUT_PATH, exist_ok=True)
+    model.save_pretrained(MERGED_MODEL_OUTPUT_PATH)
+    tokenizer.save_pretrained(MERGED_MODEL_OUTPUT_PATH)
 
-    logging.info("✅ 模型合并完成！现在您可以使用新模型进行推理部署了。")
+    print("\n" + "=" * 50)
+    print("✅✅✅ 模型合并成功！✅✅✅")
+    print(f"合并后的模型已保存至: {MERGED_MODEL_OUTPUT_PATH}")
+    print("=" * 50)
 
-
-if __name__ == "__main__":
-    main()
+except Exception as e:
+    logging.error("程序在执行期间发生致命错误！")
+    # 重新引发异常以打印完整的错误堆栈信息
+    raise e

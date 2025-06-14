@@ -36,13 +36,13 @@ class BaseConfig:
     warmup_ratio = 0.05
     logging_steps = 1
     save_strategy = "steps"
-    save_steps = 50
+    save_steps = 10
 
     # -- SFT特定参数 --
     max_seq_length = 1024
 
     # -- 其他 --
-    validation_set_size = 0.1
+    validation_set_size = 0.2
 
     # --- 断点续训开关 ---
     # True: 尝试从最新的断点恢复训练
@@ -52,9 +52,9 @@ class BaseConfig:
 
 class BF16LoRAConfig(BaseConfig):
     # 为128GB统一内存优化的配置
-    output_dir = "../results/qwen3-14b-lora-bf16_FR+CoT"
-    batch_size = 2
-    gradient_accumulation_steps = 16
+    output_dir = "../results/qwen3-14b-lora-bf16_lr-2e-4"
+    batch_size = 4
+    gradient_accumulation_steps = 8
     optimizer = "adamw_torch"
 
 
@@ -95,7 +95,7 @@ def main():
     peft_config = LoraConfig(r=config.lora_r, lora_alpha=config.lora_alpha, lora_dropout=config.lora_dropout,
                              target_modules=find_all_linear_names(model), bias="none", task_type="CAUSAL_LM")
 
-    # === 关键修正：在查找断点前，先判断输出目录是否存在 ===
+    # === 在查找断点前，先判断输出目录是否存在 ===
     last_checkpoint = None
     if config.resume_from_checkpoint:
         # 只有当输出目录存在时，才尝试在其中寻找断点
@@ -130,6 +130,7 @@ def main():
         metric_for_best_model="eval_loss",
         greater_is_better=False,
         use_cpu=False,
+        weight_decay=0.01
     )
 
     trainer = SFTTrainer(

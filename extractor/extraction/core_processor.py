@@ -1,4 +1,11 @@
 # src/extraction/core_processor.py
+"""
+Module: core_processor
+Functionality: Contains the PaperProcessor class, which orchestrates the
+               information extraction process for individual or batches of papers.
+               It handles LLM API calls, retries, checkpointing for batch processing,
+               and uses the response parser and field standardizers.
+"""
 import time
 from typing import List, Dict, Any, Tuple
 from openai import OpenAI
@@ -15,15 +22,14 @@ logger = logging.getLogger(__name__)
 class PaperProcessor:
     def __init__(self, client: OpenAI, prompt_manager: PromptManager,
                  domain_config: DomainConfig, model_name: str = "gpt-4",
-                 pydantic_validation_enabled: bool = True):  # <--- NEW PARAMETER
+                 pydantic_validation_enabled: bool = True):
         self.client = client
         self.prompt_manager = prompt_manager
         self.domain_config = domain_config
         self.model_name = model_name
-        self.pydantic_validation_enabled = pydantic_validation_enabled  # <--- STORE IT
+        self.pydantic_validation_enabled = pydantic_validation_enabled
 
     def _get_text_for_llm(self, paper_data: Dict) -> str:
-        # ... (existing method, no changes needed here) ...
         llm_text = paper_data.get("llm_ready_fulltext_cleaned", "")
         if isinstance(llm_text, str) and llm_text.strip():
             return llm_text.strip()
@@ -45,10 +51,11 @@ class PaperProcessor:
             logger.warning(f"Skipping paper {paper_id_for_log} due to empty text for LLM.")
             empty_stats = {
                 "paper_id": paper_id_for_log, "raw_llm_response_parseable_as_json": False,
+                "json_decode_error": "No text provided to LLM",
                 "initial_entry_count_from_llm": 0,
                 "top_level_validation_passed": False if self.pydantic_validation_enabled else "SKIPPED",
-                # Reflect if skipped
-                "top_level_error_message": "No text provided to LLM.",
+                "top_level_validation_errors": [{"type": "InputError", "msg": "No text provided to LLM."}],
+                "time_top_level_validation_seconds": 0.0,
                 "num_entries_after_top_level_validation": 0,
                 "domain_specific_validation_results": [],
                 "count_entries_passing_domain_details_validation": 0
@@ -64,7 +71,8 @@ class PaperProcessor:
                 response = self.client.chat.completions.create(
                     model=self.model_name,
                     messages=[
-                        {"role": "system", "content": "You are an expert academic extraction assistant..."},
+                        {"role": "system",
+                         "content": "You are an expert academic extraction assistant. Adhere strictly to the requested JSON format."},
                         {"role": "user", "content": prompt_for_llm}
                     ],
                     temperature=0.1, stream=False
@@ -77,7 +85,7 @@ class PaperProcessor:
                     paper_meta=paper_data,
                     domain_config=self.domain_config,
                     language=language,
-                    pydantic_validation_enabled=self.pydantic_validation_enabled  # <--- PASS THE FLAG
+                    pydantic_validation_enabled=self.pydantic_validation_enabled
                 )
             except Exception as e:
                 logger.error(f"LLM call or parsing attempt {attempt + 1} failed for {paper_id_for_log}: {e}")
@@ -89,17 +97,20 @@ class PaperProcessor:
                     logger.error(f"❌ Final attempt failed for {paper_id_for_log}. Skipping this paper.")
                     fail_stats = {
                         "paper_id": paper_id_for_log, "raw_llm_response_parseable_as_json": False,
+                        "json_decode_error": f"LLM call failed after {max_retries} retries: {str(e)}",
                         "initial_entry_count_from_llm": 0,
                         "top_level_validation_passed": False if self.pydantic_validation_enabled else "SKIPPED",
-                        "top_level_error_message": f"LLM call failed after {max_retries} retries: {str(e)}",
+                        "top_level_validation_errors": [{"type": type(e).__name__,
+                                                         "msg": f"LLM call failed after {max_retries} retries: {str(e)}"}],
+                        "time_top_level_validation_seconds": 0.0,
                         "num_entries_after_top_level_validation": 0,
                         "domain_specific_validation_results": [],
                         "count_entries_passing_domain_details_validation": 0
                     }
                     return [], fail_stats
         unreachable_stats = {"paper_id": paper_id_for_log,
-                             "top_level_error_message": "Max retries was zero or loop ended.",
-                             "top_level_validation_passed": "SKIPPED" if not self.pydantic_validation_enabled else False}
+                             "top_level_validation_errors": [{"msg": "Max retries was zero or loop ended."}],
+                             "top_level_validation_passed": False}
         return [], unreachable_stats
 
     def process_papers_with_checkpoint(self,
@@ -108,9 +119,6 @@ class PaperProcessor:
                                        language: str,
                                        checkpoint_file_path: str = "checkpoint_extraction.json"
                                        ) -> Tuple[List[Dict], List[Dict[str, Any]]]:
-        # ... (checkpoint loading logic and other parts of the method remain the same) ...
-        # No direct changes needed here regarding pydantic_enabled, as it's handled by process_single_paper_llm_call
-        # ... (rest of the method)
         default_checkpoint_data = {"processed_ids": set(), "results": [], "all_paper_stats": [], "total_elapsed": 0.0,
                                    "total_processed": 0}
         checkpoint_data = load_checkpoint(checkpoint_file_path, default_checkpoint_data)
@@ -141,15 +149,14 @@ class PaperProcessor:
                 try:
                     paper_specific_material_entries, current_paper_stats = \
                         self.process_single_paper_llm_call(paper_data_item, domain_name,
-                                                           language)  # pydantic_enabled is used internally
+                                                           language)
 
                     all_paper_stats.append(current_paper_stats)
 
-                    if paper_specific_material_entries:  # Only extend if there are valid entries
+                    if paper_specific_material_entries:
                         all_extracted_results.extend(paper_specific_material_entries)
                         logger.info(
                             f"Successfully processed Paper ID {paper_id}, found {len(paper_specific_material_entries)} valid material entries.")
-                    # else: No valid entries, but paper attempt was made and stats recorded
 
                     processed_ids.add(paper_id)
                     newly_processed_paper_count_this_session += 1
@@ -196,6 +203,8 @@ class PaperProcessor:
         except Exception as e:
             logger.critical(f"\nUnhandled exception in batch processing: {e}", exc_info=True)
         finally:
+            # Always save the final state to the checkpoint file before exiting.
+            # This ensures that even if the main script fails later, the progress is safe.
             final_checkpoint_data = {
                 "processed_ids": processed_ids,
                 "results": all_extracted_results,
@@ -206,12 +215,13 @@ class PaperProcessor:
             save_checkpoint(checkpoint_file_path, final_checkpoint_data)
             logger.info("Final extraction checkpoint saved.")
 
-        fully_processed_count = num_already_processed_papers + newly_processed_paper_count_this_session
-        if total_papers_to_process > 0 and fully_processed_count == total_papers_to_process:
-            cleanup_checkpoint(checkpoint_file_path)
-        elif total_papers_to_process == 0:
-            logger.info("No papers were scheduled for processing. Checkpoint not cleaned for extraction stats.")
+        # ====================================================================================
+        # --- MODIFICATION: The checkpoint cleanup logic has been removed from this file. ---
+        # It is now handled by main_extraction_pipeline.py AFTER all final files are saved.
+        # This prevents data loss if a file saving operation fails after this function completes.
+        # ====================================================================================
 
+        print()  # Adds a newline after the progress bar is finished.
         logger.info(
             f"Extraction batch processing completed. Total unique papers processed in this run: {newly_processed_paper_count_this_session}")
         logger.info(f"Total extracted material entries in results: {len(all_extracted_results)}.")

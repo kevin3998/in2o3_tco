@@ -2,7 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # 1. 定义模型路径
-model_path = "/model/models/qwen3-14b-in2o3-tco-merged"  # <-- 替换成你合并后模型的实际路径
+model_path = "../models/qwen3-14b-in2o3-tco-merged"  # <-- 替换成你合并后模型的实际路径
 
 # 2. 加载 Tokenizer 和模型
 #    device_map="auto" 会自动将模型分配到可用的硬件上 (如 GPU)
@@ -16,7 +16,7 @@ model = AutoModelForCausalLM.from_pretrained(
 # 3. 准备输入 (Prompt)
 #    注意：这里的 prompt 格式需要和你微调时使用的格式保持一致！
 #    例如，如果微调时使用了 Alpaca 格式，这里也应该遵循。
-prompt = "ITO设计中的基质材料都有哪些？简要介绍一下"
+prompt = "多元素掺杂三氧化二铟的体系一般有什么金属元素掺入？"
 # chat_template = model.chat_template # 如果你的模型有聊天模板，可以使用
 # messages = [{"role": "user", "content": prompt}]
 # formatted_prompt = tokenizer.apply_chat_template(messages, tokenize=False) # 使用模板格式化
@@ -31,7 +31,8 @@ outputs = model.generate(
     max_new_tokens=512,
     do_sample=True,
     temperature=0.7,
-    top_p=0.9
+    top_p=0.9,
+    repetition_penalty=1.15
 )
 
 # 6. 解码并打印结果

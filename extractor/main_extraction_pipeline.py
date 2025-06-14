@@ -1,4 +1,3 @@
-# src/main_extraction_pipeline.py
 """
 Module: main_extraction_pipeline
 Functionality: Serves as the main entry point for running the information
@@ -15,7 +14,7 @@ import traceback
 from typing import List, Dict, Any
 from extractor.utils.logging_config import setup_logging
 from extractor.utils.llm_client_setup import get_openai_client
-from extractor.utils.file_operations import load_json_data, save_json_data
+from extractor.utils.file_operations import load_json_data, save_json_data, cleanup_checkpoint
 from extractor.utils.general_utils import PromptManager
 from extractor.config.domain_specific_configs import get_domain_config
 from extractor.config.prompt_templates import load_prompts as load_all_extraction_prompts
@@ -75,21 +74,24 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
 
     # --- Calculate Rates ---
     json_parse_rate = (
-                total_parseable_llm_responses / total_papers_attempted * 100) if total_papers_attempted > 0 else 0
+            total_parseable_llm_responses / total_papers_attempted * 100) if total_papers_attempted > 0 else 0
 
     parseable_and_not_skipped_top_level = total_parseable_llm_responses - papers_with_top_level_skipped
     top_level_schema_validation_rate_per_paper = (
-                papers_passing_top_level_validation / parseable_and_not_skipped_top_level * 100) if parseable_and_not_skipped_top_level > 0 else 0
+            papers_passing_top_level_validation / parseable_and_not_skipped_top_level * 100) if parseable_and_not_skipped_top_level > 0 else 0
 
     entry_survival_after_top_level_rate = (
-                total_entries_after_top_level_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
+            total_entries_after_top_level_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
 
     attempted_and_not_skipped_domain = total_entries_attempted_domain_details_validation - entries_with_domain_details_skipped
     domain_specific_details_validation_rate_per_entry = (
-                total_entries_passing_domain_details_validation / attempted_and_not_skipped_domain * 100) if attempted_and_not_skipped_domain > 0 else "N/A"
+            total_entries_passing_domain_details_validation / attempted_and_not_skipped_domain * 100) if attempted_and_not_skipped_domain > 0 else "N/A"
+
+    if papers_with_top_level_skipped == total_parseable_llm_responses and total_parseable_llm_responses > 0:  # All skipped
+        domain_specific_details_validation_rate_per_entry = "SKIPPED"
 
     end_to_end_entry_success_rate = (
-                total_entries_passing_domain_details_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
+            total_entries_passing_domain_details_validation / total_initial_entries_from_llm * 100) if total_initial_entries_from_llm > 0 else 0
 
     # --- Log Summary to Console ---
     logger.info("--- Pydantic Validation Statistics ---")
@@ -111,6 +113,9 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
     if attempted_and_not_skipped_domain > 0:
         logger.info(
             f"Entries Passing Domain-Specific Details Validation: {total_entries_passing_domain_details_validation} / {attempted_and_not_skipped_domain} attempted ({domain_specific_details_validation_rate_per_entry:.2f}%)")
+    elif isinstance(domain_specific_details_validation_rate_per_entry,
+                    str) and domain_specific_details_validation_rate_per_entry == "SKIPPED":
+        logger.info("Domain-Specific Details Pydantic Validation was SKIPPED for all entries.")
     else:
         logger.info("Domain-Specific Details Validation was not performed on any entries (or all were skipped).")
 
@@ -147,11 +152,16 @@ def calculate_and_log_stats(all_paper_stats: List[Dict[str, Any]], stats_output_
     except TypeError as te:
         logger.error(f"❌ FAILED TO SAVE STATS FILE due to a TypeError (object not JSON serializable).")
         logger.error(f"Error Message: {te}")
+        # Re-raise the exception to ensure the main try-except block catches it
+        # and prevents the checkpoint from being deleted.
+        raise
     except Exception as e:
         logger.error(f"❌ FAILED TO SAVE STATS FILE due to an unexpected exception.")
         logger.error(f"Error Type: {type(e).__name__}")
         logger.error(f"Error Message: {e}")
         logger.error(f"Traceback:\n{traceback.format_exc()}")
+        # Re-raise the exception
+        raise
 
 
 def main():
@@ -204,55 +214,68 @@ def main():
         )
         args = parser.parse_args()
 
-    logger.info(f"Starting extraction pipeline with args: {vars(args)}")
+        logger.info(f"Starting extraction pipeline with args: {vars(args)}")
 
-    pydantic_enabled = not args.disable_pydantic_validation
-    if not pydantic_enabled:
-        logger.warning("PYDANTIC VALIDATION IS DISABLED VIA COMMAND-LINE ARGUMENT.")
+        pydantic_enabled = not args.disable_pydantic_validation
+        if not pydantic_enabled:
+            logger.warning("PYDANTIC VALIDATION IS DISABLED.")
 
-    try:
-        openai_client = get_openai_client()
-        domain_config = get_domain_config(args.domain)
-        logger.info(f"Loaded configuration for domain: {args.domain}")
-        prompt_manager = PromptManager()
-        load_all_extraction_prompts(prompt_manager)
-        logger.info(f"Prompts loaded. Available for: {list(prompt_manager.templates.keys())}")
+        try:
+            # Step 1: Initialization
+            openai_client = get_openai_client()
+            domain_config = get_domain_config(args.domain)
+            logger.info(f"Loaded configuration for domain: {args.domain}")
+            prompt_manager = PromptManager()
+            load_all_extraction_prompts(prompt_manager)
+            logger.info(f"Prompts loaded. Available for: {list(prompt_manager.templates.keys())}")
 
-        processor = PaperProcessor(
-            client=openai_client,
-            prompt_manager=prompt_manager,
-            domain_config=domain_config,
-            model_name=args.model_name,
-            pydantic_validation_enabled=pydantic_enabled
-        )
-        logger.info(
-            f"PaperProcessor initialized with model: {args.model_name} and Pydantic validation {'enabled' if pydantic_enabled else 'disabled'}.")
+            # Step 2: Create Processor
+            processor = PaperProcessor(
+                client=openai_client,
+                prompt_manager=prompt_manager,
+                domain_config=domain_config,
+                model_name=args.model_name,
+                pydantic_validation_enabled=pydantic_enabled
+            )
+            logger.info(
+                f"PaperProcessor initialized with model: {args.model_name} and Pydantic validation {'enabled' if pydantic_enabled else 'disabled'}.")
 
-        papers_data_list = load_json_data(args.input_file)
-        if not isinstance(papers_data_list, list):
-            logger.error(f"Input file {args.input_file} does not contain a list.")
-            return
-        logger.info(f"Loaded {len(papers_data_list)} paper data items from {args.input_file}")
+            # Step 3: Load Data
+            papers_data_list = load_json_data(args.input_file)
+            if not isinstance(papers_data_list, list):
+                logger.error(f"Input file {args.input_file} does not contain a list.")
+                return
+            logger.info(f"Loaded {len(papers_data_list)} paper data items from {args.input_file}")
 
-        extracted_results, all_paper_stats = processor.process_papers_with_checkpoint(
-            papers_list=papers_data_list,
-            domain_name=args.domain,
-            language=args.language,
-            checkpoint_file_path=args.checkpoint_file
-        )
+            # Step 4: Run Extraction
+            extracted_results, all_paper_stats = processor.process_papers_with_checkpoint(
+                papers_list=papers_data_list,
+                domain_name=args.domain,
+                language=args.language,
+                checkpoint_file_path=args.checkpoint_file
+            )
 
-        save_json_data(extracted_results, args.output_file)
-        logger.info(f"Extraction complete. {len(extracted_results)} valid material entries saved to {args.output_file}")
+            # Step 5: Save Main Output File
+            save_json_data(extracted_results, args.output_file)
+            logger.info(
+                f"Extraction complete. {len(extracted_results)} valid material entries saved to {args.output_file}")
 
-        calculate_and_log_stats(all_paper_stats, args.stats_file)
+            # Step 6: Save Statistics File
+            calculate_and_log_stats(all_paper_stats, args.stats_file)
 
-    except ValueError as ve:
-        logger.error(f"Configuration error: {ve}")
-    except FileNotFoundError as fnfe:
-        logger.error(f"File access error: {fnfe}")
-    except Exception as e:
-        logger.critical(f"An unexpected error occurred in the main pipeline: {e}", exc_info=True)
+            # --- MODIFICATION: CLEANUP CHECKPOINT AT THE VERY END ---
+            # This code will only be reached if both save_json_data and calculate_and_log_stats complete successfully.
+            # This prevents the data loss you experienced previously.
+            logger.info("All data saved successfully. Cleaning up checkpoint file.")
+            cleanup_checkpoint(args.checkpoint_file)
+            # --- END OF MODIFICATION ---
 
+        except Exception as e:
+            logger.critical(
+                f"An unexpected error occurred in the main pipeline and the process will terminate. The checkpoint file has been kept for recovery.")
+            logger.critical(f"Error details: {e}", exc_info=True)
+            # If any error occurs in the steps above (e.g., in save_json_data or calculate_and_log_stats),
+            # the program jumps here, skipping the cleanup_checkpoint call.
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()
